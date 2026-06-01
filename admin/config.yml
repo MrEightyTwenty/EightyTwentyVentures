@@ -1,45 +1,46 @@
 ﻿backend:
-name: github
-repo: MrEightyTwenty/EightyTwentyVentures
-branch: main
-base_url: https://eightytwentyventures.netlify.app
+  name: github
+  repo: MrEightyTwenty/EightyTwentyVentures
+  branch: main
+  base_url: https://eightytwentyventures.netlify.app
+  auth_endpoint: /auth
 
 media_folder: /content/images
 public_folder: /content/images
 
 collections:
-- name: "briefings"
-label: "Briefings"
-folder: "/content/briefings"
-create: true
-slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-fields:
-- {label: "Title", name: "title", widget: "string"}
-- {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-- {label: "Publish Date", name: "date", widget: "datetime"}
-- {label: "Category", name: "category", widget: "select", options: ["Macro", "COT", "Volatility", "Sectors", "Portfolio", "Process"]}
-- {label: "Author", name: "author", widget: "string", default: "Mr. EightyTwenty", required: false}
-- {label: "Featured Image", name: "image", widget: "image", required: false}
-- {label: "Body", name: "body", widget: "markdown"}
+  - name: "briefings"
+    label: "Briefings"
+    folder: "/content/briefings"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["Macro", "COT", "Volatility", "Sectors", "Portfolio", "Process"]}
+      - {label: "Author", name: "author", widget: "string", default: "Mr. EightyTwenty", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
 
-- name: "playbooks"
-label: "Playbooks"
-folder: "/content/playbooks"
-create: true
-slug: "{{slug}}"
-fields:
-- {label: "Title", name: "title", widget: "string"}
-- {label: "Description", name: "description", widget: "text"}
-- {label: "Body", name: "body", widget: "markdown"}
+  - name: "playbooks"
+    label: "Playbooks"
+    folder: "/content/playbooks"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
-- name: "pages"
-label: "Pages"
-folder: "/content/pages"
-create: false
-files:
-- file: "/content/pages/about.md"
-label: "About"
-name: "about"
-fields:
-- {label: "Title", name: "title", widget: "string"}
-- {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    folder: "/content/pages"
+    create: false
+    files:
+      - file: "/content/pages/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
