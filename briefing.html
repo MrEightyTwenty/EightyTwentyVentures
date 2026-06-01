@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Briefing · EightyTwentyVentures</title>
+  <meta name="description" content="Short, structured notes on regime, positioning, and market structure. Published when something actually changes.">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Eighty<span>Twenty</span>Ventures</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">The Playbook</a></li>
+        <li><a href="briefing.html" class="active">Briefing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">≡</button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container-narrow">
+      <span class="eyebrow">The Briefing</span>
+      <h1>What's actually moving.</h1>
+      <p class="lead">Short, structured notes on regime, positioning, and market structure. Published when something actually changes, not on a content calendar.</p>
+
+      <form class="signup-form" name="newsletter-briefing" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event, this)">
+        <input type="hidden" name="form-name" value="newsletter-briefing">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="signup-meta">Free. Concise. Delivered straight to your inbox.</p>
+      <div class="signup-success" id="signupSuccess">You're in. Watch your inbox for the next Briefing.</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <!-- Category filters (visual only for now; wire up later with JS) -->
+      <div class="briefing-filters">
+        <button class="briefing-filter active" data-cat="all">All</button>
+        <button class="briefing-filter" data-cat="macro">Macro</button>
+        <button class="briefing-filter" data-cat="regime">Regime</button>
+        <button class="briefing-filter" data-cat="cot">COT</button>
+        <button class="briefing-filter" data-cat="sectors">Sectors</button>
+        <button class="briefing-filter" data-cat="education">Education</button>
+      </div>
+
+      <!-- ====================================================
+           BRIEFING POSTS · Sample cards.
+           To add a post: duplicate one <a class="briefing-card"> block,
+           update meta, title, dek, and href. Set data-cat to the category.
+           ==================================================== -->
+      <div class="briefing-grid" id="briefingGrid">
+
+        <a href="#" class="briefing-card" data-cat="regime">
+          <div class="meta">
+            <span class="category">Regime</span>
+            <span class="dot"></span>
+            <span>Sample post</span>
+          </div>
+          <h3>Mapping the new accord: why this regime is not the last one.</h3>
+          <p>A working framework for the macro environment we are actually in, why prior playbooks keep misfiring, and where the asymmetries are forming.</p>
+        </a>
+
+        <a href="#" class="briefing-card" data-cat="cot">
+          <div class="meta">
+            <span class="category">COT</span>
+            <span class="dot"></span>
+            <span>Sample post</span>
+          </div>
+          <h3>When commercials stop hedging and start positioning.</h3>
+          <p>The single most reliable signal we track in the Commitment of Traders data, why most analysts read it backwards, and what it is saying right now.</p>
+        </a>
+
+        <a href="#" class="briefing-card" data-cat="sectors">
+          <div class="meta">
+            <span class="category">Sectors</span>
+            <span class="dot"></span>
+            <span>Sample post</span>
+          </div>
+          <h3>Where capital is concentrating, and why most participants are looking at the wrong sectors.</h3>
+          <p>A walk through the rotation the framework is currently flagging, the structural reasons behind it, and which names are showing the cleanest accumulation.</p>
+        </a>
+
+        <a href="#" class="briefing-card" data-cat="macro">
+          <div class="meta">
+            <span class="category">Macro</span>
+            <span class="dot"></span>
+            <span>Sample post</span>
+          </div>
+          <h3>Liquidity, the dollar, and the canary in the bond market.</h3>
+          <p>The three macro variables we are watching most closely, why their interaction matters more than any one of them in isolation, and what would force a regime reassessment.</p>
+        </a>
+
+        <a href="#" class="briefing-card" data-cat="education">
+          <div class="meta">
+            <span class="category">Education</span>
+            <span class="dot"></span>
+            <span>Sample post</span>
+          </div>
+          <h3>The bus analogy: how to actually hold a position you believe in.</h3>
+          <p>Why most position-trading mistakes are management failures, not entry failures, and the simple rule that resolves nine out of ten of them.</p>
+        </a>
+
+        <a href="#" class="briefing-card" data-cat="regime">
+          <div class="meta">
+            <span class="category">Regime</span>
+            <span class="dot"></span>
+            <span>Sample post</span>
+          </div>
+          <h3>Three scenarios, weighted honestly.</h3>
+          <p>The base case, the optimistic tail, and the disorderly path. Probabilities, transmission mechanisms, and what each scenario implies for sector leadership.</p>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container-narrow">
+      <span class="eyebrow">Don't Miss The Next One</span>
+      <h2>Subscribe to the Briefing.</h2>
+      <p>Quiet, structured, and rare. Delivered when something has actually changed.</p>
+
+      <form class="signup-form" name="newsletter-briefing-foot" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event, this)">
+        <input type="hidden" name="form-name" value="newsletter-briefing-foot">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="signup-meta">Free. Concise. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Eighty<span>Twenty</span>Ventures</div>
+          <p class="footer-desc">A structured decision-making ecosystem for self-directed discretionary participants. Built around the 80/20 principle.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playbook.html">The Playbook</a></li>
+            <li><a href="briefing.html">Briefing</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Risk Disclosure</a></li>
+            <li><a href="#">Subscription Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk and is not suitable for all investors. You may lose part or all of your investment. Only risk capital should be used. EightyTwentyVentures LLC provides educational software and content for informational purposes only and does not provide investment advice, financial advice, or recommendations. You are solely responsible for your investment decisions and assume full risk.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Newsletter signup
+    function handleSignup(event, form) {
+      event.preventDefault();
+      const data = new FormData(form);
+      const params = new URLSearchParams();
+      data.forEach((v, k) => params.append(k, v));
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: params.toString() })
+        .then(() => { form.reset(); const s = document.getElementById('signupSuccess'); if (s) { s.classList.add('visible'); setTimeout(() => s.classList.remove('visible'), 6000); } })
+        .catch(() => alert('Something went wrong. Please try again.'));
+    }
+
+    // Category filter (client-side)
+    document.querySelectorAll('.briefing-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.cat;
+        document.querySelectorAll('.briefing-filter').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.briefing-card').forEach(card => {
+          card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

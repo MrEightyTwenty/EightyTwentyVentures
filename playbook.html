@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eighty Twenty Playbook · EightyTwentyVentures</title>
+  <meta name="description" content="The practical application of the EightyTwenty framework across two timeframes: intra-session order flow and longer-term position trading.">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Eighty<span>Twenty</span>Ventures</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html" class="active">The Playbook</a></li>
+        <li><a href="briefing.html">Briefing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">≡</button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       PAGE HERO
+       ============================================================ -->
+  <header class="page-hero">
+    <div class="container-narrow">
+      <span class="eyebrow">The Playbook</span>
+      <h1>The Eighty Twenty Playbook</h1>
+      <p class="lead">The practical application of the framework. One methodology, two timeframes. The intra-session work answers <em>where exactly</em>. The position work answers <em>why bother</em>. They are not separate disciplines. They are the same logic operating at different speeds.</p>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HUB CARDS
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Two Timeframes</span>
+        <h2>Pick your altitude.</h2>
+        <p>Order flow handles the entry. Positioning handles the conviction. Most participants confuse these two and end up doing neither well.</p>
+      </div>
+
+      <div class="playbook-hub-grid">
+        <a href="playbook-intraday.html" class="playbook-card">
+          <span class="label">Short-Term · Intra-Session</span>
+          <h2>The Auction-Market-Theory Playbook</h2>
+          <p>Leg-to-leg delta profile, integrated volume profile, absorption signals, and range expansion logic. For participants who execute inside the session and want a structural read on who is actually getting filled, and where.</p>
+          <span class="arrow">Read the playbook →</span>
+        </a>
+
+        <a href="playbook-position.html" class="playbook-card">
+          <span class="label">Longer-Term · Position</span>
+          <h2>The Relative-Strength Playbook</h2>
+          <p>Commitment of Traders positioning, regime mapping, sector selection, volatility contraction, and the construction of a vital-few portfolio. For participants holding ideas for months and quarters rather than minutes.</p>
+          <span class="arrow">Read the playbook →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY TWO LAYERS
+       ============================================================ -->
+  <section class="framework">
+    <div class="container-narrow">
+      <div class="section-header">
+        <span class="eyebrow">The Logic</span>
+        <h2>Why two layers, not one.</h2>
+      </div>
+
+      <p class="lead">
+        A position trader who ignores execution leaves real money on the table. An intra-session trader without macro context gets chopped up by structural moves they never saw coming. The two timeframes inform each other.
+      </p>
+      <p class="lead">
+        When the position playbook says a sector is structurally favored and commercials are accumulating, the intra-session playbook tells you where in that sector buyers are actually showing up today. When the order flow shows persistent absorption at a level, the position playbook tells you whether the broader regime supports holding that idea for the next six months.
+      </p>
+      <p class="lead">
+        Same framework. Two speeds. One coherent decision.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container-narrow">
+      <span class="eyebrow">Stay Current</span>
+      <h2>Get the Briefing.</h2>
+      <p>The Playbook is the methodology. The Briefing is what we are doing with it right now.</p>
+
+      <form
+        class="signup-form"
+        name="newsletter-playbook"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onsubmit="handleSignup(event, this)"
+      >
+        <input type="hidden" name="form-name" value="newsletter-playbook">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="signup-meta">Free. Concise. Unsubscribe anytime.</p>
+      <div class="signup-success" id="signupSuccess">You're in. Watch your inbox for the next Briefing.</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Eighty<span>Twenty</span>Ventures</div>
+          <p class="footer-desc">A structured decision-making ecosystem for self-directed discretionary participants. Built around the 80/20 principle.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playbook.html">The Playbook</a></li>
+            <li><a href="briefing.html">Briefing</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Risk Disclosure</a></li>
+            <li><a href="#">Subscription Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk and is not suitable for all investors. You may lose part or all of your investment. Only risk capital should be used. EightyTwentyVentures LLC provides educational software and content for informational purposes only and does not provide investment advice, financial advice, or recommendations. You are solely responsible for your investment decisions and assume full risk.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSignup(event, form) {
+      event.preventDefault();
+      const data = new FormData(form);
+      const params = new URLSearchParams();
+      data.forEach((v, k) => params.append(k, v));
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString()
+      }).then(() => {
+        form.reset();
+        const s = document.getElementById('signupSuccess');
+        if (s) { s.classList.add('visible'); setTimeout(() => s.classList.remove('visible'), 6000); }
+      }).catch(() => alert('Something went wrong. Please try again.'));
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EightyTwentyVentures · Market Intelligence From a Working Trader</title>
+  <meta name="description" content="Macro regime analysis, COT-driven positioning work, and short-term structural ideas. Written by a working trader when something is worth saying.">
+  <meta property="og:title" content="EightyTwentyVentures">
+  <meta property="og:description" content="Market intelligence and ideas from a working trader. The 20% of inputs that drive 80% of what matters.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Eighty<span>Twenty</span>Ventures</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="playbook.html">The Playbook</a></li>
+        <li><a href="briefing.html">Briefing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#subscribe" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bloom" aria-hidden="true"></div>
+    <div class="container-narrow">
+      <div class="hero-logo-wrap">
+        <img src="assets/logo.png" alt="EightyTwentyVentures bull and bear emblem" class="hero-logo">
+      </div>
+      <h1 class="hero-brand">Eighty<span class="txt-green">Twenty</span>Ventures</h1>
+      <p class="hero-tagline">Market intelligence and ideas from a working trader.</p>
+      <p class="hero-subtagline">Macro regime analysis, institutional positioning, and structural trade ideas. Written when something is worth saying.</p>
+      <form class="signup-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event,this)">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Read along</button>
+      </form>
+      <p class="signup-meta">Free. No daily noise. Unsubscribe anytime.</p>
+      <div class="signup-success" id="signupSuccess">You're in. Watch your inbox for the next piece.</div>
+    </div>
+  </header>
+
+  <!-- LATEST WRITING : 3-column card grid -->
+  <section class="latest-writing reveal">
+    <div class="container">
+      <div class="latest-header">
+        <h2>Latest Writing</h2>
+        <a href="briefing.html" class="latest-view-all">View all &rarr;</a>
+      </div>
+      <div class="post-grid">
+
+        <!-- Card 1 -->
+        <a href="briefing.html" class="post-card stagger-child">
+          <div class="post-card-img">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="g1a" cx="30%" cy="40%" r="70%">
+                  <stop offset="0%" stop-color="#0D2B22"/>
+                  <stop offset="100%" stop-color="#050D09"/>
+                </radialGradient>
+                <radialGradient id="g1b" cx="75%" cy="60%" r="50%">
+                  <stop offset="0%" stop-color="#00C896" stop-opacity="0.14"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#g1a)"/>
+              <rect width="640" height="360" fill="url(#g1b)"/>
+              <polyline points="40,280 100,240 160,255 220,200 280,210 340,155 400,170 460,120 520,135 600,90" fill="none" stroke="#00C896" stroke-width="1.8" stroke-opacity="0.4"/>
+              <polyline points="40,300 120,270 200,280 280,245 360,255 440,215 540,195 600,175" fill="none" stroke="#00C896" stroke-width="0.9" stroke-opacity="0.2"/>
+              <line x1="0" y1="180" x2="640" y2="180" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+              <line x1="0" y1="90"  x2="640" y2="90"  stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+              <line x1="0" y1="270" x2="640" y2="270" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+              <text x="32" y="44" font-family="Georgia,serif" font-size="12" fill="#00C896" fill-opacity="0.45" letter-spacing="3">MACRO</text>
+            </svg>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              <span class="writing-tag macro">Macro</span>
+              <span class="post-card-date">Coming soon</span>
+            </div>
+            <div class="post-card-title">Mapping the New Accord: Why This Regime Is Not the Last One</div>
+            <p class="post-card-dek">A working framework for the macro environment we are actually in, why prior playbooks keep misfiring, and where the asymmetries are forming.</p>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="briefing.html" class="post-card stagger-child">
+          <div class="post-card-img">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="g2a" cx="65%" cy="35%" r="70%">
+                  <stop offset="0%" stop-color="#1A1508"/>
+                  <stop offset="100%" stop-color="#080600"/>
+                </radialGradient>
+                <radialGradient id="g2b" cx="25%" cy="70%" r="55%">
+                  <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.12"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#g2a)"/>
+              <rect width="640" height="360" fill="url(#g2b)"/>
+              <rect x="55"  y="205" width="38" height="75"  fill="#C9A84C" fill-opacity="0.22" rx="2"/>
+              <rect x="115" y="160" width="38" height="120" fill="#C9A84C" fill-opacity="0.32" rx="2"/>
+              <rect x="175" y="135" width="38" height="145" fill="#C9A84C" fill-opacity="0.42" rx="2"/>
+              <rect x="235" y="95"  width="38" height="185" fill="#C9A84C" fill-opacity="0.52" rx="2"/>
+              <rect x="295" y="125" width="38" height="155" fill="#C9A84C" fill-opacity="0.38" rx="2"/>
+              <rect x="355" y="175" width="38" height="105" fill="#E84040" fill-opacity="0.28" rx="2"/>
+              <rect x="415" y="215" width="38" height="65"  fill="#E84040" fill-opacity="0.2"  rx="2"/>
+              <rect x="475" y="245" width="38" height="35"  fill="#E84040" fill-opacity="0.16" rx="2"/>
+              <line x1="40" y1="288" x2="560" y2="288" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1"/>
+              <text x="32" y="44" font-family="Georgia,serif" font-size="12" fill="#C9A84C" fill-opacity="0.45" letter-spacing="3">POSITIONING</text>
+            </svg>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              <span class="writing-tag positioning">Positioning</span>
+              <span class="post-card-date">Coming soon</span>
+            </div>
+            <div class="post-card-title">When Commercials Stop Hedging and Start Positioning</div>
+            <p class="post-card-dek">The single most reliable signal in COT data, why most analysts read it backwards, and what it is saying in the current environment.</p>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="briefing.html" class="post-card stagger-child">
+          <div class="post-card-img">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="g3a" cx="50%" cy="50%" r="70%">
+                  <stop offset="0%" stop-color="#1A0C0C"/>
+                  <stop offset="100%" stop-color="#060304"/>
+                </radialGradient>
+                <radialGradient id="g3b" cx="50%" cy="28%" r="60%">
+                  <stop offset="0%" stop-color="#E84040" stop-opacity="0.09"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#g3a)"/>
+              <rect width="640" height="360" fill="url(#g3b)"/>
+              <g stroke-width="1.4" stroke-opacity="0.5">
+                <line x1="78"  y1="198" x2="78"  y2="258" stroke="#E84040"/>
+                <rect x="68"   y="208" width="20" height="38" fill="#E84040" fill-opacity="0.35" rx="1"/>
+                <line x1="128" y1="188" x2="128" y2="252" stroke="#E84040"/>
+                <rect x="118"  y="200" width="20" height="36" fill="#E84040" fill-opacity="0.28" rx="1"/>
+                <line x1="178" y1="168" x2="178" y2="238" stroke="#00C896"/>
+                <rect x="168"  y="173" width="20" height="44" fill="#00C896" fill-opacity="0.35" rx="1"/>
+                <line x1="228" y1="138" x2="228" y2="208" stroke="#00C896"/>
+                <rect x="218"  y="143" width="20" height="46" fill="#00C896" fill-opacity="0.44" rx="1"/>
+                <line x1="278" y1="118" x2="278" y2="183" stroke="#00C896"/>
+                <rect x="268"  y="123" width="20" height="44" fill="#00C896" fill-opacity="0.54" rx="1"/>
+                <line x1="328" y1="103" x2="328" y2="163" stroke="#00C896"/>
+                <rect x="318"  y="108" width="20" height="42" fill="#00C896" fill-opacity="0.54" rx="1"/>
+                <line x1="378" y1="113" x2="378" y2="178" stroke="#00C896"/>
+                <rect x="368"  y="118" width="20" height="44" fill="#00C896" fill-opacity="0.44" rx="1"/>
+                <line x1="428" y1="128" x2="428" y2="193" stroke="#E84040"/>
+                <rect x="418"  y="133" width="20" height="42" fill="#E84040" fill-opacity="0.28" rx="1"/>
+                <line x1="478" y1="153" x2="478" y2="213" stroke="#E84040"/>
+                <rect x="468"  y="158" width="20" height="38" fill="#E84040" fill-opacity="0.22" rx="1"/>
+              </g>
+              <text x="32" y="44" font-family="Georgia,serif" font-size="12" fill="#E84040" fill-opacity="0.45" letter-spacing="3">TACTICAL</text>
+            </svg>
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              <span class="writing-tag tactical">Tactical</span>
+              <span class="post-card-date">Coming soon</span>
+            </div>
+            <div class="post-card-title">Price Precedes the Narrative. A Framework for Getting There First.</div>
+            <p class="post-card-dek">The mechanics of how institutional accumulation leaves footprints before the public story forms, and how to read them in real time.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE EIGHTY TWENTY LENS -->
+  <section class="the-lens reveal glow-trigger">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">How the Writing Is Structured</span>
+        <h2>The <span class="txt-green">EightyTwenty</span> Lens</h2>
+        <p>Every piece runs through the same intellectual architecture. Not as a checklist, but as a filter: identifying the 20% of inputs that determine 80% of outcomes, then writing only about those.</p>
+      </div>
+      <div class="lens-grid">
+        <div class="lens-card stagger-child">
+          <span class="lens-num">01</span>
+          <h3>Macro Regime</h3>
+          <p>What is the dominant economic environment, and which cycle playbook actually fits? The regime is the context that makes everything else legible or illegible.</p>
+        </div>
+        <div class="lens-card stagger-child">
+          <span class="lens-num">02</span>
+          <h3>Institutional Positioning</h3>
+          <p>Where is informed capital moving before the narrative catches up? COT data, volume behavior, and accumulation footprints read against prevailing sentiment.</p>
+        </div>
+        <div class="lens-card stagger-child">
+          <span class="lens-num">03</span>
+          <h3>Thematic Branching</h3>
+          <p>Which sectors and industries are structurally positioned to capture the macro thesis? The theme is identified first. The sector follows. The equity is the final filter.</p>
+        </div>
+        <div class="lens-card stagger-child">
+          <span class="lens-num">04</span>
+          <h3>Expectation Shifts</h3>
+          <p>Markets move on changing future expectations, not on current conditions. The edge is in identifying where the market is about to revise its probability distribution before that revision is consensus.</p>
+        </div>
+        <div class="lens-card stagger-child">
+          <span class="lens-num">05</span>
+          <h3>Price Structure</h3>
+          <p>Auction market dynamics, order flow, and volatility patterns across timeframes. Where is the market deciding, and which side is winning that decision right now?</p>
+        </div>
+        <div class="lens-card stagger-child">
+          <span class="lens-num">06</span>
+          <h3>Asymmetric Positioning</h3>
+          <p>How ideas are sized and sequenced when all layers converge. Concentration over diversification. Conviction over activity. The vital few over the comfortable many.</p>
+        </div>
+      </div>
+      <p class="lens-bridge">Every Briefing applies one or more of these layers to a specific situation in the market. The Playbooks go deeper into each one.</p>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL FIND HERE: revised prose + pill tags -->
+  <section class="whats-here reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Archive</span>
+        <h2>What you'll find <span class="txt-green">here</span></h2>
+      </div>
+      <div class="whats-prose">
+        <p>The Briefing is not a scheduled newsletter. It is a growing database, pieces written when a topic warrants it, organized so they can be found when you need them. Some are foundational. Some are current. Some are written because enough readers asked about the same thing. The only constant is the EightyTwenty framework running underneath all of it: the same lens applied to a different situation in the market.</p>
+      </div>
+      <div class="category-tags">
+        <span class="cat-pill macro">Macro</span>
+        <span class="cat-pill positioning">Positioning</span>
+        <span class="cat-pill tactical">Tactical</span>
+        <span class="cat-pill educational">Educational</span>
+      </div>
+      <p class="whats-suggest">Have something you want covered? <a href="briefing.html">Submit a topic &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip reveal">
+    <div class="about-strip-inner">
+      <div>
+        <span class="about-strip-label">The Writer</span>
+        <h2>Mr. EightyTwenty</h2>
+      </div>
+      <div>
+        <p>A working trader who has spent years at the intersection of macro positioning, institutional order flow, and equity speculation. EightyTwentyVentures is the externalization of how he actually thinks about markets: not as a system of predictions, but as a continuous exercise in identifying the 20% of inputs that drive 80% of outcomes, and ignoring the rest.</p>
+        <p>The name is the philosophy. The writing is the application of it. The Playbooks are the methodology made explicit. The Briefings are where that methodology meets current conditions.</p>
+        <a href="about.html" class="read-more">Full background &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="archive-cta reveal" id="subscribe">
+    <div class="container-narrow">
+      <span class="eyebrow">The Archive Grows Weekly</span>
+      <h2>Subscribers get every Briefing <span class="txt-green">as it's published.</span></h2>
+      <p>Every piece is organized by category and available in full. No paywalls on the back catalog. The only cost is an email address.</p>
+      <form class="signup-form" name="newsletter-footer" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event,this)">
+        <input type="hidden" name="form-name" value="newsletter-footer">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Get the Briefing in your inbox</button>
+      </form>
+      <p class="signup-meta">Free. Organized by category. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Eighty<span>Twenty</span>Ventures</div>
+          <p class="footer-desc">Market intelligence from a working trader. Macro regime, institutional positioning, and structural ideas. The 20% that drives 80% of what matters.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playbook.html">The Playbook</a></li>
+            <li><a href="briefing.html">Briefing</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Risk Disclosure</a></li>
+            <li><a href="#">Subscription Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk and is not suitable for all investors. You may lose part or all of your investment. Only risk capital should be used. EightyTwentyVentures LLC provides educational content for informational purposes only and does not provide investment advice, financial advice, or recommendations. You are solely responsible for your investment decisions and assume full risk.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSignup(event, form) {
+      event.preventDefault();
+      const params = new URLSearchParams();
+      new FormData(form).forEach((v,k) => params.append(k,v));
+      fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:params.toString() })
+        .then(() => {
+          form.reset();
+          const s = document.getElementById('signupSuccess');
+          if (s) { s.classList.add('visible'); setTimeout(() => s.classList.remove('visible'), 6000); }
+        })
+        .catch(() => alert('Something went wrong. Please try again.'));
+    }
+
+    // Scroll-triggered reveal + staggered card animations
+    (function () {
+      const STAGGER = 120;
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+
+          if (el.classList.contains('reveal')) el.classList.add('visible');
+          if (el.classList.contains('glow-trigger')) el.classList.add('visible');
+
+          // Stagger children within this element
+          el.querySelectorAll('.stagger-child').forEach((child, i) => {
+            setTimeout(() => child.classList.add('visible'), i * STAGGER);
+          });
+
+          io.unobserve(el);
+        });
+      }, { threshold: 0.07, rootMargin: '0px 0px -30px 0px' });
+
+      document.querySelectorAll('.reveal, .post-grid, .lens-grid').forEach(el => io.observe(el));
+    })();
+  </script>
+</body>
+</html>

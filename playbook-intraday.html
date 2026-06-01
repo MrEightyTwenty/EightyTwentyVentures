@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Auction-Market-Theory Playbook · EightyTwentyVentures</title>
+  <meta name="description" content="A complete short-term and intra-session trading system built on Auction Market Theory. Nine chapters covering everything from framing a market to execution and psychology.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .amt-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .amt-chapter-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-default);
+      border-radius: 3px;
+      padding: 1.75rem 1.5rem;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.22s ease, transform 0.22s ease;
+    }
+    .amt-chapter-card:hover { border-color: var(--border-green); transform: translateY(-2px); color: inherit; }
+    .amt-chapter-card .ch { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 0.6rem; display: block; }
+    .amt-chapter-card h3 { font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.6rem; line-height: 1.3; }
+    .amt-chapter-card p  { font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.55; }
+    @media (max-width: 860px) { .amt-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px)  { .amt-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Eighty<span>Twenty</span>Ventures</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html" class="active">The Playbook</a></li>
+        <li><a href="briefing.html">Briefing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">&#9776;</button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container-narrow">
+      <span class="eyebrow">Short-Term · Intra-Session</span>
+      <h1>The Auction-Market-Theory <span class="txt-green">Playbook</span></h1>
+      <p class="lead">A complete short-term trading system built from the ground up on one foundational idea: markets are continuous auctions between buyers and sellers. Nine chapters. No borrowed mythology. No brand names for what already has names.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Nine Chapters</span>
+        <h2>The complete system.</h2>
+        <p>Read in sequence the first time. Return to individual chapters as reference points. Each one builds on the last.</p>
+      </div>
+
+      <div class="amt-grid">
+        <a href="amt/ch1-introduction.html" class="amt-chapter-card">
+          <span class="ch">Chapter 01</span>
+          <h3>The Foundation</h3>
+          <p>Why Auction Market Theory, how this system was built, and what "freedom of time" actually means as a design constraint.</p>
+        </a>
+        <a href="amt/ch2-framing.html" class="amt-chapter-card">
+          <span class="ch">Chapter 02</span>
+          <h3>Framing a Market</h3>
+          <p>Higher-timeframe volume mapping, Globex integration, and the if-then scenario framework that replaces prediction.</p>
+        </a>
+        <a href="amt/ch3-inflection.html" class="amt-chapter-card">
+          <span class="ch">Chapter 03</span>
+          <h3>Key Inflection Points</h3>
+          <p>The four types of inflection zones, how to read a revisit, and why the obvious levels are also the most reliable ones.</p>
+        </a>
+        <a href="amt/ch4-confluence.html" class="amt-chapter-card">
+          <span class="ch">Chapter 04</span>
+          <h3>Reading the Tape</h3>
+          <p>Price action, order flow, and depth of market. The six-layer confluence model and the three behaviors that generate trades.</p>
+        </a>
+        <a href="amt/ch5-bias.html" class="amt-chapter-card">
+          <span class="ch">Chapter 05</span>
+          <h3>Establishing Directional Bias</h3>
+          <p>Day type identification. The three environments you will encounter, and why each one demands a completely different response.</p>
+        </a>
+        <a href="amt/ch6-intraday.html" class="amt-chapter-card">
+          <span class="ch">Chapter 06</span>
+          <h3>Navigating the Session</h3>
+          <p>Intraday MGI levels, decision sequencing, and how to track which decisions the market has already made.</p>
+        </a>
+        <a href="amt/ch7-execution.html" class="amt-chapter-card">
+          <span class="ch">Chapter 07</span>
+          <h3>Execution</h3>
+          <p>The two-layer entry framework, risk framing, trade grading, holding mechanics, and the five acceptable outcomes.</p>
+        </a>
+        <a href="amt/ch8-management.html" class="amt-chapter-card">
+          <span class="ch">Chapter 08</span>
+          <h3>Trade Management</h3>
+          <p>Pyramiding protocol, sizing rules, the EMA ribbon as a holding mechanism, and why premature exits are a structural problem.</p>
+        </a>
+        <a href="amt/ch9-psychology.html" class="amt-chapter-card">
+          <span class="ch">Chapter 09</span>
+          <h3>The War Between Your Ears</h3>
+          <p>Mental capital, behavioral protection rules, journaling as audit, and the feedback loop that compounds everything else.</p>
+        </a>
+      </div>
+
+      <div style="text-align:center; margin-top:3.5rem;">
+        <a href="amt/ch1-introduction.html" class="btn btn-primary btn-large">Start with Chapter 1 &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container-narrow">
+      <span class="eyebrow">Stay Current</span>
+      <h2>Get the Briefing.</h2>
+      <p>The Playbook is the methodology. The Briefing is what we are doing with it right now.</p>
+      <form class="signup-form" name="newsletter-amt" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event,this)">
+        <input type="hidden" name="form-name" value="newsletter-amt">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="signup-meta">Free. Concise. Unsubscribe anytime.</p>
+      <div class="signup-success" id="signupSuccess">You're in.</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><div class="footer-brand">Eighty<span>Twenty</span>Ventures</div><p class="footer-desc">A structured decision-making ecosystem for self-directed discretionary participants.</p></div>
+        <div class="footer-col"><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="playbook.html">The Playbook</a></li><li><a href="briefing.html">Briefing</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Risk Disclosure</a></li></ul></div>
+      </div>
+      <div class="footer-legal"><p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk and is not suitable for all investors. EightyTwentyVentures LLC provides educational content for informational purposes only and does not provide investment advice.</p></div>
+      <div class="footer-bottom"><span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclosure</a></div></div>
+    </div>
+  </footer>
+  <script>
+    function handleSignup(e,f){e.preventDefault();const p=new URLSearchParams();new FormData(f).forEach((v,k)=>p.append(k,v));fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:p.toString()}).then(()=>{f.reset();const s=document.getElementById('signupSuccess');if(s){s.classList.add('visible');setTimeout(()=>s.classList.remove('visible'),6000);}});}
+  </script>
+</body>
+</html>
