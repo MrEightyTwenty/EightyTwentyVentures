@@ -1,9 +1,6 @@
 ﻿backend:
-  name: github
-  repo: MrEightyTwenty/EightyTwentyVentures
+  name: git-gateway
   branch: main
-  base_url: https://eightytwentyventures.netlify.app
-  auth_endpoint: /auth
 
 media_folder: /content/images
 public_folder: /content/images
