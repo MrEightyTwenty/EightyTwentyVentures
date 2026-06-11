@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>EightyTwentyVentures · Market Intelligence From a Working Trader</title>
-				<meta name="description" content="Macro regime analysis, COT-driven positioning work, and short-term structural ideas. Written by a working trader when something is worth saying.">
-					<meta property="og:title" content="EightyTwentyVentures">
-						<meta property="og:description" content="Market intelligence and ideas from a working trader. The 20% of inputs that drive 80% of what matters.">
-							<meta property="og:type" content="website">
-								<link rel="icon" type="image/png" href="assets/logo.png">
-									<link rel="preconnect" href="https://fonts.googleapis.com">
-										<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-											<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-												<link rel="stylesheet" href="style.css">
-													<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-												</head>
-	<body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EightyTwentyVentures · Market Intelligence From a Working Trader</title>
+  <meta name="description" content="Macro regime analysis, COT-driven positioning work, and short-term structural ideas. Written by a working trader when something is worth saying.">
+  <meta property="og:title" content="EightyTwentyVentures">
+  <meta property="og:description" content="Market intelligence and ideas from a working trader. The 20% of inputs that drive 80% of what matters.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
 
 		<nav class="nav">
 			<div class="nav-inner">
@@ -404,22 +404,22 @@
 			});
 			}, { threshold: 0.07, rootMargin: '0px 0px -30px 0px' });
 
-			document.querySelectorAll('.reveal, .post-grid, .lens-grid').forEach(el => io.observe(el));
-			})();
+      document.querySelectorAll('.reveal, .post-grid, .lens-grid').forEach(el => io.observe(el));
+    })();
 
-			// Netlify Identity: handle confirmation/invite/recovery tokens that
-			// arrive in the URL hash (e.g. #confirmation_token=..., #invite_token=...,
-			// #recovery_token=...). Without this, the widget never processes the
-			// token and the user just lands on the homepage with nothing happening.
-			if (window.netlifyIdentity) {
-			window.netlifyIdentity.on("init", user => {
-			if (!user) {
-			window.netlifyIdentity.on("login", () => {
-			document.location.href = "/admin/";
-			});
-			}
-			});
-			}
-		</script>
-	</body>
+    // Netlify Identity: handle confirmation/invite/recovery tokens that
+    // arrive in the URL hash (e.g. #confirmation_token=..., #invite_token=...,
+    // #recovery_token=...). Without this, the widget never processes the
+    // token and the user just lands on the homepage with nothing happening.
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
 </html>
