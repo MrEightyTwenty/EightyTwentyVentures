@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -357,6 +358,20 @@
 
       document.querySelectorAll('.reveal, .post-grid, .lens-grid').forEach(el => io.observe(el));
     })();
+
+    // Netlify Identity: handle confirmation/invite/recovery tokens that
+    // arrive in the URL hash (e.g. #confirmation_token=..., #invite_token=...,
+    // #recovery_token=...). Without this, the widget never processes the
+    // token and the user just lands on the homepage with nothing happening.
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
