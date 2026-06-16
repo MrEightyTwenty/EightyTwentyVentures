@@ -320,7 +320,7 @@ const GLOSSARY = {
       <p>A power-law distribution describes a relationship where a small number of observations account for a disproportionately large share of the total. In equity markets, this means that a small number of stocks produce the vast majority of total market returns over any given decade, while the majority of stocks produce returns at or below the risk-free rate.</p>
       <p>Research examining US equity returns over multi-decade periods consistently shows that the entire positive return of the market is attributable to a small fraction of stocks — often the top 4% of performers. The rest, in aggregate, returned roughly zero above Treasury bills.</p>
       <p>The practical implication: broad diversification across the full stock market captures the average of a distribution where the majority of constituents do not meaningfully contribute to returns. Concentrated positioning in the right subset can capture a disproportionate share of the total available return — but only if those positions are held long enough for the power-law outcome to materialize.</p>`,
-    related: ["asymmetry", "100-bagger", "concentration"]
+    related: ["asymmetry", "concentration"]
   },
 
   "asymmetry": {
@@ -330,17 +330,7 @@ const GLOSSARY = {
       <p>Asymmetry in trading refers to setups or positions where the potential upside significantly exceeds the potential downside. An asymmetric position is one where being wrong costs you a small, defined amount, but being right can return a multiple of that cost.</p>
       <p>In position trading, asymmetry is the explicit goal of the selection process. A company in the early accumulation phase with improving fundamentals, in a sector benefiting from a macro theme, bought at a structural low with a clearly defined invalidation point is asymmetric: the maximum loss is the distance to invalidation, but the potential gain — if the thesis develops fully — can be several multiples of that.</p>
       <p>The philosophical framing matters: asymmetry requires accepting frequent small losses in exchange for infrequent large gains. Most people's intuition runs in the opposite direction. They prefer frequent small wins and few losses, which produces a symmetric or negative-expectancy system. Embracing asymmetry requires genuinely understanding why the math works even when the emotional experience is uncomfortable.</p>`,
-    related: ["expectancy", "r-multiple", "power-law-returns", "100-bagger"]
-  },
-
-  "100-bagger": {
-    term: "100-Bagger",
-    category: "Position Trading",
-    body: `
-      <p>A 100-bagger is a stock that returns 100 times your initial investment. If you bought at $1, the stock would need to reach $100. At a 2% position size in a portfolio, a 100x return on that position would approximately double the overall portfolio.</p>
-      <p>The concept, popularized by investor Chris Mayer, is not about finding magic stocks. It is about identifying companies that are in the early stages of a large and sustained business improvement, getting positioned before the institutional narrative shifts, and holding through the discomfort and volatility of the full development cycle — often five to ten years.</p>
-      <p>Most people who own 100-baggers do not hold them for the full journey. They sell after 5x or 10x, feeling satisfied with the return while leaving the vast majority of the asymmetric outcome behind. The "100-bagger mentality" in this framework is specifically about developing the holding discipline to let correct ideas develop to their full maturity rather than to a comfort level.</p>`,
-    related: ["asymmetry", "power-law-returns", "corporate-lifecycle", "premature-exit"]
+    related: ["expectancy", "r-multiple", "power-law-returns"]
   },
 
   "corporate-lifecycle": {
@@ -350,7 +340,7 @@ const GLOSSARY = {
       <p>Every company progresses through recognizable phases as it grows, matures, and eventually either adapts or declines. The four primary phases are <strong>early growth</strong> (high investment, low or no profit, narrative-driven valuation), <strong>high-growth expansion</strong> (operating leverage emerging, institutional coverage arriving, real cash flows developing), <strong>maturity</strong> (stable growth, predictable cash flows, capital returned to shareholders), and <strong>decline</strong> (structural competitive deterioration, revenue contraction, margin compression).</p>
       <p>The market values companies differently at each phase, which is why the same financial metrics mean different things in different contexts. A negative free cash flow is normal and expected for an early-growth technology company investing aggressively in R&D and market capture. It is a warning sign for a mature consumer staples company with no reinvestment rationale.</p>
       <p>The most consistently mispriced transitions are the inflection points: early growth to high-growth expansion (first meaningful profitability), and distressed to recovering (operational improvement before consensus recognition). Positioning before the market fully prices the phase transition is where the asymmetric return lives.</p>`,
-    related: ["100-bagger", "asymmetry", "narrative-shift", "fundamental-catalyst"]
+    related: ["asymmetry", "narrative-shift", "fundamental-catalyst"]
   },
 
   "macro-regime": {
@@ -400,7 +390,7 @@ const GLOSSARY = {
       <p>A narrative shift occurs when the dominant institutional story about a company changes — from ignored to covered, from speculative to respectable, from "turnaround story" to "proven compounder." These shifts drive valuation re-ratings: the market assigns a higher earnings multiple because the perceived quality and durability of those earnings has improved in institutional perception.</p>
       <p>Crucially, the narrative shift almost always lags the operational reality. A company can be operationally improving for twelve to eighteen months before Wall Street initiates coverage, before index funds begin meaningful allocation, and before retail awareness arrives. Each of those events represents a new wave of demand entering at higher prices — each one a different stage of the transition from under-owned to institutionally saturated.</p>
       <p>The asymmetric return is concentrated in the period between when the operational improvement begins and when the narrative fully reflects it. Positioning during accumulation and holding through the narrative shift is the full arc of the position trading opportunity.</p>`,
-    related: ["fundamental-catalyst", "corporate-lifecycle", "100-bagger"]
+    related: ["fundamental-catalyst", "corporate-lifecycle", "asymmetry"]
   },
 
   "kelly-criterion": {
@@ -419,7 +409,7 @@ const GLOSSARY = {
     body: `
       <p>Return on Invested Capital measures how efficiently a company generates profit from the capital invested in its business. It is calculated as Net Operating Profit After Tax (NOPAT) divided by total invested capital (debt + equity). When ROIC exceeds the Weighted Average Cost of Capital (WACC), the company is creating genuine economic value. When ROIC falls below WACC, the company is destroying value even if it reports positive earnings.</p>
       <p>ROIC is particularly useful for distinguishing between companies that appear similarly profitable on surface metrics but have very different capital efficiency profiles. A business that earns $10M on $50M of invested capital (20% ROIC) is fundamentally more attractive than one earning $10M on $200M of invested capital (5% ROIC).</p>
-      <p>Companies with sustainably high and improving ROIC tend to be compounding machines: they reinvest their returns at high rates, generating earnings growth that is self-funding and durable. This is the financial profile that produces the 100-bagger trajectory.</p>`,
+      <p>Companies with sustainably high and improving ROIC tend to be compounding machines: they reinvest their returns at high rates, generating earnings growth that is self-funding and durable. This is the financial profile of a business capable of sustaining a large structural move over years rather than quarters.</p>`,
     related: ["fundamental-catalyst", "corporate-lifecycle", "free-cash-flow"]
   },
 
@@ -480,7 +470,7 @@ const GLOSSARY = {
       <p>A premature exit is exiting a position that is working — one where the original thesis is still intact, the fundamental trajectory is still improving, and the structural targets have not been reached — because the position has become psychologically uncomfortable to hold.</p>
       <p>This is identified as the single greatest systematic failure mode of position traders who are analytically correct. The analysis was right. The selection was right. The entry was right. But the holding behavior was wrong — the position was exited at a 40% gain rather than held to the 200% gain the thesis supported.</p>
       <p>The mechanism is well understood: a paper gain creates a psychological reference point. When normal volatility causes the position to retrace from its peak, the gap between peak and current price feels like a loss, triggering the impulse to exit and "lock in" the gain. The structural review process (is the thesis still intact? is the regime still supportive? is this still a high-conviction idea?) is the tool for distinguishing a thesis change from a fear response.</p>`,
-    related: ["100-bagger", "concentration", "corporate-lifecycle", "asymmetry"]
+    related: ["concentration", "corporate-lifecycle", "asymmetry"]
   },
 
   "mental-capital": {
@@ -521,17 +511,16 @@ const GLOSSARY = {
       <p>This principle matters because individual trade outcomes are noisy. A system with genuine positive expectancy will still produce losing streaks. Evaluating the system based on any given week's or month's results produces incorrect conclusions about its validity. Evaluating the system based on whether process is being followed consistently across hundreds of trades produces accurate conclusions.</p>
       <p>The corollary: focusing on P&L on any given day or week creates pressure to override the process in order to hit a number. Process-focus eliminates that pressure and allows the statistical edge to manifest across a sufficient sample size.</p>`,
     related: ["expectancy", "journaling", "feedback-loop", "mental-capital"]
-  }
-
+  },
 
   "reflexivity": {
     term: "Reflexivity",
     category: "Position Trading",
     body: `
       <p>Reflexivity is a concept developed by George Soros describing a self-reinforcing feedback loop between market participants' perceptions and the underlying reality those perceptions are meant to reflect. In classical economics, participants observe reality and react to it. In Soros' framework, participants' beliefs and actions change reality itself, which then changes beliefs, which then changes reality further.</p>
-      <p>In equity markets, this plays out as: smart money accumulates a position. Price rises. Rising price attracts attention. Attention attracts institutional flows. Institutional flows improve the company's access to capital. Cheaper capital improves operational execution. Improved execution confirms the original thesis. Confirmation attracts more capital. The process becomes self-reinforcing in ways that extend trends far beyond what any initial valuation model would have suggested.</p>
+      <p>In equity markets, this plays out as: informed participants accumulate a position. Price rises. Rising price attracts attention. Attention attracts institutional flows. Institutional flows improve the company's access to capital. Cheaper capital improves operational execution. Improved execution confirms the original thesis. Confirmation attracts more capital. The process becomes self-reinforcing in ways that extend trends far beyond what any initial valuation model would have suggested.</p>
       <p>The implication for speculation: the endpoint of a major equity move is often not where fundamental analysis said it should stop. The reflexive process continues until it exhausts itself, usually when a fundamental reality fails to meet the expectations the reflexive expansion had embedded. Recognizing when reflexivity is operating versus when a move is purely speculative and detached from any improving reality is one of the most difficult judgments in this framework.</p>`,
-    related: ["narrative-shift", "asymmetry", "100-bagger", "power-law-returns"]
+    related: ["narrative-shift", "asymmetry", "power-law-returns"]
   },
 
   "operating-leverage": {
@@ -571,7 +560,7 @@ const GLOSSARY = {
       <p>The distinction between speculating and investing is not primarily about holding period or risk tolerance. It is about what the return is expected to come from. A Buffett-style investment expects its return primarily from the long-term compounding of a business's intrinsic value, the actual earnings and cash flows the business generates over many years. The business itself is the source of return.</p>
       <p>A speculative framework, in the tradition of Druckenmiller, Tudor Jones, or Soros, expects its return primarily from the market changing its assessment of future expectations. The source of return is not the business compounding for decades. It is the gap between where the market is currently pricing the probability distribution of the company's future and where that probability distribution should be once the emerging reality is more widely recognized.</p>
       <p>This distinction matters for every decision: how you use financials (as confirmation of thesis quality versus as an intrinsic value calculation), what your exit logic is (expectation fully priced versus business permanently impaired), how you size (based on asymmetry of repricing opportunity versus confidence in long-term intrinsic value), and how long you hold (as long as the expectation gap exists versus essentially forever if the business keeps compounding).</p>`,
-    related: ["asymmetry", "expectation-repricing", "reflexivity", "100-bagger"]
+    related: ["asymmetry", "expectation-repricing", "reflexivity"]
   },
 };
 
