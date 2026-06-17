@@ -43,8 +43,9 @@
       <p class="chapter-intro">The objective is not to predict direction. It is to determine where the market has recently accepted or rejected value, and where it is likely to make its next meaningful decision. Equally important: where is the market probably not going? Spend equal time on both. The second question is routinely underweighted.</p>
 
 <h2><span class="gl" data-key="market-generated-information">Market Generated Information</span> Is the Whole Game</h2>
+<p>The concept of Market Generated Information was developed in the 1980s by a trader named James F. Dalton, who built on the market profile work pioneered at the Chicago Board of Trade and turned it into a coherent way of reading what an auction is actually communicating about itself. The core insight was simple and durable: the market is constantly producing information about its own intentions through the act of trading, and that information is more honest than anything written about the market from the outside.</p>
 <p>There is a temptation, especially early on, to go looking for context in places the market never put it: opinions, headlines, somebody else's chart with twelve indicators on it. None of that is information the market generated. It is information generated about the market, which is a different and much less reliable thing.</p>
-<p>Market Generated Information, or MGI, is everything the auction itself has produced: where price traded, how much volume transacted at each price, where it opened, where it closed, and where it has repeatedly refused to go. The reason MGI matters so much is structural. It is free, in the sense that it requires no interpretation layer between the data and the decision. It is the market telling you, directly and without commentary, what has already happened. Everything in this chapter is an exercise in reading that information well, and everything in later chapters about inflection points, bias, and execution is built on top of it.</p>
+<p>Market Generated Information, or MGI, is everything the auction itself has produced: where price traded, how much volume transacted at each price, where it opened, where it closed, and where it has repeatedly refused to go. The reason MGI matters so much is structural. It is the rawest and realest form of information available, because it requires no interpretation layer between the data and the decision. It is the market telling you, directly and without commentary, what has already happened. Everything in this chapter is an exercise in reading that information well, and everything in later chapters about inflection points, bias, and execution is built on top of it.</p>
 
 <h2>Before the Session Opens</h2>
 <p>By the time RTH begins, the market has already communicated a substantial amount through MGI. Prior sessions have left volume distributions, accepted levels, rejected zones, and directional footprints across higher timeframes. The pre-market process is the work of reading that communication systematically, then constructing conditional responses rather than predictions. The difference matters: predictions require being right. Conditional responses require having read the options correctly.</p>
@@ -68,40 +69,41 @@
 </div>
 <p>In a trending structure, volume builds directionally because insufficient opposing interest exists to slow the move. In a balanced structure, volume accumulates across a range in a D-shaped distribution. Those two conditions call for completely different session approaches. Treating a balanced market like a trending one is one of the most reliable ways to donate capital to someone who correctly identified the difference.</p>
 
+<p>The reference levels worth tracking are not a random grab-bag. They are parallel expressions of the same idea applied across different timeframes, and reading them as a set is what gives them meaning. Each one is a piece of MGI whose weight is proportional to the timeframe it belongs to.</p>
+<ul class="term-list">
+  <li><span class="term">Candlestick information, weighted by timeframe</span><span class="def">A single candle is a summary of the business done during its period, and its weight scales with that period. The information in a monthly candle carries more structural weight than the information in a five-minute one, because far more participants and far more volume went into producing it. Read every candle as a statement scaled to the timeframe it represents.</span></li>
+  <li><span class="term">Settlements</span><span class="def">A settlement is the closing price at which a prior timeframe was forced to conclude its positioning and inventory. It is the moment volume gets "locked in" for that period. Because participants are forced to mark their books against it, the settlement of any timeframe (daily, weekly, monthly) becomes a reference the next period anchors to.</span></li>
+  <li><span class="term">Opens</span><span class="def">An open is the first traded price of a given timeframe, and it carries importance relative to that timeframe because information is so often anchored to it. The annual, quarterly, monthly, weekly, and daily opens each function as a reference point participants measure value against for the duration of that period: are we above or below where this period began?</span></li>
+  <li><span class="term">5-Day rolling profile</span><span class="def">A rolling five-day <span class="gl" data-key="volume-profile">volume profile</span> represents the last rolling week of activity. Because price is dynamic and the market is always in motion, a rolling window keeps the read current rather than letting it expire on an arbitrary calendar boundary. This is the primary intermediate-term structural reference.</span></li>
+  <li><span class="term">4-Week rolling profile</span><span class="def">A rolling four-week profile provides a wider scope on the higher-timeframe narrative and context. It is where the week-over-week story becomes legible: how this week's value is positioned relative to the last several, and whether the broader auction is migrating in one direction or balancing.</span></li>
+</ul>
+
 <table class="outcome-table">
   <thead><tr><th>Reference Level</th><th>What It Tells You</th></tr></thead>
   <tbody>
     <tr><td>Prior Month H/L</td><td>Outer boundaries of the last completed monthly auction</td></tr>
     <tr><td>Prior Week Range + Value</td><td>Where participants agreed on value last week; is current price inside or outside that agreement?</td></tr>
-    <tr><td>Prior Day H/L / Open / Close</td><td>The most recent completed auction; strong or weak close is directional information</td></tr>
+    <tr><td>Prior Day H/L / Open / Settlement</td><td>The most recent completed auction; a strong or weak close is directional information</td></tr>
     <tr><td>5-Day Composite Value Area + <span class="gl" data-key="point-of-control">POC</span></td><td>Rolling intermediate-term structural acceptance zone</td></tr>
     <tr><td><span class="gl" data-key="hvn-lvn">HVN</span> / LVN</td><td>Areas of structural agreement versus structural disinterest; both are actionable in different ways</td></tr>
   </tbody>
 </table>
 
 <h3>Stage 2: Overnight Session Analysis, Read at a Discount</h3>
-<p>Once structural context is established, focus shifts to how the <span class="gl" data-key="globex">Globex</span> session is interacting with that broader framework. Overnight highs, lows, midpoints, and volume concentrations are cross-referenced against the daily and five-day anchors. But for the products this playbook is built around, equity indexes and metals, the overnight session needs to be read through a specific lens: total Globex volume is typically a small fraction of total RTH participation. That does not make overnight information worthless. It makes it lower-confidence information, context to be aware of rather than context to act on directly.</p>
-<div class="chapter-box green">
-  <h4>Overnight Behaviors and Their Implications</h4>
-  <p><strong>Sustained acceptance above prior value:</strong> Buyers comfortable at elevated prices; continuation toward composite highs is the lean, pending RTH confirmation.</p>
-  <p><strong>Repeated failure at <span class="gl" data-key="value-area">value area</span> edges:</strong> Neither side can sustain a break overnight; balance continues or reversal develops, but this is a low-volume read until RTH weighs in.</p>
-  <p><strong>Large overnight imbalance with thin structure:</strong> Vulnerable inventory built on light participation. These levels frequently unwind once full RTH volume arrives and actually tests the conviction behind them.</p>
-  <p><strong>Passive probing without commitment:</strong> Indecision on thin volume. Let RTH establish the narrative before positioning.</p>
-</div>
+<p>Once structural context is established, focus shifts to how the <span class="gl" data-key="globex">Globex</span> session is interacting with that broader framework. For the products this playbook is built around, equity indexes and metals, the overnight session needs to be read through a specific lens: total Globex volume is typically a small fraction of total RTH participation. As a single unit of information, it is therefore lower-weighted. It is not something to act on directly so much as something to reference, because even at low volume it has already begun making decisions on behalf of the session, or pointedly declined to.</p>
+<p>The cleanest way to understand why the overnight matters is the gap. When an index or its corresponding ETF opens away from where the prior RTH session settled, that gap is the visible record of a decision the overnight session made while most participants were not watching. The market has already repriced. The question RTH then has to answer is whether that overnight decision gets accepted or rejected once full volume arrives. An overnight session that drifts quietly back toward the prior settlement is telling you it has not committed to anything. An overnight session that holds a gap and builds value away from the prior close is telling you a decision has been made that RTH will now either confirm or unwind.</p>
+<p>So the overnight is read not for conviction but for the decisions it reveals: where price has already chosen to go, where it has refused to go, and what that leaves open as unfinished business heading into the open. Those are the questions worth carrying into RTH, held at appropriately low confidence until real volume weighs in.</p>
 
 <h3>Stage 3: Real-Time Adaptation</h3>
 <p>The pre-market work is a hypothesis. Once the session begins, that hypothesis is tested against reality. The market either validates the prepared scenario or it doesn't. When it doesn't, the pre-market narrative does not override what is actually happening. Real-time evidence wins. Always. This is not a close call.</p>
-<p>After 2 PM, the volume profile built during the morning session becomes the primary intraday reference structure. The morning's value area, point of control, and extremes are now fresh inflection points for afternoon decision-making.</p>
+<p>As the RTH session develops, you gain more and more information about which decisions have already been made and which are still open. Afternoon sessions in particular tend to resolve into one of two environments. The first is reversion: inventory has largely been set, and the market is unwilling to commit new capital, so price rotates around established value. The second is continuation: there is information, a catalyst, or some other dynamic actively influencing pricing, and in those cases the market is both willing and able to make new decisions and extend. Reading which of those two environments you are in is most of what afternoon trading requires.</p>
 
 <div class="chapter-callout">When the market is literally showing you where the interest is going, do yourself a favor and don't take it for a liar. It has no interest in your opinions. It has its own, and those are the only ones with authority in this room.</div>
 
 <h2>The Questions Worth Asking Every Session</h2>
 <ul class="step-list">
-  <li>Where has the market spent the most time and volume in recent sessions?</li>
-  <li>Where has it repeatedly refused to go?</li>
+  <li>Where has the market spent the most time and volume recently, and where has it repeatedly refused to go?</li>
   <li>Is current price operating within, above, or below the dominant value area?</li>
-  <li>Is recent structure compressing or expanding directionally?</li>
-  <li>What does the overnight session suggest, held at appropriately lower confidence given the volume behind it?</li>
   <li>Where is the market probably not going, and what structural evidence supports that conclusion?</li>
 </ul>
 

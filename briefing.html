@@ -51,11 +51,10 @@
       <!-- Category filters (visual only for now; wire up later with JS) -->
       <div class="briefing-filters">
         <button class="briefing-filter active" data-cat="all">All</button>
-        <button class="briefing-filter" data-cat="macro">Macro</button>
-        <button class="briefing-filter" data-cat="regime">Regime</button>
-        <button class="briefing-filter" data-cat="cot">COT</button>
-        <button class="briefing-filter" data-cat="sectors">Sectors</button>
-        <button class="briefing-filter" data-cat="education">Education</button>
+        <button class="briefing-filter" data-cat="structure">Market Structure</button>
+        <button class="briefing-filter" data-cat="positioning">Positioning &amp; Regime</button>
+        <button class="briefing-filter" data-cat="execution">Execution</button>
+        <button class="briefing-filter" data-cat="psychology">Psychology &amp; Process</button>
       </div>
 
       <!-- ====================================================
@@ -65,9 +64,9 @@
            ==================================================== -->
       <div class="briefing-grid" id="briefingGrid">
 
-        <a href="#" class="briefing-card" data-cat="regime">
+        <a href="#" class="briefing-card" data-cat="positioning">
           <div class="meta">
-            <span class="category">Regime</span>
+            <span class="category">Positioning &amp; Regime</span>
             <span class="dot"></span>
             <span>Sample post</span>
           </div>
@@ -75,9 +74,9 @@
           <p>A working framework for the macro environment we are actually in, why prior playbooks keep misfiring, and where the asymmetries are forming.</p>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="cot">
+        <a href="#" class="briefing-card" data-cat="positioning">
           <div class="meta">
-            <span class="category">COT</span>
+            <span class="category">Positioning &amp; Regime</span>
             <span class="dot"></span>
             <span>Sample post</span>
           </div>
@@ -85,9 +84,9 @@
           <p>The single most reliable signal we track in the Commitment of Traders data, why most analysts read it backwards, and what it is saying right now.</p>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="sectors">
+        <a href="#" class="briefing-card" data-cat="positioning">
           <div class="meta">
-            <span class="category">Sectors</span>
+            <span class="category">Positioning &amp; Regime</span>
             <span class="dot"></span>
             <span>Sample post</span>
           </div>
@@ -95,9 +94,9 @@
           <p>A walk through the rotation the framework is currently flagging, the structural reasons behind it, and which names are showing the cleanest accumulation.</p>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="macro">
+        <a href="#" class="briefing-card" data-cat="structure">
           <div class="meta">
-            <span class="category">Macro</span>
+            <span class="category">Market Structure</span>
             <span class="dot"></span>
             <span>Sample post</span>
           </div>
@@ -105,9 +104,9 @@
           <p>The three macro variables we are watching most closely, why their interaction matters more than any one of them in isolation, and what would force a regime reassessment.</p>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="education">
+        <a href="#" class="briefing-card" data-cat="psychology">
           <div class="meta">
-            <span class="category">Education</span>
+            <span class="category">Psychology &amp; Process</span>
             <span class="dot"></span>
             <span>Sample post</span>
           </div>
@@ -115,9 +114,9 @@
           <p>Why most position-trading mistakes are management failures, not entry failures, and the simple rule that resolves nine out of ten of them.</p>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="regime">
+        <a href="#" class="briefing-card" data-cat="execution">
           <div class="meta">
-            <span class="category">Regime</span>
+            <span class="category">Execution</span>
             <span class="dot"></span>
             <span>Sample post</span>
           </div>
@@ -129,62 +128,6 @@
 
     </div>
   </section>
-
-  <section class="cta-section">
-    <div class="container-narrow">
-      <span class="eyebrow">Don't Miss The Next One</span>
-      <h2>Subscribe to the Briefing.</h2>
-      <p>Quiet, structured, and rare. Delivered when something has actually changed.</p>
-
-      <form class="signup-form" name="newsletter-briefing-foot" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event, this)">
-        <input type="hidden" name="form-name" value="newsletter-briefing-foot">
-        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="signup-meta">Free. Concise. Unsubscribe anytime.</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div>
-          <div class="footer-brand">Eighty<span>Twenty</span>Ventures</div>
-          <p class="footer-desc">A structured decision-making ecosystem for self-directed discretionary participants. Built around the 80/20 principle.</p>
-        </div>
-        <div class="footer-col">
-          <h5>Explore</h5>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="playbook.html">The Playbook</a></li>
-            <li><a href="briefing.html">Briefing</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Risk Disclosure</a></li>
-            <li><a href="#">Subscription Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-legal">
-        <p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk and is not suitable for all investors. You may lose part or all of your investment. Only risk capital should be used. EightyTwentyVentures LLC provides educational software and content for informational purposes only and does not provide investment advice, financial advice, or recommendations. You are solely responsible for your investment decisions and assume full risk.</p>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Disclosure</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script>
     // Newsletter signup

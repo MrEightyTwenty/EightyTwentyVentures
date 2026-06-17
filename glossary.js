@@ -60,6 +60,15 @@ const GLOSSARY = {
     related: ["commercial-participants", "speculative-participants", "risk-on-environment"]
   },
 
+  "cot-proxy": {
+    term: "COT Proxy",
+    category: "Market Data",
+    body: `
+      <p>The COT Proxy is a proprietary lookback-based tool built to surface the commercial buying signal before it becomes obvious in the standard Commitment of Traders data. It was inspired by the systematic COT readings developed by Larry Williams for various futures instruments, but it is built with a different methodology and calibrated specifically to the instruments used in this system.</p>
+      <p>Its function is to simulate the timing of commercial accumulation: flagging when the informed bid is likely present even in periods where the price action alone gives little indication of it. Where the raw COT report tells you how participants are positioned as of the prior Tuesday, the proxy adds a timing dimension, surfacing when the accumulation signal is emerging rather than waiting for it to become unambiguous in the published data.</p>`,
+    related: ["cot-report", "commercial-participants", "risk-on-environment"]
+  },
+
   // ── VOLUME / PROFILE ─────────────────────────────────────────────────
   "volume-profile": {
     term: "Volume Profile",

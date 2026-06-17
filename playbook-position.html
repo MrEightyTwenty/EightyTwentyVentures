@@ -70,33 +70,33 @@
       <div class="rsp-grid">
         <a href="rsp/ch1-philosophy.html" class="rsp-chapter-card">
           <span class="ch">Chapter 01</span>
-          <h3>The Philosophy of Asymmetry</h3>
-          <p>Why exceptional returns require concentrated, unconventional positioning. The power-law nature of equity returns, what transitional companies look like before they become obvious, and the philosophical shift from trader to capital allocator.</p>
+          <h3>The Architecture of a Mispricing</h3>
+          <p>The difference between investing and exploiting a mispricing, why the edge lives in the gap between expectation and reality, where asymmetry tends to concentrate, and why this approach is concentrated by necessity rather than preference.</p>
         </a>
-        <a href="rsp/ch2-accumulation.html" class="rsp-chapter-card">
+        <a href="rsp/ch2-regime.html" class="rsp-chapter-card">
           <span class="ch">Chapter 02</span>
-          <h3>Reading Accumulation</h3>
-          <p>How institutional participants build exposure before narratives shift, why markets bottom on improving expectations rather than good news, relative strength as a capital flow signal, and volatility compression as the precursor to expansion.</p>
+          <h3>Risk-On and Risk-Off Windows</h3>
+          <p>The broad market as the first filter. The one, three, and five-year moving average framework, what the COT report reveals about commercial and speculative participants, and reading index volume profiles to map the structural path.</p>
         </a>
-        <a href="rsp/ch3-macro.html" class="rsp-chapter-card">
+        <a href="rsp/ch3-narrative.html" class="rsp-chapter-card">
           <span class="ch">Chapter 03</span>
-          <h3>Mapping the Macro Regime</h3>
-          <p>Economic cycles, geopolitical forces, and capital flow dynamics. How global conditions translate into themes, and how themes branch into sectors, industries, and individual opportunities.</p>
+          <h3>Constructing the Narrative</h3>
+          <p>Why markets price expectations rather than conditions, reading the economic landscape, identifying durable themes and their consequences, and tracing first, second, and third order effects before the broader market does.</p>
         </a>
-        <a href="rsp/ch4-intelligence.html" class="rsp-chapter-card">
+        <a href="rsp/ch4-opportunity.html" class="rsp-chapter-card">
           <span class="ch">Chapter 04</span>
-          <h3>Financial Intelligence</h3>
-          <p>Reading businesses beneath the chart. The five qualities that distinguish exceptional companies, why cash flow trumps reported earnings, and how sector context changes what every metric means.</p>
+          <h3>Identifying the Opportunity Set</h3>
+          <p>Why timing the scan against a weak market is what makes relative strength meaningful, the momentum and volatility compression filters, sector sifting through the narrative, and hand-selecting charts that show genuine accumulation.</p>
         </a>
-        <a href="rsp/ch5-lifecycle.html" class="rsp-chapter-card">
+        <a href="rsp/ch5-business.html" class="rsp-chapter-card">
           <span class="ch">Chapter 05</span>
-          <h3>Corporate Life Cycles</h3>
-          <p>Every company evolves through recognizable stages. The market values them differently at each one. Understanding where a company sits in its life cycle determines which metrics matter and what return profile is realistically available.</p>
+          <h3>Financial Intelligence</h3>
+          <p>Understanding the business model before the metrics. Why a software company, a miner, a restaurant, and a bank require completely different lenses, and the three-part assessment of sector truths, peer comparison, and catalyst.</p>
         </a>
-        <a href="rsp/ch6-construction.html" class="rsp-chapter-card">
+        <a href="rsp/ch6-trade.html" class="rsp-chapter-card">
           <span class="ch">Chapter 06</span>
-          <h3>Building the Portfolio</h3>
-          <p>Concentration as a feature not a bug, sizing by conviction quality, defining invalidation before entry, holding to structural maturity instead of a comfort level, and the review cadence that replaces continuous monitoring.</p>
+          <h3>Positioning to Gain from the Edge</h3>
+          <p>Writing the thesis, defining invalidation through structure rather than loss tolerance, setting targets from the compression, managing by progress instead of price, and the concentration and sizing logic that ties it together.</p>
         </a>
       </div>
 
@@ -106,35 +106,5 @@
     </div>
   </section>
 
-  <section class="cta-section">
-    <div class="container-narrow">
-      <span class="eyebrow">Stay Current</span>
-      <h2>Get the Briefing.</h2>
-      <p>The Playbook is the methodology. The Briefing is where the regime analysis runs in real time.</p>
-      <form class="signup-form" name="newsletter-rsp" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event,this)">
-        <input type="hidden" name="form-name" value="newsletter-rsp">
-        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="signup-meta">Free. Concise. Unsubscribe anytime.</p>
-      <div class="signup-success" id="signupSuccess">You're in.</div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div><div class="footer-brand">Eighty<span>Twenty</span>Ventures</div><p class="footer-desc">A structured decision-making ecosystem for self-directed discretionary participants.</p></div>
-        <div class="footer-col"><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="playbook.html">The Playbook</a></li><li><a href="briefing.html">Briefing</a></li><li><a href="about.html">About</a></li></ul></div>
-        <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Risk Disclosure</a></li></ul></div>
-      </div>
-      <div class="footer-legal"><p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk. EightyTwentyVentures LLC provides educational content for informational purposes only and does not provide investment advice.</p></div>
-      <div class="footer-bottom"><span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclosure</a></div></div>
-    </div>
-  </footer>
-  <script>
-    function handleSignup(e,f){e.preventDefault();const p=new URLSearchParams();new FormData(f).forEach((v,k)=>p.append(k,v));fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:p.toString()}).then(()=>{f.reset();const s=document.getElementById('signupSuccess');if(s){s.classList.add('visible');setTimeout(()=>s.classList.remove('visible'),6000);}});}
-  </script>
 </body>
 </html>

@@ -1879,3 +1879,93 @@ section { padding: var(--section-pad-y) 0; }
 @media (max-width: 580px) {
   .post-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   AMT INTERACTIVE STUDY SLIDESHOWS
+   Stepped, dark, institutional educational diagrams.
+   ============================================================ */
+.study {
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  margin: 2.5rem 0;
+  overflow: hidden;
+}
+.study-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+}
+.study-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.study-count {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+}
+.study-stage {
+  position: relative;
+  width: 100%;
+  background: var(--bg-primary);
+}
+.study-stage svg { display: block; width: 100%; height: auto; }
+.study-slide { display: none; }
+.study-slide.active { display: block; }
+.study-caption {
+  padding: 1.1rem 1.2rem 0.4rem;
+  border-top: 1px solid var(--border-subtle);
+}
+.study-step-label {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.study-caption p { color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 0.4rem; }
+.study-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.2rem 1.1rem;
+  gap: 1rem;
+}
+.study-dots { display: flex; gap: 0.4rem; }
+.study-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--border-emphasis);
+  border: none; padding: 0; cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.study-dot.active { background: var(--green); transform: scale(1.25); }
+.study-btn {
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 0.45rem 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+.study-btn:hover { border-color: var(--border-green); color: var(--green); }
+.study-btn:disabled { opacity: 0.3; cursor: default; }
+.study-btn:disabled:hover { border-color: var(--border-default); color: var(--text-primary); }
+@media (max-width: 600px) {
+  .study-controls { flex-wrap: wrap; }
+  .study-caption p { font-size: 0.86rem; }
+}
