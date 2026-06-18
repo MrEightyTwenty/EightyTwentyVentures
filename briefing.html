@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Briefing · EightyTwentyVentures</title>
   <meta name="description" content="Short, structured notes on regime, positioning, and market structure. Published when something actually changes.">
-
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,31 +23,32 @@
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">≡</button>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">&#9776;</button>
     </div>
   </nav>
 
+  <!-- Page hero -->
   <header class="page-hero">
     <div class="container-narrow">
       <span class="eyebrow">The Briefing</span>
       <h1>What's actually moving.</h1>
       <p class="lead">Short, structured notes on regime, positioning, and market structure. Published when something actually changes, not on a content calendar.</p>
-
       <form class="signup-form" name="newsletter-briefing" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event, this)">
         <input type="hidden" name="form-name" value="newsletter-briefing">
-        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
         <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-        <button type="submit">Subscribe</button>
+        <button type="submit">Get notified</button>
       </form>
-      <p class="signup-meta">Free. Concise. Delivered straight to your inbox.</p>
+      <p class="signup-meta">Free. No daily noise. Unsubscribe anytime.</p>
       <div class="signup-success" id="signupSuccess">You're in. Watch your inbox for the next Briefing.</div>
     </div>
   </header>
 
+  <!-- Archive -->
   <section>
     <div class="container">
 
-      <!-- Category filters (visual only for now; wire up later with JS) -->
+      <!-- Category filters -->
       <div class="briefing-filters">
         <button class="briefing-filter active" data-cat="all">All</button>
         <button class="briefing-filter" data-cat="structure">Market Structure</button>
@@ -57,102 +57,209 @@
         <button class="briefing-filter" data-cat="psychology">Psychology &amp; Process</button>
       </div>
 
-      <!-- ====================================================
-           BRIEFING POSTS · Sample cards.
-           To add a post: duplicate one <a class="briefing-card"> block,
-           update meta, title, dek, and href. Set data-cat to the category.
-           ==================================================== -->
+      <!-- ============================================================
+           BRIEFING GRID
+           To add a real article: copy one .briefing-card.teaser block,
+           remove the "teaser" class, update href to the article path,
+           replace the .teaser-badge with a date span, and remove the
+           .teaser-cta block. Set data-gated on the <a> tag.
+           ============================================================ -->
       <div class="briefing-grid" id="briefingGrid">
 
-        <a href="#" class="briefing-card" data-cat="positioning">
+        <!-- Teaser 1 -->
+        <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
           <div class="meta">
             <span class="category">Positioning &amp; Regime</span>
             <span class="dot"></span>
-            <span>Sample post</span>
+            <span class="teaser-badge">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              Upcoming
+            </span>
+          </div>
+          <h3>When commercials stop hedging and start positioning.</h3>
+          <p>The single most reliable signal in COT data, why most analysts read it backwards, and what it is saying in the current environment.</p>
+          <div class="teaser-cta">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Register to read
+          </div>
+        </a>
+
+        <!-- Teaser 2 -->
+        <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
+          <div class="meta">
+            <span class="category">Positioning &amp; Regime</span>
+            <span class="dot"></span>
+            <span class="teaser-badge">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              Upcoming
+            </span>
           </div>
           <h3>Mapping the new accord: why this regime is not the last one.</h3>
           <p>A working framework for the macro environment we are actually in, why prior playbooks keep misfiring, and where the asymmetries are forming.</p>
-        </a>
-
-        <a href="#" class="briefing-card" data-cat="positioning">
-          <div class="meta">
-            <span class="category">Positioning &amp; Regime</span>
-            <span class="dot"></span>
-            <span>Sample post</span>
+          <div class="teaser-cta">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Register to read
           </div>
-          <h3>When commercials stop hedging and start positioning.</h3>
-          <p>The single most reliable signal we track in the Commitment of Traders data, why most analysts read it backwards, and what it is saying right now.</p>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="positioning">
-          <div class="meta">
-            <span class="category">Positioning &amp; Regime</span>
-            <span class="dot"></span>
-            <span>Sample post</span>
-          </div>
-          <h3>Where capital is concentrating, and why most participants are looking at the wrong sectors.</h3>
-          <p>A walk through the rotation the framework is currently flagging, the structural reasons behind it, and which names are showing the cleanest accumulation.</p>
-        </a>
-
-        <a href="#" class="briefing-card" data-cat="structure">
+        <!-- Teaser 3 -->
+        <a href="#" class="briefing-card teaser" data-cat="structure" data-gated>
           <div class="meta">
             <span class="category">Market Structure</span>
             <span class="dot"></span>
-            <span>Sample post</span>
+            <span class="teaser-badge">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              Upcoming
+            </span>
           </div>
-          <h3>Liquidity, the dollar, and the canary in the bond market.</h3>
-          <p>The three macro variables we are watching most closely, why their interaction matters more than any one of them in isolation, and what would force a regime reassessment.</p>
+          <h3>Price precedes the narrative. A framework for getting there first.</h3>
+          <p>The mechanics of how institutional accumulation leaves footprints before the public story forms, and how to read them in real time.</p>
+          <div class="teaser-cta">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Register to read
+          </div>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="psychology">
+        <!-- Teaser 4 -->
+        <a href="#" class="briefing-card teaser" data-cat="psychology" data-gated>
           <div class="meta">
             <span class="category">Psychology &amp; Process</span>
             <span class="dot"></span>
-            <span>Sample post</span>
+            <span class="teaser-badge">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              Upcoming
+            </span>
           </div>
           <h3>The bus analogy: how to actually hold a position you believe in.</h3>
           <p>Why most position-trading mistakes are management failures, not entry failures, and the simple rule that resolves nine out of ten of them.</p>
+          <div class="teaser-cta">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Register to read
+          </div>
         </a>
 
-        <a href="#" class="briefing-card" data-cat="execution">
+        <!-- Teaser 5 -->
+        <a href="#" class="briefing-card teaser" data-cat="execution" data-gated>
           <div class="meta">
             <span class="category">Execution</span>
             <span class="dot"></span>
-            <span>Sample post</span>
+            <span class="teaser-badge">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              Upcoming
+            </span>
           </div>
           <h3>Three scenarios, weighted honestly.</h3>
           <p>The base case, the optimistic tail, and the disorderly path. Probabilities, transmission mechanisms, and what each scenario implies for sector leadership.</p>
+          <div class="teaser-cta">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Register to read
+          </div>
         </a>
 
-      </div>
+        <!-- Teaser 6 -->
+        <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
+          <div class="meta">
+            <span class="category">Positioning &amp; Regime</span>
+            <span class="dot"></span>
+            <span class="teaser-badge">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              Upcoming
+            </span>
+          </div>
+          <h3>Where capital is concentrating, and why most participants are looking at the wrong sectors.</h3>
+          <p>A walk through the rotation the framework is currently flagging, the structural reasons behind it, and which areas are showing the cleanest accumulation signatures.</p>
+          <div class="teaser-cta">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Register to read
+          </div>
+        </a>
+
+      </div><!-- /briefing-grid -->
 
     </div>
   </section>
 
+  <!-- Registration Gate Modal -->
+  <div id="etv-gate-modal" class="etv-gate-modal" role="dialog" aria-modal="true" aria-labelledby="etv-modal-title">
+    <div class="etv-modal-backdrop"></div>
+    <div class="etv-modal-panel">
+      <button class="etv-modal-close" aria-label="Close">&times;</button>
+      <div class="etv-modal-eyebrow">EightyTwentyVentures Research</div>
+      <h2 id="etv-modal-title" class="etv-modal-title">Access the full briefings.</h2>
+      <p class="etv-modal-body">Full briefings, positioning notes, and trade analysis are available at no cost. Register with your email to unlock immediate access to all current and future publications.</p>
+      <form name="etv-access" method="POST" data-netlify="true" class="etv-modal-form">
+        <input type="hidden" name="form-name" value="etv-access">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Create Free Account</button>
+      </form>
+      <p class="etv-modal-disclaimer">No credit card. No subscription fee. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
   <script>
-    // Newsletter signup
     function handleSignup(event, form) {
       event.preventDefault();
-      const data = new FormData(form);
-      const params = new URLSearchParams();
-      data.forEach((v, k) => params.append(k, v));
+      var params = new URLSearchParams();
+      new FormData(form).forEach(function(v, k) { params.append(k, v); });
       fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: params.toString() })
-        .then(() => { form.reset(); const s = document.getElementById('signupSuccess'); if (s) { s.classList.add('visible'); setTimeout(() => s.classList.remove('visible'), 6000); } })
-        .catch(() => alert('Something went wrong. Please try again.'));
+        .then(function() {
+          form.reset();
+          var s = document.getElementById('signupSuccess');
+          if (s) { s.classList.add('visible'); setTimeout(function() { s.classList.remove('visible'); }, 6000); }
+        })
+        .catch(function() { alert('Something went wrong. Please try again.'); });
     }
 
-    // Category filter (client-side)
-    document.querySelectorAll('.briefing-filter').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const cat = btn.dataset.cat;
-        document.querySelectorAll('.briefing-filter').forEach(b => b.classList.remove('active'));
+    /* Category filter */
+    document.querySelectorAll('.briefing-filter').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var cat = btn.dataset.cat;
+        document.querySelectorAll('.briefing-filter').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
-        document.querySelectorAll('.briefing-card').forEach(card => {
+        document.querySelectorAll('.briefing-card').forEach(function(card) {
           card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
         });
       });
     });
   </script>
+  <script src="auth.js"></script>
 
 </body>
 </html>

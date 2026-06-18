@@ -1965,3 +1965,267 @@ section { padding: var(--section-pad-y) 0; }
   .study-controls { flex-wrap: wrap; }
   .study-caption p { font-size: 0.86rem; }
 }
+
+
+/* ==========================================================================
+   Registration Gate — Modal & Teaser Card Styles
+   ========================================================================== */
+
+/* ── Modal overlay ───────────────────────────────────────────────────────── */
+
+.etv-gate-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.etv-gate-modal.open { display: flex; }
+
+body.etv-modal-lock { overflow: hidden; }
+
+.etv-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.etv-modal-panel {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-default);
+  border-top: 2px solid var(--green);
+  border-radius: 2px;
+  padding: 3rem 3rem 2.5rem;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(0,200,150,0.06);
+}
+
+.etv-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.2s;
+}
+.etv-modal-close:hover { color: var(--text-primary); }
+
+.etv-modal-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 1.4rem;
+}
+
+.etv-modal-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.55rem, 4vw, 1.9rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.18;
+  margin-bottom: 1rem;
+}
+
+.etv-modal-body {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.etv-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.etv-modal-form input[type="email"] {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 2px;
+  padding: 0.85rem 1rem;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.etv-modal-form input[type="email"]:focus { border-color: var(--green); }
+.etv-modal-form input[type="email"]::placeholder { color: var(--text-tertiary); }
+
+.etv-modal-form button[type="submit"] {
+  width: 100%;
+  background: var(--green);
+  border: none;
+  border-radius: 2px;
+  padding: 0.85rem 1rem;
+  color: #000;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+.etv-modal-form button[type="submit"]:hover   { background: var(--green-hover); }
+.etv-modal-form button[type="submit"]:disabled { opacity: 0.6; cursor: default; }
+
+.etv-modal-disclaimer {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.etv-modal-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  color: var(--text-tertiary);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.etv-modal-divider::before,
+.etv-modal-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+/* ── Teaser / locked briefing cards ─────────────────────────────────────── */
+
+.briefing-card.teaser {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.briefing-card.teaser .teaser-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  padding: 0.18rem 0.5rem;
+  line-height: 1;
+}
+
+/* Lock icon inside teaser badge */
+.briefing-card.teaser .teaser-badge svg {
+  width: 9px;
+  height: 9px;
+  opacity: 0.55;
+}
+
+.briefing-card.teaser .teaser-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--green);
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.briefing-card.teaser .teaser-cta svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.briefing-card.teaser:hover .teaser-cta { opacity: 0.8; }
+
+/* Registered state: lock disappears, shows "coming soon" hint */
+.briefing-card.teaser.registered .teaser-cta {
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+.briefing-card.teaser.registered .teaser-cta svg { display: none; }
+.briefing-card.teaser.registered .teaser-badge {
+  color: var(--text-tertiary);
+  border-color: var(--border-subtle);
+}
+
+/* ── Gated post-cards on homepage ────────────────────────────────────────── */
+
+.post-card.gated { cursor: pointer; }
+
+.post-card-lock {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--green);
+  letter-spacing: 0.03em;
+}
+.post-card-lock svg { width: 11px; height: 11px; flex-shrink: 0; }
+
+.post-card.gated.registered .post-card-lock {
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+.post-card.gated.registered .post-card-lock svg { display: none; }
+
+/* ── Briefing empty state ────────────────────────────────────────────────── */
+
+.briefing-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  background: var(--bg-secondary);
+}
+
+.briefing-empty-state p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Mobile adjustments ─────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .etv-modal-panel { padding: 2.5rem 1.75rem 2rem; }
+  .etv-modal-title { font-size: 1.5rem; }
+}

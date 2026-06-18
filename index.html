@@ -80,7 +80,7 @@
 				<div class="post-grid">
 
 					<!-- Card 1 -->
-					<a href="briefing.html" class="post-card stagger-child">
+					<a href="briefing.html" class="post-card stagger-child gated" data-gated>
 						<div class="post-card-img">
 							<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
 								<defs>
@@ -110,11 +110,15 @@
 							</div>
 							<div class="post-card-title">Mapping the New Accord: Why This Regime Is Not the Last One</div>
 							<p class="post-card-dek">A working framework for the macro environment we are actually in, why prior playbooks keep misfiring, and where the asymmetries are forming.</p>
+							<div class="post-card-lock">
+								<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+								Register to read
+							</div>
 						</div>
 					</a>
 
 					<!-- Card 2 -->
-					<a href="briefing.html" class="post-card stagger-child">
+					<a href="briefing.html" class="post-card stagger-child gated" data-gated>
 						<div class="post-card-img">
 							<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
 								<defs>
@@ -148,11 +152,15 @@
 							</div>
 							<div class="post-card-title">When Commercials Stop Hedging and Start Positioning</div>
 							<p class="post-card-dek">The single most reliable signal in COT data, why most analysts read it backwards, and what it is saying in the current environment.</p>
+							<div class="post-card-lock">
+								<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+								Register to read
+							</div>
 						</div>
 					</a>
 
 					<!-- Card 3 -->
-					<a href="briefing.html" class="post-card stagger-child">
+					<a href="briefing.html" class="post-card stagger-child gated" data-gated>
 						<div class="post-card-img">
 							<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
 								<defs>
@@ -197,6 +205,10 @@
 							</div>
 							<div class="post-card-title">Price Precedes the Narrative. A Framework for Getting There First.</div>
 							<p class="post-card-dek">The mechanics of how institutional accumulation leaves footprints before the public story forms, and how to read them in real time.</p>
+							<div class="post-card-lock">
+								<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+								Register to read
+							</div>
 						</div>
 					</a>
 
@@ -396,5 +408,25 @@
       });
     }
   </script>
+
+  <!-- Registration Gate Modal -->
+  <div id="etv-gate-modal" class="etv-gate-modal" role="dialog" aria-modal="true" aria-labelledby="etv-modal-title">
+    <div class="etv-modal-backdrop"></div>
+    <div class="etv-modal-panel">
+      <button class="etv-modal-close" aria-label="Close">&times;</button>
+      <div class="etv-modal-eyebrow">EightyTwentyVentures Research</div>
+      <h2 id="etv-modal-title" class="etv-modal-title">Access the full briefings.</h2>
+      <p class="etv-modal-body">Full briefings, positioning notes, and trade analysis are available at no cost. Register with your email to unlock immediate access to all current and future publications.</p>
+      <form name="etv-access" method="POST" data-netlify="true" class="etv-modal-form">
+        <input type="hidden" name="form-name" value="etv-access">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Create Free Account</button>
+      </form>
+      <p class="etv-modal-disclaimer">No credit card. No subscription fee. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
 </body>
 </html>
