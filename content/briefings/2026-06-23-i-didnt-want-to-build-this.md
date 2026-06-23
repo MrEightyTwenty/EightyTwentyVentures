@@ -70,5 +70,3 @@ What's here now exists mostly because a few people I trusted insisted it was wor
 </figure>
 
 ---
-
-Thank you for your time, take care, and stay safe out there!
