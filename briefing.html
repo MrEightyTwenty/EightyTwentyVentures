@@ -10,6 +10,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Search bar */
+    .briefing-search-wrap {
+      margin-top: 32px;
+    }
+    .briefing-search {
+      width: 100%;
+      max-width: 480px;
+      background: #111111;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      padding: 12px 16px;
+      font-size: 15px;
+      color: #cccccc;
+      outline: none;
+      transition: border-color 0.15s;
+      font-family: inherit;
+    }
+    .briefing-search::placeholder { color: #444444; }
+    .briefing-search:focus { border-color: #444444; }
+
+    /* No results message */
+    .briefing-no-results {
+      display: none;
+      grid-column: 1 / -1;
+      padding: 48px 0;
+      text-align: center;
+      color: #444444;
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
 
@@ -33,14 +66,16 @@
       <span class="eyebrow">The Briefing</span>
       <h1>What's actually moving.</h1>
       <p class="lead">Short, structured notes on regime, positioning, and market structure. Published when something actually changes, not on a content calendar.</p>
-      <form class="signup-form" name="newsletter-briefing" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSignup(event, this)">
-        <input type="hidden" name="form-name" value="newsletter-briefing">
-        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-        <button type="submit">Get notified</button>
-      </form>
-      <p class="signup-meta">Free. No daily noise. Unsubscribe anytime.</p>
-      <div class="signup-success" id="signupSuccess">You're in. Watch your inbox for the next Briefing.</div>
+      <div class="briefing-search-wrap">
+        <input
+          type="search"
+          id="briefingSearch"
+          class="briefing-search"
+          placeholder="Search briefings by title, category, or topic..."
+          aria-label="Search briefings"
+          autocomplete="off"
+        >
+      </div>
     </div>
   </header>
 
@@ -59,7 +94,10 @@
 
       <div class="briefing-grid" id="briefingGrid">
 
-        <!-- Teaser 1 -->
+        <!-- No results indicator (hidden by default) -->
+        <div class="briefing-no-results" id="briefingNoResults">No briefings match your search.</div>
+
+        <!-- Teaser: Q3 Outlook (quarterly, recurring) -->
         <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
           <div class="meta">
             <span class="category">Positioning &amp; Regime</span>
@@ -72,8 +110,8 @@
               Upcoming
             </span>
           </div>
-          <h3>When commercials stop hedging and start positioning.</h3>
-          <p>The single most reliable signal in COT data, why most analysts read it backwards, and what it is saying in the current environment.</p>
+          <h3>Into Q3: what the data has resolved, and what it hasn't.</h3>
+          <p>A quarterly orientation piece. What the framework has confirmed since the last major inflection, which questions remain open, and what the highest-conviction setups look like going into the next three months.</p>
           <div class="teaser-cta">
             <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
@@ -83,31 +121,7 @@
           </div>
         </a>
 
-        <!-- Teaser 2 -->
-        <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
-          <div class="meta">
-            <span class="category">Positioning &amp; Regime</span>
-            <span class="dot"></span>
-            <span class="teaser-badge">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              Upcoming
-            </span>
-          </div>
-          <h3>Mapping the new accord: why this regime is not the last one.</h3>
-          <p>A working framework for the macro environment we are actually in, why prior playbooks keep misfiring, and where the asymmetries are forming.</p>
-          <div class="teaser-cta">
-            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-            Register to read
-          </div>
-        </a>
-
-        <!-- Teaser 3 -->
+        <!-- Teaser: Week Ahead (weekly, recurring) -->
         <a href="#" class="briefing-card teaser" data-cat="structure" data-gated>
           <div class="meta">
             <span class="category">Market Structure</span>
@@ -120,80 +134,8 @@
               Upcoming
             </span>
           </div>
-          <h3>Price precedes the narrative. A framework for getting there first.</h3>
-          <p>The mechanics of how institutional accumulation leaves footprints before the public story forms, and how to read them in real time.</p>
-          <div class="teaser-cta">
-            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-            Register to read
-          </div>
-        </a>
-
-        <!-- Teaser 4 -->
-        <a href="#" class="briefing-card teaser" data-cat="psychology" data-gated>
-          <div class="meta">
-            <span class="category">Psychology &amp; Process</span>
-            <span class="dot"></span>
-            <span class="teaser-badge">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              Upcoming
-            </span>
-          </div>
-          <h3>The bus analogy: how to actually hold a position you believe in.</h3>
-          <p>Why most position-trading mistakes are management failures, not entry failures, and the simple rule that resolves nine out of ten of them.</p>
-          <div class="teaser-cta">
-            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-            Register to read
-          </div>
-        </a>
-
-        <!-- Teaser 5 -->
-        <a href="#" class="briefing-card teaser" data-cat="execution" data-gated>
-          <div class="meta">
-            <span class="category">Execution</span>
-            <span class="dot"></span>
-            <span class="teaser-badge">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              Upcoming
-            </span>
-          </div>
-          <h3>Three scenarios, weighted honestly.</h3>
-          <p>The base case, the optimistic tail, and the disorderly path. Probabilities, transmission mechanisms, and what each scenario implies for sector leadership.</p>
-          <div class="teaser-cta">
-            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-            Register to read
-          </div>
-        </a>
-
-        <!-- Teaser 6 -->
-        <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
-          <div class="meta">
-            <span class="category">Positioning &amp; Regime</span>
-            <span class="dot"></span>
-            <span class="teaser-badge">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              Upcoming
-            </span>
-          </div>
-          <h3>Where capital is concentrating, and why most participants are looking at the wrong sectors.</h3>
-          <p>A walk through the rotation the framework is currently flagging, the structural reasons behind it, and which areas are showing the cleanest accumulation signatures.</p>
+          <h3>The Week Ahead: regime context, key levels, and the five markets on the board.</h3>
+          <p>A weekly recurring piece. Volatility context for the session ahead, calendar risk, COT-anchored reads on the primary instruments, and the operational frame for how the week sets up structurally.</p>
           <div class="teaser-cta">
             <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
@@ -241,19 +183,19 @@
 
       function esc(s) {
         return String(s || '')
-          .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+          .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+          .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
       }
 
       function formatDate(str) {
         if (!str) return '';
-        var d = new Date(str);
+        var d = new Date(str.includes('T') ? str : str + 'T00:00:00');
         if (isNaN(d.getTime())) return str;
         return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
       }
 
       function wireGating(card) {
-        card.addEventListener('click', function (e) {
+        card.addEventListener('click', function(e) {
           var etv = window.ETV;
           if (etv && etv.isRegistered && etv.isRegistered()) return;
           e.preventDefault();
@@ -263,15 +205,15 @@
       }
 
       fetch('content/briefings/index.json')
-        .then(function (r) { return r.ok ? r.json() : []; })
-        .then(function (articles) {
+        .then(function(r) { return r.ok ? r.json() : []; })
+        .then(function(articles) {
           if (!Array.isArray(articles) || !articles.length) return;
 
           var grid        = document.getElementById('briefingGrid');
           var firstTeaser = grid ? grid.querySelector('.briefing-card.teaser') : null;
           if (!grid) return;
 
-          articles.slice().reverse().forEach(function (a) {
+          articles.slice().reverse().forEach(function(a) {
             var cat   = a.cat || 'positioning';
             var label = CAT_LABELS[cat] || esc(a.category || cat);
             var card  = document.createElement('a');
@@ -305,22 +247,8 @@
             }
           });
         })
-        .catch(function () {});
+        .catch(function() {});
     })();
-
-    /* ── Newsletter signup handler ────────────────────────────── */
-    function handleSignup(event, form) {
-      event.preventDefault();
-      var params = new URLSearchParams();
-      new FormData(form).forEach(function(v, k) { params.append(k, v); });
-      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: params.toString() })
-        .then(function() {
-          form.reset();
-          var s = document.getElementById('signupSuccess');
-          if (s) { s.classList.add('visible'); setTimeout(function() { s.classList.remove('visible'); }, 6000); }
-        })
-        .catch(function() { alert('Something went wrong. Please try again.'); });
-    }
 
     /* ── Category filter ──────────────────────────────────────── */
     document.querySelectorAll('.briefing-filter').forEach(function(btn) {
@@ -328,10 +256,50 @@
         var cat = btn.dataset.cat;
         document.querySelectorAll('.briefing-filter').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
+
+        // Clear search when switching category
+        var search = document.getElementById('briefingSearch');
+        if (search) search.value = '';
+        document.getElementById('briefingNoResults').style.display = 'none';
+
         document.querySelectorAll('.briefing-card').forEach(function(card) {
           card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
         });
       });
+    });
+
+    /* ── Search ───────────────────────────────────────────────── */
+    document.getElementById('briefingSearch').addEventListener('input', function() {
+      var query    = this.value.toLowerCase().trim();
+      var cards    = document.querySelectorAll('.briefing-card:not(.teaser)');
+      var teasers  = document.querySelectorAll('.briefing-card.teaser');
+      var noResult = document.getElementById('briefingNoResults');
+
+      // Reset category filter highlight to "All"
+      if (query) {
+        document.querySelectorAll('.briefing-filter').forEach(function(b) { b.classList.remove('active'); });
+        document.querySelector('.briefing-filter[data-cat="all"]').classList.add('active');
+      }
+
+      if (!query) {
+        cards.forEach(function(c)   { c.style.display = ''; });
+        teasers.forEach(function(c) { c.style.display = ''; });
+        noResult.style.display = 'none';
+        return;
+      }
+
+      // Hide teasers while searching
+      teasers.forEach(function(c) { c.style.display = 'none'; });
+
+      var anyVisible = false;
+      cards.forEach(function(card) {
+        var text = (card.textContent || '').toLowerCase();
+        var show = text.includes(query);
+        card.style.display = show ? '' : 'none';
+        if (show) anyVisible = true;
+      });
+
+      noResult.style.display = anyVisible ? 'none' : 'block';
     });
 
   </script>
