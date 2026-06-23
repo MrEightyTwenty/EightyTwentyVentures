@@ -199,7 +199,7 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email:    email,
-        redirect: redirect || '/briefings.html'
+        redirect: redirect || '/briefing.html'
       })
     })
     .then(function (res) { return res.json(); })
@@ -232,7 +232,7 @@
     if (errEl) errEl.textContent = '';
 
     var modal    = getModal();
-    var redirect = modal ? (modal._redirect || '/briefings.html') : '/briefings.html';
+    var redirect = modal ? (modal._redirect || '/briefing.html') : '/briefing.html';
 
     captureToNetlifyForms(form, email);
 
@@ -270,7 +270,7 @@
 
         captureToNetlifyForms(form, email);
 
-        sendMagicLink(email, '/briefings.html', function () {
+        sendMagicLink(email, '/briefing.html', function () {
           if (btn) { btn.disabled = false; btn.textContent = 'Read along'; }
         })
         .then(function (sent) {

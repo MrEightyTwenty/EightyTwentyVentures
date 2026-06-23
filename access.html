@@ -118,7 +118,7 @@
       <div class="icon icon-success">&#10003;</div>
       <h1>You're in.</h1>
       <p>Access granted. Redirecting you now.</p>
-      <a id="redirect-link" href="/briefings.html" class="btn">Continue</a>
+      <a id="redirect-link" href="/briefing.html" class="btn">Continue</a>
     </div>
 
     <!-- Error -->
@@ -162,7 +162,7 @@
       var params   = new URLSearchParams(window.location.search);
       var email    = (params.get('email')    || '').trim();
       var token    = (params.get('token')    || '').trim();
-      var redirect = (params.get('redirect') || '/briefings.html').trim();
+      var redirect = (params.get('redirect') || '/briefing.html').trim();
 
       if (!email || !token) {
         setError(
