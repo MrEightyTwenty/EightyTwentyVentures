@@ -1,9 +1,9 @@
 ---
-title: "I Didn't Want to Build This"
-subtitle: "The story behind EightyTwentyVentures"
-date: "2026-06-23"
-category: "Process"
-author: "Mr. EightyTwenty"
+title: I Didn't Want to Build This
+subtitle: The story behind EightyTwentyVentures
+date: 2026-06-23
+category: Process
+author: Mr. EightyTwenty
 ---
 
 For a long time, I wanted nothing to do with social media. I still don't post much. When I do, it's in short bursts, then nothing for a while. Privacy always felt like the safer default, and for years it was.
@@ -38,7 +38,7 @@ Somewhere in that stretch there's a day every trader has a version of. Mine was 
 ---
 
 <figure style="text-align:center;margin:40px 0;">
-<img src="content/images/we-dont-care.gif" alt="" style="max-width:100%;border-radius:4px;">
+<img src="content/images/we-don't-care.gif" alt="" style="max-width:100%;border-radius:4px;">
 <figcaption style="font-size:13px;color:#888888;margin-top:10px;font-style:italic;">(The market that day)</figcaption>
 </figure>
 
