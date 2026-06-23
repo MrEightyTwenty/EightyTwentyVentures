@@ -133,6 +133,25 @@
     }
     .article-body pre code { background: none; padding: 0; }
 
+    /* Image and figure centering — overrides style.css */
+    .article-body img {
+      display: block !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    .article-body figure {
+      margin: 40px 0;
+      text-align: center;
+    }
+    .article-body figcaption {
+      font-size: 13px;
+      color: #888888;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
     /* Loading / error states */
     .article-state {
       padding: 80px 24px;
