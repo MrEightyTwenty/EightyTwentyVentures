@@ -25,7 +25,7 @@ This was approximately the equivalent of stepping into the ring with prime Mike 
 ---
 
 <figure style="text-align:center;margin:40px 0;">
-<img src="content/images/mike-tyson-knockout.gif" alt="" style="max-width:100%;border-radius:4px;">
+<img src="content/images/mike-tyson-knockout.gif" alt="" style="display:block;margin:0 auto;max-width:100%;border-radius:4px;">
 <figcaption style="font-size:13px;color:#888888;margin-top:10px;font-style:italic;">(Precisely how my intro to the market went)</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Somewhere in that stretch there's a day every trader has a version of. Mine was 
 ---
 
 <figure style="text-align:center;margin:40px 0;">
-<img src="content/images/we-don't-care.gif" alt="" style="max-width:100%;border-radius:4px;">
+<img src="content/images/we-don't-care.gif" alt="" style="display:block;margin:0 auto;max-width:100%;border-radius:4px;">
 <figcaption style="font-size:13px;color:#888888;margin-top:10px;font-style:italic;">(The market that day)</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ What's here now exists mostly because a few people I trusted insisted it was wor
 ---
 
 <figure style="text-align:center;margin:40px 0;">
-<img src="content/images/keanu-reeves-blow-kiss.gif" alt="" style="max-width:100%;border-radius:4px;">
+<img src="content/images/keanu-reeves-blow-kiss.gif" alt="" style="display:block;margin:0 auto;max-width:100%;border-radius:4px;">
 <figcaption style="font-size:13px;color:#888888;margin-top:10px;font-style:italic;">(The End)</figcaption>
 </figure>
 
