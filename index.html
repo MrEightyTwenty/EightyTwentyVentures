@@ -329,6 +329,13 @@
 
             grid.appendChild(card);
 
+            /* The IO already fired on the empty grid before fetch resolved,
+               so visible is never added automatically. Apply it manually
+               with a staggered delay so the CSS transition still runs. */
+            (function(c, delay) {
+              setTimeout(function() { c.classList.add('visible'); }, delay);
+            })(card, 80 + idx * 120);
+
             // Wire gating
             card.addEventListener('click', function(e) {
               if (window.ETV && window.ETV.isRegistered && window.ETV.isRegistered()) return;
