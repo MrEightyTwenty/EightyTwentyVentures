@@ -68,32 +68,32 @@
       </div>
 
       <div class="rsp-grid">
-        <a href="rsp/ch1-philosophy.html" class="rsp-chapter-card">
+        <a href="rsp/ch1-philosophy.html" class="rsp-chapter-card" data-gated>
           <span class="ch">Chapter 01</span>
           <h3>The Architecture of a Mispricing</h3>
           <p>The difference between investing and exploiting a mispricing, why the edge lives in the gap between expectation and reality, where asymmetry tends to concentrate, and why this approach is concentrated by necessity rather than preference.</p>
         </a>
-        <a href="rsp/ch2-regime.html" class="rsp-chapter-card">
+        <a href="rsp/ch2-regime.html" class="rsp-chapter-card" data-gated>
           <span class="ch">Chapter 02</span>
           <h3>Risk-On and Risk-Off Windows</h3>
           <p>The broad market as the first filter. The one, three, and five-year moving average framework, what the COT report reveals about commercial and speculative participants, and reading index volume profiles to map the structural path.</p>
         </a>
-        <a href="rsp/ch3-narrative.html" class="rsp-chapter-card">
+        <a href="rsp/ch3-narrative.html" class="rsp-chapter-card" data-gated>
           <span class="ch">Chapter 03</span>
           <h3>Constructing the Narrative</h3>
           <p>Why markets price expectations rather than conditions, reading the economic landscape, identifying durable themes and their consequences, and tracing first, second, and third order effects before the broader market does.</p>
         </a>
-        <a href="rsp/ch4-opportunity.html" class="rsp-chapter-card">
+        <a href="rsp/ch4-opportunity.html" class="rsp-chapter-card" data-gated>
           <span class="ch">Chapter 04</span>
           <h3>Identifying the Opportunity Set</h3>
           <p>Why timing the scan against a weak market is what makes relative strength meaningful, the momentum and volatility compression filters, sector sifting through the narrative, and hand-selecting charts that show genuine accumulation.</p>
         </a>
-        <a href="rsp/ch5-business.html" class="rsp-chapter-card">
+        <a href="rsp/ch5-business.html" class="rsp-chapter-card" data-gated>
           <span class="ch">Chapter 05</span>
           <h3>Financial Intelligence</h3>
           <p>Understanding the business model before the metrics. Why a software company, a miner, a restaurant, and a bank require completely different lenses, and the three-part assessment of sector truths, peer comparison, and catalyst.</p>
         </a>
-        <a href="rsp/ch6-trade.html" class="rsp-chapter-card">
+        <a href="rsp/ch6-trade.html" class="rsp-chapter-card" data-gated>
           <span class="ch">Chapter 06</span>
           <h3>Positioning to Gain from the Edge</h3>
           <p>Writing the thesis, defining invalidation through structure rather than loss tolerance, setting targets from the compression, managing by progress instead of price, and the concentration and sizing logic that ties it together.</p>
@@ -101,10 +101,46 @@
       </div>
 
       <div style="text-align:center;margin-top:3.5rem;">
-        <a href="rsp/ch1-philosophy.html" class="btn btn-primary btn-large">Start with Chapter 1 &rarr;</a>
+        <a href="rsp/ch1-philosophy.html" class="btn btn-primary btn-large" data-gated>Start with Chapter 1 &rarr;</a>
       </div>
     </div>
   </section>
+
+  <!-- Registration Gate Modal -->
+  <div id="etv-gate-modal" class="etv-gate-modal" role="dialog" aria-modal="true" aria-labelledby="etv-modal-title">
+    <div class="etv-modal-backdrop"></div>
+    <div class="etv-modal-panel">
+      <button class="etv-modal-close" aria-label="Close">&times;</button>
+      <div class="etv-modal-eyebrow">EightyTwentyVentures</div>
+      <h2 id="etv-modal-title" class="etv-modal-title">Access the Playbooks.</h2>
+      <p class="etv-modal-body">Both Playbooks are available at no cost. Register with your email to read them in full and unlock access to all current and future publications.</p>
+      <form name="etv-access" method="POST" data-netlify="true" class="etv-modal-form">
+        <input type="hidden" name="form-name" value="etv-access">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Get access</button>
+      </form>
+      <p class="etv-modal-disclaimer">No credit card. No subscription fee. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script>
+    /* Page-level gate: show registration modal immediately if not registered.
+       auth.js also wires data-gated on each chapter link as a secondary guard. */
+    (function () {
+      function checkGate() {
+        if (window.ETV && !window.ETV.isRegistered()) {
+          window.ETV.showModal(window.location.href);
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', checkGate);
+      } else {
+        setTimeout(checkGate, 0);
+      }
+    })();
+  </script>
 
 </body>
 </html>
