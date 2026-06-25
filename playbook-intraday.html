@@ -167,18 +167,41 @@
   </script>
   <script src="auth.js"></script>
   <script>
-    /* Page-level gate: show registration modal immediately if not registered.
-       auth.js also wires data-gated on each chapter link as a secondary guard. */
     (function () {
-      function checkGate() {
+      var emailSubmitted = false;
+
+      function setupGate() {
+        /* Show modal immediately if not registered */
         if (window.ETV && !window.ETV.isRegistered()) {
           window.ETV.showModal(window.location.href);
         }
+
+        var modal = document.getElementById('etv-gate-modal');
+        if (!modal) return;
+
+        /* Track whether the user has submitted their email.
+           If they have, closing the modal is fine (they're waiting for the link).
+           If they haven't, closing the modal redirects them away from the page. */
+        modal.addEventListener('submit', function () {
+          emailSubmitted = true;
+        });
+
+        new MutationObserver(function (mutations) {
+          mutations.forEach(function (m) {
+            if (m.attributeName !== 'class') return;
+            var closed = !modal.classList.contains('open');
+            var notRegistered = window.ETV && !window.ETV.isRegistered();
+            if (closed && notRegistered && !emailSubmitted) {
+              window.location.href = 'playbook.html';
+            }
+          });
+        }).observe(modal, { attributes: true, attributeFilter: ['class'] });
       }
+
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', checkGate);
+        document.addEventListener('DOMContentLoaded', setupGate);
       } else {
-        setTimeout(checkGate, 0);
+        setTimeout(setupGate, 0);
       }
     })();
   </script>
