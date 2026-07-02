@@ -1,17 +1,19 @@
 /* ==========================================================================
    EightyTwentyVentures — Magic Link Sender
-   Generates a signed HMAC token and delivers it via Resend.
+   Generates a signed HMAC token and delivers it via Google Workspace SMTP.
    No database required. Token is self-contained and expires in 30 minutes.
 
    Environment variables required:
-     RESEND_API_KEY  — from resend.com dashboard
-     TOKEN_SECRET    — random 64-char hex string (generate once, store in Netlify)
+     GOOGLE_SMTP_APP_PASSWORD  — app password for admin@eightytwentyventures.com
+     TOKEN_SECRET              — random 64-char hex string (generate once, store in Netlify)
    ========================================================================== */
 
 const crypto = require('crypto');
+const nodemailer = require('nodemailer');
 
-const EXPIRY_MS  = 30 * 60 * 1000;   // 30 minutes
-const EMAIL_FROM = 'EightyTwentyVentures <access@eightytwentyventures.com>';
+const EXPIRY_MS   = 30 * 60 * 1000;   // 30 minutes
+const EMAIL_FROM  = '"EightyTwentyVentures" <admin@eightytwentyventures.com>';
+const SMTP_USER   = 'admin@eightytwentyventures.com';
 
 exports.handler = async function (event) {
   if (event.httpMethod !== 'POST') {
@@ -34,12 +36,12 @@ exports.handler = async function (event) {
   }
 
   /* ── Config check ───────────────────────────────────────────── */
-  const secret  = process.env.TOKEN_SECRET;
-  const apiKey  = process.env.RESEND_API_KEY;
-  const siteUrl = (process.env.URL || 'https://eightytwentyventures.com').replace(/\/$/, '');
+  const secret     = process.env.TOKEN_SECRET;
+  const smtpPass   = process.env.GOOGLE_SMTP_APP_PASSWORD;
+  const siteUrl    = (process.env.URL || 'https://eightytwentyventures.com').replace(/\/$/, '');
 
-  if (!secret || !apiKey) {
-    console.error('Missing env vars: TOKEN_SECRET or RESEND_API_KEY');
+  if (!secret || !smtpPass) {
+    console.error('Missing env vars: TOKEN_SECRET or GOOGLE_SMTP_APP_PASSWORD');
     return { statusCode: 500, body: JSON.stringify({ error: 'Server configuration error' }) };
   }
 
@@ -53,27 +55,24 @@ exports.handler = async function (event) {
   const qs        = new URLSearchParams({ email, token, redirect });
   const magicLink = `${siteUrl}/access.html?${qs.toString()}`;
 
-  /* ── Send via Resend ────────────────────────────────────────── */
+  /* ── Send via Google Workspace SMTP ─────────────────────────── */
   try {
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        from:    EMAIL_FROM,
-        to:      [email],
-        subject: 'Your access link — EightyTwentyVentures',
-        html:    buildEmailHtml(magicLink)
-      })
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: SMTP_USER,
+        pass: smtpPass
+      }
     });
 
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      console.error('Resend error:', JSON.stringify(err));
-      return { statusCode: 502, body: JSON.stringify({ error: 'Email delivery failed' }) };
-    }
+    await transporter.sendMail({
+      from:    EMAIL_FROM,
+      to:      email,
+      subject: 'Your access link — EightyTwentyVentures',
+      html:    buildEmailHtml(magicLink)
+    });
 
     return {
       statusCode: 200,
@@ -81,8 +80,8 @@ exports.handler = async function (event) {
       body: JSON.stringify({ ok: true })
     };
   } catch (err) {
-    console.error('Unexpected error:', err);
-    return { statusCode: 500, body: JSON.stringify({ error: 'Internal server error' }) };
+    console.error('SMTP send error:', err);
+    return { statusCode: 502, body: JSON.stringify({ error: 'Email delivery failed' }) };
   }
 };
 
