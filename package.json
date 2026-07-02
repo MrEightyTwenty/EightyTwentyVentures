@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A clean, dark, brand-aligned static site ready for Netlify. Built as a foundation you can expand without ripping things out.",
+  "main": "auth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrEightyTwenty/EightyTwentyVentures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MrEightyTwenty/EightyTwentyVentures/issues"
+  },
+  "homepage": "https://github.com/MrEightyTwenty/EightyTwentyVentures#readme",
+  "dependencies": {
+    "nodemailer": "^9.0.3"
+  }
+}
