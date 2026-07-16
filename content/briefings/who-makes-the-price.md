@@ -1,3 +1,11 @@
+---
+title: "Who Makes the Price"
+subtitle: "First in a series on the machinery underneath markets"
+date: "2026-07-16"
+category: "Market Structure"
+author: "Mr. EightyTwenty"
+---
+
 # Who Makes the Price
 
 *First in a series on the machinery underneath markets.*
@@ -258,3 +266,7 @@ Businesses transfer risk. Speculators accept it. Institutions execute it. Thousa
 So the next time you open a positioning report, don't ask where price is going. Ask who needs this market. Ask who is transferring risk, and who is being paid to accept it. Then ask whether the auction still agrees with them.
 
 Price is the receipt. Ownership is the transaction.
+
+---
+
+That's all for this one. I'll see you in the next.
