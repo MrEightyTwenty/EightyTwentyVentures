@@ -6,10 +6,6 @@ category: "Market Structure"
 author: "Mr. EightyTwenty"
 ---
 
-# Who Makes the Price
-
-*First in a series on the machinery underneath markets.*
-
 Before we talk about markets, we have to ruin one of the biggest lies in finance.
 
 Markets were never built for traders. Traders found a market that already existed, one built by people who needed something entirely different, and then spent a century convincing themselves it was theirs. Almost everything retail believes about price follows from that misunderstanding, and almost none of it survives contact with the machinery.
