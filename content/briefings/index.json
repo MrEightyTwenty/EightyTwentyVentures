@@ -5,7 +5,8 @@
     "excerpt": "For a long time, I wanted nothing to do with social media. Here's the dichotomy: it's also where I found trading.",
     "date": "2026-06-23",
     "category": "Process",
-    "cat": "psychology"
+    "cat": "psychology",
+    "image": "assets/i-didnt-want-to-build-this-cover.jpg"
   },
   {
     "slug": "who-makes-the-price",
@@ -13,6 +14,7 @@
     "excerpt": "What a futures market is actually for, who shows up to build it, and how to read the crowd without pretending to read its mind.",
     "date": "2026-07-16",
     "category": "Market Structure",
-    "cat": "market-structure"
+    "cat": "market-structure",
+    "image": "assets/who-makes-the-price-cover.jpg"
   }
 ]

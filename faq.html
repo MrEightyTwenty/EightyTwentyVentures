@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ · EightyTwentyVentures</title>
+  <meta name="description" content="Common questions about EightyTwentyVentures: what it is, what it isn't, and how it works.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid #1e1e1e;
+      padding: 22px 0;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      font-size: 17px;
+      font-weight: 500;
+      color: #e8e8e8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 20px;
+      color: #555555;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item summary:hover { color: #ffffff; }
+    .faq-answer {
+      margin: 14px 0 0;
+      font-size: 15px;
+      line-height: 1.65;
+      color: #999999;
+      max-width: 640px;
+    }
+    .faq-group-label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #444444;
+      margin: 48px 0 4px;
+    }
+    .faq-group-label:first-of-type { margin-top: 0; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Eighty<span>Twenty</span>Ventures</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">The Playbook</a></li>
+        <li><a href="briefing.html">Briefing</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">&#9776;</button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container-narrow">
+      <span class="eyebrow">FAQ</span>
+      <h1>Questions worth answering once.</h1>
+      <p class="lead">The things that don't fit anywhere else on the site, answered plainly.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="faq-list">
+
+        <p class="faq-group-label">The Content</p>
+
+        <details class="faq-item">
+          <summary>Is anything on this site financial advice?</summary>
+          <p class="faq-answer">No. Everything published here, including the Briefings and the Playbooks, is educational and informational. It describes a framework for reading markets, not a recommendation to buy or sell anything. You are responsible for your own decisions, and you should treat every piece here as a way of thinking, not an instruction.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you give trade calls, signals, or alerts?</summary>
+          <p class="faq-answer">No, and this one is on purpose. Signal services sell certainty without context. The entire point of this site is the opposite: building a framework the reader can apply themselves, across any market condition, without needing to check in for the next call. If that's what you're looking for, this isn't the right fit, and that's fine.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What markets does the content actually cover?</summary>
+          <p class="faq-answer">Primarily equity index futures (ES, NQ, YM) as regime gauges, with metals (gold, silver) used as confluence inputs. The underlying framework, COT-anchored positioning analysis and auction market theory, generalizes to any liquid futures market, but the Briefings tend to stay concentrated where the signal is cleanest rather than covering every instrument for the sake of coverage.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How often does new content get published?</summary>
+          <p class="faq-answer">When there's something worth saying, not on a fixed schedule. A Briefing publishes when a piece of market structure, a positioning shift, or an idea actually warrants the writing. That means some stretches are quiet and some aren't. Signal density matters more here than frequency.</p>
+        </details>
+
+        <p class="faq-group-label">Cost & Access</p>
+
+        <details class="faq-item">
+          <summary>Why do I need to register if everything is free?</summary>
+          <p class="faq-answer">Registration exists to give you an account, not to charge you one. There's no credit card, no trial period, and no hidden tier. It's the mechanism for tracking what's been read and, eventually, for things like saved articles or notifications on new pieces. The content itself has never been and will never be paywalled.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is there a paid tier, membership, or subscription?</summary>
+          <p class="faq-answer">Not currently. The free content, the Briefings and the Playbooks, is the whole product for now. If a paid coaching or mentorship offering is introduced in the future, it will be a separate, clearly-labeled engagement, gated behind demonstrated demand rather than bundled quietly into what's already free. See the Subscription Policy for the exact terms if and when that changes.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you offer one-on-one coaching or mentorship?</summary>
+          <p class="faq-answer">On a limited, demand-gated basis. It isn't advertised as a funnel and there's no application form on this site yet. If that changes, it will be announced through the free content channels first, not buried in a pricing page.</p>
+        </details>
+
+        <p class="faq-group-label">The Fine Print, Briefly</p>
+
+        <details class="faq-item">
+          <summary>How is my email address used?</summary>
+          <p class="faq-answer">To send the content you signed up for and nothing else. It isn't sold, rented, or shared with third parties for marketing. Full detail on what's collected and why lives in the Privacy Policy.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I unsubscribe or delete my account?</summary>
+          <p class="faq-answer">Yes, at any time, with no retention attempt and no confirmation gauntlet. Every email includes an unsubscribe link, and account deletion requests are handled directly. Reach out through the contact method listed in the Privacy Policy.</p>
+        </details>
+
+        <p class="faq-group-label">Fit</p>
+
+        <details class="faq-item">
+          <summary>I'm new to markets entirely. Is this the right place to start?</summary>
+          <p class="faq-answer">Probably not yet, and it's worth saying plainly rather than pretending otherwise. This content assumes you've already spent real time in markets and found simplified education insufficient. If you're looking for a first introduction to what a candlestick is, you'll get more out of starting elsewhere and coming back once the basics are the boring part.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you accept sponsorships, guest posts, or advertising?</summary>
+          <p class="faq-answer">No. There's no ad inventory on this site and no sponsored placements in the Briefings. The content reflects one person's framework and thinking, and keeping it that way is the point.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I submit a question or suggest a topic?</summary>
+          <p class="faq-answer">Yes. Reach out through any of the linked social channels. Not every suggestion turns into a piece, but the ones that hold up under the same 80/20 filter as everything else here usually do, eventually.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Eighty<span>Twenty</span>Ventures</div>
+          <p class="footer-desc">Market intelligence from a working trader. Macro regime, institutional positioning, and structural ideas. The 20% that drives 80% of what matters.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playbook.html">The Playbook</a></li>
+            <li><a href="briefing.html">Briefing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="subscription-policy.html">Subscription Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Futures, equities, options, forex, and cryptocurrency trading involves substantial risk and is not suitable for all investors. You may lose part or all of your investment. Only risk capital should be used. EightyTwentyVentures LLC provides educational content for informational purposes only and does not provide investment advice, financial advice, or recommendations. You are solely responsible for your investment decisions and assume full risk.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EightyTwentyVentures LLC. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="risk-disclosure.html">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>

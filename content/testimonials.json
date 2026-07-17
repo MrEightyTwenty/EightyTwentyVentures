@@ -1,0 +1,12 @@
+[
+  {
+    "name": "REPLACE ME — Reader name or initials",
+    "role": "REPLACE ME — context, e.g. 'Reader since 2026' or 'Discretionary trader'",
+    "quote": "REPLACE ME. Keep it about decision quality, framework clarity, or how the writing changed how someone reads a chart, not about returns or P&L. That's the one hard rule: no dollar figures, no win-rate claims, no 'made me X% this month.'"
+  },
+  {
+    "name": "REPLACE ME",
+    "role": "REPLACE ME",
+    "quote": "REPLACE ME. Add as many entries to this array as you have testimonials. They rotate automatically on the homepage, one every 7 seconds, with dot navigation appearing once there are 2 or more."
+  }
+]

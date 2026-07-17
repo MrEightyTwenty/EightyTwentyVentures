@@ -72,6 +72,22 @@
       margin: 0 0 48px;
     }
 
+    /* Hero cover image */
+    .article-hero {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 4px;
+      margin: 0 0 48px;
+      background: #0e1311;
+    }
+    .article-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
     /* Rendered markdown body */
     .article-body {
       font-size: 17px;
@@ -171,6 +187,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="playbook.html">The Playbook</a></li>
         <li><a href="briefing.html" class="active">Briefing</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
       </ul>
@@ -294,6 +311,10 @@
 
             (meta.subtitle
               ? '<p class="article-subtitle">' + esc(meta.subtitle) + '</p>'
+              : '') +
+
+            (meta.image
+              ? '<div class="article-hero"><img src="' + esc(meta.image) + '" alt=""></div>'
               : '') +
 
             '<hr class="article-divider">' +

@@ -4,6 +4,7 @@ subtitle: The story behind EightyTwentyVentures
 date: 2026-06-23
 category: Process
 author: Mr. EightyTwenty
+image: assets/i-didnt-want-to-build-this-cover.jpg
 ---
 
 For a long time, I wanted nothing to do with social media. I still don't post much. When I do, it's in short bursts, then nothing for a while. Privacy always felt like the safer default, and for years it was.

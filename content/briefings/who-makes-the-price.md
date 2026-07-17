@@ -4,6 +4,7 @@ subtitle: "First in a series on the machinery underneath markets"
 date: "2026-07-16"
 category: "Market Structure"
 author: "Mr. EightyTwenty"
+image: "assets/who-makes-the-price-cover.jpg"
 ---
 
 Before we talk about markets, we have to ruin one of the biggest lies in finance.

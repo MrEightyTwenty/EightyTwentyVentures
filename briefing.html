@@ -31,6 +31,25 @@
     .briefing-search::placeholder { color: #444444; }
     .briefing-search:focus { border-color: #444444; }
 
+    /* Cover image on briefing cards */
+    .briefing-card { overflow: hidden; }
+    .card-cover {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      background: #0e1311;
+    }
+    .card-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .briefing-card:hover .card-cover img { transform: scale(1.035); }
+
     /* No results message */
     .briefing-no-results {
       display: none;
@@ -53,6 +72,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="playbook.html">The Playbook</a></li>
         <li><a href="briefing.html" class="active">Briefing</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#subscribe" class="nav-cta">Subscribe</a></li>
       </ul>
@@ -96,54 +116,6 @@
 
         <!-- No results indicator (hidden by default) -->
         <div class="briefing-no-results" id="briefingNoResults">No briefings match your search.</div>
-
-        <!-- Teaser: Q3 Outlook (quarterly, recurring) -->
-        <a href="#" class="briefing-card teaser" data-cat="positioning" data-gated>
-          <div class="meta">
-            <span class="category">Positioning &amp; Regime</span>
-            <span class="dot"></span>
-            <span class="teaser-badge">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              Upcoming
-            </span>
-          </div>
-          <h3>Into Q3: what the data has resolved, and what it hasn't.</h3>
-          <p>A quarterly orientation piece. What the framework has confirmed since the last major inflection, which questions remain open, and what the highest-conviction setups look like going into the next three months.</p>
-          <div class="teaser-cta">
-            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-            Register to read
-          </div>
-        </a>
-
-        <!-- Teaser: Week Ahead (weekly, recurring) -->
-        <a href="#" class="briefing-card teaser" data-cat="structure" data-gated>
-          <div class="meta">
-            <span class="category">Market Structure</span>
-            <span class="dot"></span>
-            <span class="teaser-badge">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              Upcoming
-            </span>
-          </div>
-          <h3>The Week Ahead: regime context, key levels, and the five markets on the board.</h3>
-          <p>A weekly recurring piece. Volatility context for the session ahead, calendar risk, COT-anchored reads on the primary instruments, and the operational frame for how the week sets up structurally.</p>
-          <div class="teaser-cta">
-            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M4 5V3.5a2 2 0 1 1 4 0V5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-            Register to read
-          </div>
-        </a>
 
       </div><!-- /briefing-grid -->
 
@@ -224,6 +196,7 @@
             card.setAttribute('data-gated', '');
 
             card.innerHTML =
+              (a.image ? '<div class="card-cover"><img src="' + esc(a.image) + '" alt="" loading="lazy"></div>' : '') +
               '<div class="meta">' +
                 '<span class="category">' + label + '</span>' +
                 '<span class="dot"></span>' +
