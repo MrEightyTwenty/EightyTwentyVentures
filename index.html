@@ -13,70 +13,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Testimonials rotation */
-    .testimonials { padding: 96px 0; }
-    .testimonial-stage {
-      position: relative;
-      max-width: 760px;
-      margin: 48px auto 0;
-      min-height: 190px;
-    }
-    .testimonial-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transform: translateY(8px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      pointer-events: none;
-      text-align: center;
-    }
-    .testimonial-slide.active {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-      position: relative;
-    }
-    .testimonial-quote {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-style: italic;
-      font-size: 22px;
-      line-height: 1.55;
-      color: #d8d8d8;
-      margin: 0 0 20px;
-    }
-    .testimonial-attrib {
-      font-size: 13px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #666666;
-    }
-    .testimonial-attrib strong { color: #999999; font-style: normal; }
-    .testimonial-dots {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 32px;
-    }
-    .testimonial-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #2a2a2a;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      transition: background 0.2s;
-    }
-    .testimonial-dot.active { background: #2dc89a; }
-    .testimonial-empty {
-      text-align: center;
-      color: #444444;
-      font-size: 14px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      display: none;
-    }
-  </style>
 </head>
 <body>
 
@@ -227,20 +163,6 @@
           </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials reveal">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">From Readers</span>
-        <h2>What people <span class="txt-green">say</span></h2>
-      </div>
-      <div class="testimonial-stage" id="testimonialStage">
-        <p class="testimonial-empty" id="testimonialEmpty">Testimonials coming soon.</p>
-      </div>
-      <div class="testimonial-dots" id="testimonialDots"></div>
     </div>
   </section>
 
@@ -425,78 +347,6 @@
           });
         })
         .catch(function() {});
-    })();
-
-    /* ── Load and rotate testimonials ─────────────────────────── */
-    (function loadTestimonials() {
-      var stage   = document.getElementById('testimonialStage');
-      var dotsWrap = document.getElementById('testimonialDots');
-      var emptyMsg = document.getElementById('testimonialEmpty');
-      if (!stage) return;
-
-      function esc(s) {
-        return String(s || '')
-          .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-          .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-      }
-
-      fetch('content/testimonials.json')
-        .then(function(r) { return r.ok ? r.json() : []; })
-        .then(function(items) {
-          if (!Array.isArray(items) || !items.length) {
-            if (emptyMsg) emptyMsg.style.display = 'block';
-            return;
-          }
-
-          if (emptyMsg) emptyMsg.remove();
-
-          items.forEach(function(t, i) {
-            var slide = document.createElement('div');
-            slide.className = 'testimonial-slide' + (i === 0 ? ' active' : '');
-            slide.innerHTML =
-              '<p class="testimonial-quote">&ldquo;' + esc(t.quote) + '&rdquo;</p>' +
-              '<p class="testimonial-attrib"><strong>' + esc(t.name) + '</strong>' +
-              (t.role ? ' &middot; ' + esc(t.role) : '') + '</p>';
-            stage.appendChild(slide);
-
-            if (items.length > 1) {
-              var dot = document.createElement('button');
-              dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
-              dot.setAttribute('aria-label', 'Show testimonial ' + (i + 1));
-              dot.addEventListener('click', function() { goTo(i); });
-              dotsWrap.appendChild(dot);
-            }
-          });
-
-          if (items.length <= 1) return;
-
-          var slides = stage.querySelectorAll('.testimonial-slide');
-          var dots   = dotsWrap.querySelectorAll('.testimonial-dot');
-          var current = 0;
-          var timer;
-
-          function goTo(i) {
-            slides[current].classList.remove('active');
-            dots[current].classList.remove('active');
-            current = i;
-            slides[current].classList.add('active');
-            dots[current].classList.add('active');
-          }
-
-          function next() { goTo((current + 1) % slides.length); }
-
-          function startAutoRotate() {
-            clearInterval(timer);
-            timer = setInterval(next, 7000);
-          }
-
-          startAutoRotate();
-
-          dotsWrap.addEventListener('click', startAutoRotate);
-        })
-        .catch(function() {
-          if (emptyMsg) emptyMsg.style.display = 'block';
-        });
     })();
   </script>
 
