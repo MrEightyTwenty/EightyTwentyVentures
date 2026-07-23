@@ -11,8 +11,6 @@ part: 1
 image: "assets/positioning-metals-gc-cot.png"
 ---
 
-![Gold COT positioning and price, January 2026 through July 1. Green bars show commercial long interest near 83%, red bars show speculator interest near 35%, both trending higher through a decline. Price shows the January spike to $5,600 and subsequent 10% drawdown, with commercials accumulating consistently through the decline while open interest contracts toward range lows.](assets/positioning-metals-gc-cot.png)
-
 In January, silver printed a record near $121 and gave back more than thirty percent of it inside a week, its worst session since 1980. Gold peaked near $5,600 on the twenty ninth after gaining roughly 29.5% in a single month, then fell about ten percent in the days that followed.
 
 The consensus explanation is that the debasement trade got crowded and then got taken out. That explanation is correct, and it is the reason the five months since matter more than the crash did.
@@ -30,6 +28,8 @@ January was the earthquake. The question worth asking is what happened on the Tu
 *Or: the residual*
 
 Here is the July 1 picture. Silver trades near 59.6 with the speculator positioning index at 4.5 and the commercial index at 95.92. Gold trades near 4044 with speculators at 34.76 and commercials at 83.16. Silver open interest has been contracting toward the bottom of its range throughout.
+
+![Silver COT positioning and price, showing speculator index at 4.5 and commercial index at 95.92. Silver peaked near $121 in January and has fallen to $59.60 by July 1. The symmetry mirrors gold: a small speculator base contrasting a massive commercial long, with open interest contracting through the entire period.](assets/positioning-metals-si-cot.png)
 
 Commercials did not chase the metals lower. They bought into the crash, and they were still buying five months after the news that caused it had been priced, absorbed and forgotten by everyone else.
 
@@ -63,5 +63,3 @@ Two developments would invalidate the read. The speculator index rebuilding towa
 One caveat stays in the open. In an acute liquidity event, metals get sold for margin alongside everything else, and January is the live precedent. A depleted speculator base argues for a shallower drawdown, not for immunity.
 
 A positioning extreme is a condition, not a trigger. It does not tell you what the market will do. It tells you what the market can no longer easily do, and silver, right now, cannot easily be sold.
-
-![Silver COT positioning and price, showing speculator index at 4.5 and commercial index at 95.92. Silver peaked near $121 in January and has fallen to $59.60 by July 1. The symmetry mirrors gold: a small speculator base contrasting a massive commercial long, with open interest contracting through the entire period.](assets/positioning-metals-si-cot.png)

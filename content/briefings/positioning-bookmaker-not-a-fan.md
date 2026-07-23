@@ -11,8 +11,6 @@ part: 3
 image: "assets/positioning-bitcoin-flows-cot.png"
 ---
 
-![Bitcoin COT positioning and spot price, January 2026 through July 1. Green bars show commercial positioning at 5.34, red bars show speculator positioning at 100 (maximum long). Price chart shows January peak at roughly $93,000, decline to $58,000 by July 1. Open interest contracting through the period. Volume profile at bottom shows distribution across price levels. The visual demonstrates the contradiction: managed money at maximum long while spot ETFs posted net outflows of $4.5 billion in June alone.](assets/positioning-bitcoin-flows-cot.png)
-
 June produced the largest outflows on record from spot Bitcoin funds, roughly $4.5 billion on a net basis. Over the same weeks, managed money futures positioning reached the most bullish reading the scale allows.
 
 Those two facts should not comfortably coexist. Working out why they do is more useful than any view either of them might have supported.

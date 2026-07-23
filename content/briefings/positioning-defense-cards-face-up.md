@@ -8,10 +8,8 @@ category: "Positioning in Context"
 cat: "positioning"
 series: "Positioning in Context"
 part: 2
-image: "assets/positioning-yen-usdj-cot.png"
+image: "assets/positioning-yen-usdjpy-cot.png"
 ---
-
-![USD/JPY positioning and price across the intervention period, April through June 2026. Commercial positioning shown in green at 96.72, speculators in red at 1.43, open interest surging toward range highs. Price shows April 30 appreciation to 156.6 (intervention), May policy tightening, June BOJ hike at 1.00%, and continued weakness to 162.58 by June 30, a 40-year low. The chart demonstrates policy defense failing despite rate hike and record ¥73.5 billion intervention.](assets/positioning-yen-usdj-cot.png)
 
 Japan spent the first half of 2026 doing everything the textbook recommends.
 
