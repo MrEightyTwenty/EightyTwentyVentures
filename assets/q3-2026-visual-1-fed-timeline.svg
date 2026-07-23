@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1440 960" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line chart of market-implied December hike probability rising from 25 percent in January to 75 percent in June 2026, with a timeline of four Fed communication events below">
+  <defs>
+    <marker id="fedarrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5f6a64"/></marker>
+  </defs>
+
+  <rect width="1440" height="960" fill="#0b0f0d"/>
+
+  <text x="70" y="66" fill="#e8ede9" font-size="30" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Price moves before policy confirms it</text>
+  <text x="70" y="98" fill="#8b9490" font-size="17" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Market-implied December hike probability against the official communication record, January to June 2026.</text>
+  <line x1="70" y1="116" x2="1370" y2="116" stroke="#1e2622" stroke-width="1"/>
+
+  <g stroke="#151b17" stroke-width="1">
+    <line x1="150" y1="150" x2="150" y2="620"/>
+    <line x1="366" y1="150" x2="366" y2="620"/>
+    <line x1="582" y1="150" x2="582" y2="620"/>
+    <line x1="798" y1="150" x2="798" y2="620"/>
+    <line x1="1014" y1="150" x2="1014" y2="620"/>
+    <line x1="1230" y1="150" x2="1230" y2="620"/>
+  </g>
+  <g fill="#5f6a64" font-size="14" text-anchor="middle" font-family="Consolas, SF Mono, monospace">
+    <text x="150" y="640">JAN</text>
+    <text x="366" y="640">FEB</text>
+    <text x="582" y="640">MAR</text>
+    <text x="798" y="640">APR</text>
+    <text x="1014" y="640">MAY</text>
+    <text x="1230" y="640">JUN</text>
+  </g>
+
+  <g fill="#5f6a64" font-size="13" text-anchor="end" font-family="Consolas, SF Mono, monospace">
+    <text x="132" y="185">100%</text>
+    <text x="132" y="295">50%</text>
+    <text x="132" y="405">0%</text>
+  </g>
+  <g stroke="#141a16" stroke-width="1">
+    <line x1="150" y1="180" x2="1230" y2="180"/>
+    <line x1="150" y1="290" x2="1230" y2="290"/>
+    <line x1="150" y1="400" x2="1230" y2="400"/>
+  </g>
+  <text x="58" y="290" fill="#7c857f" font-size="13" text-anchor="middle" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" transform="rotate(-90 58 290)">DEC HIKE ODDS, MARKET-IMPLIED</text>
+
+  <path d="M150,345 L366,345 L582,331 L798,312 L1014,275 L1230,235" fill="none" stroke="#35c07d" stroke-width="3"/>
+  <g fill="#35c07d">
+    <circle cx="150" cy="345" r="5"/><circle cx="366" cy="345" r="4"/><circle cx="582" cy="331" r="4"/>
+    <circle cx="798" cy="312" r="4"/><circle cx="1014" cy="275" r="4"/><circle cx="1230" cy="235" r="6"/>
+  </g>
+  <text x="150" y="333" fill="#5ad89b" font-size="13" text-anchor="middle" font-family="Consolas, SF Mono, monospace">~25%</text>
+  <text x="1230" y="222" fill="#5ad89b" font-size="14" text-anchor="middle" font-weight="700" font-family="Consolas, SF Mono, monospace">~75%</text>
+
+  <text x="700" y="172" fill="#5ad89b" font-size="13" font-style="italic" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">the odds catch up late, but the shift was legible earlier</text>
+
+  <line x1="150" y1="700" x2="1230" y2="700" stroke="#2b332e" stroke-width="2"/>
+  <text x="70" y="705" fill="#8b9490" font-size="13" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">OFFICIAL</text>
+  <text x="70" y="722" fill="#8b9490" font-size="13" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">RECORD</text>
+
+  <g stroke="#39423c" stroke-width="1.5">
+    <line x1="150" y1="700" x2="150" y2="730"/>
+    <line x1="582" y1="700" x2="582" y2="730"/>
+    <line x1="798" y1="700" x2="798" y2="730"/>
+    <line x1="1230" y1="700" x2="1230" y2="730"/>
+  </g>
+  <g fill="#5f6a64"><circle cx="150" cy="700" r="4"/><circle cx="582" cy="700" r="4"/><circle cx="798" cy="700" r="4"/><circle cx="1230" cy="700" r="4"/></g>
+
+  <rect x="82" y="730" width="200" height="88" rx="6" fill="#101613" stroke="#2b332e"/>
+  <text x="94" y="754" fill="#7c857f" font-size="12" font-family="Consolas, SF Mono, monospace">JANUARY, BASELINE</text>
+  <text x="94" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Consensus path: two cuts</text>
+  <text x="94" y="800" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">priced for the year.</text>
+
+  <rect x="470" y="730" width="286" height="146" rx="6" fill="#0e1512" stroke="#35c07d" stroke-width="1.5"/>
+  <text x="484" y="754" fill="#5ad89b" font-size="12" font-family="Consolas, SF Mono, monospace">MAR 17 TO 18, THE STALE SURVEY</text>
+  <text x="484" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Dealer survey median still shows</text>
+  <text x="484" y="798" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">two cuts, but the Desk notes</text>
+  <text x="484" y="818" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">respondents had already shifted</text>
+  <text x="484" y="838" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">to fewer cuts after submitting.</text>
+  <text x="484" y="862" fill="#8b9490" font-size="12.5" font-style="italic" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The record lags the dealer on arrival.</text>
+
+  <rect x="686" y="730" width="224" height="120" rx="6" fill="#101613" stroke="#2b332e"/>
+  <text x="700" y="754" fill="#7c857f" font-size="12" font-family="Consolas, SF Mono, monospace">APRIL, THE DISSENT</text>
+  <text x="700" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Vote splits 8 to 4, pulled apart</text>
+  <text x="700" y="798" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">from both flanks at once.</text>
+  <text x="700" y="822" fill="#e05a4f" font-size="13.5" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">First 4-dissent action in 30+ yrs.</text>
+
+  <rect x="1118" y="730" width="252" height="120" rx="6" fill="#0e1512" stroke="#35c07d" stroke-width="1.5"/>
+  <text x="1132" y="754" fill="#5ad89b" font-size="12" font-family="Consolas, SF Mono, monospace">JUN 17, THE ANNOUNCEMENT</text>
+  <text x="1132" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Dot median 3.4% to 3.8%.</text>
+  <text x="1132" y="798" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">9 of 18 pencil in a hike.</text>
+  <text x="1132" y="822" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Unanimous 12 to 0. The change,</text>
+  <text x="1132" y="842" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">finally, made explicit.</text>
+
+  <line x1="70" y1="890" x2="1370" y2="890" stroke="#1e2622" stroke-width="1"/>
+  <text x="70" y="908" fill="#e8ede9" font-size="14" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Read:</text>
+  <text x="70" y="928" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">June announced a shift already visible in the record since March. The longer-run anchor held at 3.1% in</text>
+  <text x="70" y="948" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">both the March and June projections, two regimes quoted in one document.</text>
+</svg>

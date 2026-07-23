@@ -1,0 +1,38 @@
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contrast between the myth of one algorithm producing price and the reality of many participants negotiating micro-auctions from which price emerges">
+  <defs>
+    <marker id="a2" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8b9299"/></marker>
+  </defs>
+  <rect width="820" height="360" fill="#0e1311"/>
+  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="200" y="40" text-anchor="middle" fill="#e0514b" font-size="15" font-weight="700">WHAT PEOPLE PICTURE</text>
+    <rect x="120" y="70" width="160" height="46" rx="7" fill="none" stroke="#e0514b" stroke-width="1.5"/>
+    <text x="200" y="99" text-anchor="middle" fill="#e8ecee" font-size="13.5">The Algorithm</text>
+    <line x1="200" y1="120" x2="200" y2="168" stroke="#8b9299" stroke-width="2" marker-end="url(#a2)"/>
+    <rect x="120" y="174" width="160" height="46" rx="7" fill="none" stroke="#8b9299" stroke-width="1.5"/>
+    <text x="200" y="203" text-anchor="middle" fill="#e8ecee" font-size="13.5">Price</text>
+    <text x="200" y="262" text-anchor="middle" fill="#aab1b5" font-size="12">One brain. One decision.</text>
+    <text x="200" y="282" text-anchor="middle" fill="#aab1b5" font-size="12">Somebody to blame.</text>
+    <line x1="410" y1="60" x2="410" y2="300" stroke="#2a3230" stroke-width="1.5"/>
+    <text x="610" y="40" text-anchor="middle" fill="#2fbf71" font-size="15" font-weight="700">WHAT ACTUALLY HAPPENS</text>
+    <rect x="470" y="66" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
+    <text x="530" y="86" text-anchor="middle" fill="#c9d0d3" font-size="11">dealer hedge</text>
+    <rect x="630" y="66" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
+    <text x="690" y="86" text-anchor="middle" fill="#c9d0d3" font-size="11">pension flow</text>
+    <rect x="470" y="110" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
+    <text x="530" y="130" text-anchor="middle" fill="#c9d0d3" font-size="11">stat arb</text>
+    <rect x="630" y="110" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
+    <text x="690" y="130" text-anchor="middle" fill="#c9d0d3" font-size="11">CTA model</text>
+    <rect x="470" y="154" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
+    <text x="530" y="174" text-anchor="middle" fill="#c9d0d3" font-size="11">index rebal</text>
+    <rect x="630" y="154" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
+    <text x="690" y="174" text-anchor="middle" fill="#c9d0d3" font-size="11">market maker</text>
+    <rect x="520" y="204" width="180" height="34" rx="6" fill="#151b19" stroke="#2fbf71" stroke-width="1.5"/>
+    <text x="610" y="226" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">micro-auctions</text>
+    <line x1="530" y1="188" x2="580" y2="200" stroke="#8b9299" stroke-width="1.2" marker-end="url(#a2)"/>
+    <line x1="690" y1="188" x2="644" y2="200" stroke="#8b9299" stroke-width="1.2" marker-end="url(#a2)"/>
+    <line x1="610" y1="242" x2="610" y2="266" stroke="#8b9299" stroke-width="2" marker-end="url(#a2)"/>
+    <rect x="530" y="272" width="160" height="34" rx="6" fill="none" stroke="#e8ecee" stroke-width="1.5"/>
+    <text x="610" y="294" text-anchor="middle" fill="#e8ecee" font-size="13">Price</text>
+    <text x="610" y="336" text-anchor="middle" fill="#aab1b5" font-size="12">Thousands of brains. No decision. Nobody to blame.</text>
+  </g>
+</svg>

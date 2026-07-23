@@ -1,0 +1,83 @@
+<svg viewBox="0 0 1440 960" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of top-five hyperscaler capital expenditure rising from 256 billion dollars in 2024 to 650 to 700 billion guided for 2026, with a panel of financing metrics alongside">
+  <defs>
+    <marker id="capexarrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e05a4f"/></marker>
+  </defs>
+
+  <rect width="1440" height="960" fill="#0b0f0d"/>
+
+  <text x="70" y="66" fill="#e8ede9" font-size="30" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">A physical engine, financed at the long end</text>
+  <text x="70" y="98" fill="#8b9490" font-size="17" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Top-five hyperscaler capital expenditure, and the market that has to clear its financing. Two systems, one link.</text>
+  <line x1="70" y1="116" x2="1370" y2="116" stroke="#1e2622" stroke-width="1"/>
+
+  <line x1="150" y1="700" x2="960" y2="700" stroke="#2b332e" stroke-width="1.5"/>
+  <g stroke="#141a16" stroke-width="1">
+    <line x1="150" y1="180" x2="960" y2="180"/>
+    <line x1="150" y1="353" x2="960" y2="353"/>
+    <line x1="150" y1="527" x2="960" y2="527"/>
+  </g>
+  <g fill="#5f6a64" font-size="13" text-anchor="end" font-family="Consolas, SF Mono, monospace">
+    <text x="138" y="185">$750B</text>
+    <text x="138" y="358">$500B</text>
+    <text x="138" y="532">$250B</text>
+    <text x="138" y="705">$0</text>
+  </g>
+  <text x="60" y="440" fill="#7c857f" font-size="13" text-anchor="middle" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" transform="rotate(-90 60 440)">HYPERSCALER CAPEX, TOP 5</text>
+
+  <rect x="230" y="522" width="130" height="178" fill="#1e5c40"/>
+  <rect x="500" y="393" width="130" height="307" fill="#24734e"/>
+  <rect x="770" y="249" width="130" height="451" fill="#35c07d"/>
+  <line x1="770" y1="215" x2="900" y2="215" stroke="#5ad89b" stroke-width="2"/>
+  <text x="835" y="207" fill="#5ad89b" font-size="12" text-anchor="middle" font-family="Consolas, SF Mono, monospace">to 700</text>
+
+  <g fill="#e8ede9" font-size="17" text-anchor="middle" font-weight="700" font-family="Consolas, SF Mono, monospace">
+    <text x="295" y="512">$256B</text>
+    <text x="565" y="383">$443B</text>
+    <text x="835" y="239">$650B</text>
+  </g>
+  <g fill="#7c857f" font-size="14" text-anchor="middle" font-family="Consolas, SF Mono, monospace">
+    <text x="295" y="724">2024</text>
+    <text x="565" y="724">2025</text>
+    <text x="835" y="724">2026, guidance</text>
+  </g>
+
+  <path d="M905,262 C 965,262 985,300 1008,320" fill="none" stroke="#e05a4f" stroke-width="2.5" marker-end="url(#capexarrow)"/>
+  <text x="912" y="250" fill="#c96a63" font-size="12.5" font-family="Consolas, SF Mono, monospace">must clear</text>
+
+  <text x="150" y="762" fill="#7c857f" font-size="13" font-style="italic" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Bars: reported top-five hyperscaler guidance. The financing side is stated as levels, not plotted as a derived line.</text>
+
+  <rect x="1010" y="150" width="360" height="560" rx="8" fill="#101613" stroke="#1e2622"/>
+  <text x="1032" y="184" fill="#e8ede9" font-size="17" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">What the engine runs on</text>
+  <line x1="1032" y1="198" x2="1348" y2="198" stroke="#1e2622"/>
+
+  <text x="1032" y="238" fill="#35c07d" font-size="34" font-weight="700" font-family="Consolas, SF Mono, monospace">2.5x</text>
+  <text x="1032" y="262" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">capex growth in two years,</text>
+  <text x="1032" y="282" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">$256B to $650 or 700B.</text>
+
+  <line x1="1032" y1="306" x2="1348" y2="306" stroke="#171d19"/>
+
+  <text x="1032" y="346" fill="#35c07d" font-size="34" font-weight="700" font-family="Consolas, SF Mono, monospace">45 to 57%</text>
+  <text x="1032" y="370" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">capital intensity as a share of</text>
+  <text x="1032" y="390" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">revenue, no recent precedent.</text>
+
+  <line x1="1032" y1="414" x2="1348" y2="414" stroke="#171d19"/>
+
+  <text x="1032" y="454" fill="#35c07d" font-size="34" font-weight="700" font-family="Consolas, SF Mono, monospace">~$2.25T</text>
+  <text x="1032" y="478" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">gross investment-grade issuance</text>
+  <text x="1032" y="498" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">this year, up about 25% on the year.</text>
+
+  <line x1="1032" y1="522" x2="1348" y2="522" stroke="#171d19"/>
+
+  <text x="1032" y="560" fill="#e05a4f" font-size="15" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The uncoupling ends here.</text>
+  <text x="1032" y="586" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The buildout is substantially</text>
+  <text x="1032" y="606" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">debt-financed, underwritten in part</text>
+  <text x="1032" y="626" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">against the value of the equity the</text>
+  <text x="1032" y="646" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">debt is helping to inflate.</text>
+  <text x="1032" y="678" fill="#e8ede9" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">A multi-decade physical liability,</text>
+  <text x="1032" y="698" fill="#e8ede9" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">priced at the long end, not the funds rate.</text>
+
+  <line x1="70" y1="880" x2="1370" y2="880" stroke="#1e2622" stroke-width="1"/>
+  <text x="70" y="898" fill="#e8ede9" font-size="14" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Read:</text>
+  <text x="70" y="918" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The rally is not running on easier policy. It runs on a physical-constraint spending cycle whose scale must</text>
+  <text x="70" y="938" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">clear the long-duration credit market. The open question is whether that market absorbs the financing</text>
+  <text x="70" y="958" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">without demanding materially more.</text>
+</svg>

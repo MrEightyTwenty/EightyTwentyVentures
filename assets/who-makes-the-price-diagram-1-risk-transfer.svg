@@ -1,0 +1,29 @@
+<svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing risk transferring from a business needing certainty through the futures market to a speculator accepting risk">
+  <defs>
+    <marker id="a1" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8b9299"/></marker>
+  </defs>
+  <rect width="820" height="300" fill="#0e1311"/>
+  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="410" y="36" text-anchor="middle" fill="#e8ecee" font-size="17" font-weight="700">One contract. Two problems.</text>
+    <rect x="40" y="76" width="200" height="150" rx="9" fill="none" stroke="#2fbf71" stroke-width="2"/>
+    <text x="140" y="112" text-anchor="middle" fill="#2fbf71" font-size="15" font-weight="700">BUSINESS</text>
+    <text x="140" y="140" text-anchor="middle" fill="#e8ecee" font-size="13">needs certainty</text>
+    <text x="140" y="176" text-anchor="middle" fill="#aab1b5" font-size="12">has risk it</text>
+    <text x="140" y="194" text-anchor="middle" fill="#aab1b5" font-size="12">cannot carry</text>
+    <rect x="310" y="76" width="200" height="150" rx="9" fill="#151b19" stroke="#8b9299" stroke-width="1.5"/>
+    <text x="410" y="112" text-anchor="middle" fill="#e8ecee" font-size="15" font-weight="700">THE MARKET</text>
+    <text x="410" y="140" text-anchor="middle" fill="#aab1b5" font-size="12">prices the transfer</text>
+    <text x="410" y="176" text-anchor="middle" fill="#c9d0d3" font-size="12.5">the price is what</text>
+    <text x="410" y="194" text-anchor="middle" fill="#c9d0d3" font-size="12.5">they settle on</text>
+    <rect x="580" y="76" width="200" height="150" rx="9" fill="none" stroke="#e0514b" stroke-width="2"/>
+    <text x="680" y="112" text-anchor="middle" fill="#e0514b" font-size="15" font-weight="700">SPECULATOR</text>
+    <text x="680" y="140" text-anchor="middle" fill="#e8ecee" font-size="13">needs opportunity</text>
+    <text x="680" y="176" text-anchor="middle" fill="#aab1b5" font-size="12">gets paid to</text>
+    <text x="680" y="194" text-anchor="middle" fill="#aab1b5" font-size="12">carry it instead</text>
+    <line x1="244" y1="151" x2="304" y2="151" stroke="#8b9299" stroke-width="2" marker-end="url(#a1)"/>
+    <line x1="514" y1="151" x2="574" y2="151" stroke="#8b9299" stroke-width="2" marker-end="url(#a1)"/>
+    <text x="274" y="140" text-anchor="middle" fill="#8b9299" font-size="11">sheds</text>
+    <text x="544" y="140" text-anchor="middle" fill="#8b9299" font-size="11">accepts</text>
+    <text x="410" y="266" text-anchor="middle" fill="#8b9299" font-size="12.5">Risk does not disappear. It changes owner.</text>
+  </g>
+</svg>

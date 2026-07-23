@@ -1,0 +1,19 @@
+<svg viewBox="0 0 820 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A price cycle showing six stages of inventory migration between balance sheets">
+  <rect width="820" height="390" fill="#0e1311"/>
+  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="410" y="34" text-anchor="middle" fill="#e8ecee" font-size="17" font-weight="700">Inventory migration</text>
+    <text x="410" y="56" text-anchor="middle" fill="#8b9299" font-size="12">the line is the receipt, not the transaction</text>
+    <polyline points="60,212 200,308 410,120 620,308 760,212" fill="none" stroke="#c9d0d3" stroke-width="2.5"/>
+    <circle cx="200" cy="308" r="5" fill="#2fbf71"/>
+    <circle cx="410" cy="120" r="5" fill="#e0514b"/>
+    <circle cx="620" cy="308" r="5" fill="#2fbf71"/>
+    <text x="200" y="344" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">ACCUMULATION</text>
+    <text x="200" y="362" text-anchor="middle" fill="#aab1b5" font-size="11">into patient hands</text>
+    <text x="298" y="190" text-anchor="middle" fill="#8b9299" font-size="12.5" font-weight="700">MARKUP</text>
+    <text x="410" y="94" text-anchor="middle" fill="#e0514b" font-size="12.5" font-weight="700">DISTRIBUTION</text>
+    <text x="410" y="78" text-anchor="middle" fill="#aab1b5" font-size="11">out of them again</text>
+    <text x="512" y="160" text-anchor="middle" fill="#e0514b" font-size="12.5" font-weight="700">EXHAUSTION</text>
+    <text x="596" y="256" text-anchor="middle" fill="#8b9299" font-size="12.5" font-weight="700">MARKDOWN</text>
+    <text x="632" y="344" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">CAPITULATION</text>
+  </g>
+</svg>

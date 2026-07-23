@@ -51,38 +51,8 @@ So the professional question is never who is buying. It is what business problem
 
 One discipline holds the method together. The data shows behavior, never intent. It shows that exposure changed, not why, and the moment an interpretation reaches for motive it has left the evidence and started writing fiction with a terminal open. You reason from the economics of the business. The mind of the participant was never in the file.
 
-<figure>
-<svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing risk transferring from a business needing certainty through the futures market to a speculator accepting risk">
-  <defs>
-    <marker id="a1" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8b9299"/></marker>
-  </defs>
-  <rect width="820" height="300" fill="#0e1311"/>
-  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="410" y="36" text-anchor="middle" fill="#e8ecee" font-size="17" font-weight="700">One contract. Two problems.</text>
-    <rect x="40" y="76" width="200" height="150" rx="9" fill="none" stroke="#2fbf71" stroke-width="2"/>
-    <text x="140" y="112" text-anchor="middle" fill="#2fbf71" font-size="15" font-weight="700">BUSINESS</text>
-    <text x="140" y="140" text-anchor="middle" fill="#e8ecee" font-size="13">needs certainty</text>
-    <text x="140" y="176" text-anchor="middle" fill="#aab1b5" font-size="12">has risk it</text>
-    <text x="140" y="194" text-anchor="middle" fill="#aab1b5" font-size="12">cannot carry</text>
-    <rect x="310" y="76" width="200" height="150" rx="9" fill="#151b19" stroke="#8b9299" stroke-width="1.5"/>
-    <text x="410" y="112" text-anchor="middle" fill="#e8ecee" font-size="15" font-weight="700">THE MARKET</text>
-    <text x="410" y="140" text-anchor="middle" fill="#aab1b5" font-size="12">prices the transfer</text>
-    <text x="410" y="176" text-anchor="middle" fill="#c9d0d3" font-size="12.5">the price is what</text>
-    <text x="410" y="194" text-anchor="middle" fill="#c9d0d3" font-size="12.5">they settle on</text>
-    <rect x="580" y="76" width="200" height="150" rx="9" fill="none" stroke="#e0514b" stroke-width="2"/>
-    <text x="680" y="112" text-anchor="middle" fill="#e0514b" font-size="15" font-weight="700">SPECULATOR</text>
-    <text x="680" y="140" text-anchor="middle" fill="#e8ecee" font-size="13">needs opportunity</text>
-    <text x="680" y="176" text-anchor="middle" fill="#aab1b5" font-size="12">gets paid to</text>
-    <text x="680" y="194" text-anchor="middle" fill="#aab1b5" font-size="12">carry it instead</text>
-    <line x1="244" y1="151" x2="304" y2="151" stroke="#8b9299" stroke-width="2" marker-end="url(#a1)"/>
-    <line x1="514" y1="151" x2="574" y2="151" stroke="#8b9299" stroke-width="2" marker-end="url(#a1)"/>
-    <text x="274" y="140" text-anchor="middle" fill="#8b9299" font-size="11">sheds</text>
-    <text x="544" y="140" text-anchor="middle" fill="#8b9299" font-size="11">accepts</text>
-    <text x="410" y="266" text-anchor="middle" fill="#8b9299" font-size="12.5">Risk does not disappear. It changes owner.</text>
-  </g>
-</svg>
-<figcaption><em>The trade is identical. The reason never is.</em></figcaption>
-</figure>
+![Diagram showing risk transferring from a business needing certainty through the futures market to a speculator accepting risk](assets/who-makes-the-price-diagram-1-risk-transfer.svg)
+<figcaption style="text-align:center;"><em>The trade is identical. The reason never is.</em></figcaption>
 
 ## Part III: There is no algorithm / Or: the market does not have one brain
 
@@ -96,47 +66,8 @@ Price isn't generated.
 
 It emerges.
 
-<figure>
-<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contrast between the myth of one algorithm producing price and the reality of many participants negotiating micro-auctions from which price emerges">
-  <defs>
-    <marker id="a2" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8b9299"/></marker>
-  </defs>
-  <rect width="820" height="360" fill="#0e1311"/>
-  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="200" y="40" text-anchor="middle" fill="#e0514b" font-size="15" font-weight="700">WHAT PEOPLE PICTURE</text>
-    <rect x="120" y="70" width="160" height="46" rx="7" fill="none" stroke="#e0514b" stroke-width="1.5"/>
-    <text x="200" y="99" text-anchor="middle" fill="#e8ecee" font-size="13.5">The Algorithm</text>
-    <line x1="200" y1="120" x2="200" y2="168" stroke="#8b9299" stroke-width="2" marker-end="url(#a2)"/>
-    <rect x="120" y="174" width="160" height="46" rx="7" fill="none" stroke="#8b9299" stroke-width="1.5"/>
-    <text x="200" y="203" text-anchor="middle" fill="#e8ecee" font-size="13.5">Price</text>
-    <text x="200" y="262" text-anchor="middle" fill="#aab1b5" font-size="12">One brain. One decision.</text>
-    <text x="200" y="282" text-anchor="middle" fill="#aab1b5" font-size="12">Somebody to blame.</text>
-    <line x1="410" y1="60" x2="410" y2="300" stroke="#2a3230" stroke-width="1.5"/>
-    <text x="610" y="40" text-anchor="middle" fill="#2fbf71" font-size="15" font-weight="700">WHAT ACTUALLY HAPPENS</text>
-    <rect x="470" y="66" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
-    <text x="530" y="86" text-anchor="middle" fill="#c9d0d3" font-size="11">dealer hedge</text>
-    <rect x="630" y="66" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
-    <text x="690" y="86" text-anchor="middle" fill="#c9d0d3" font-size="11">pension flow</text>
-    <rect x="470" y="110" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
-    <text x="530" y="130" text-anchor="middle" fill="#c9d0d3" font-size="11">stat arb</text>
-    <rect x="630" y="110" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
-    <text x="690" y="130" text-anchor="middle" fill="#c9d0d3" font-size="11">CTA model</text>
-    <rect x="470" y="154" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
-    <text x="530" y="174" text-anchor="middle" fill="#c9d0d3" font-size="11">index rebal</text>
-    <rect x="630" y="154" width="120" height="30" rx="5" fill="none" stroke="#8b9299" stroke-width="1.2"/>
-    <text x="690" y="174" text-anchor="middle" fill="#c9d0d3" font-size="11">market maker</text>
-    <rect x="520" y="204" width="180" height="34" rx="6" fill="#151b19" stroke="#2fbf71" stroke-width="1.5"/>
-    <text x="610" y="226" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">micro-auctions</text>
-    <line x1="530" y1="188" x2="580" y2="200" stroke="#8b9299" stroke-width="1.2" marker-end="url(#a2)"/>
-    <line x1="690" y1="188" x2="644" y2="200" stroke="#8b9299" stroke-width="1.2" marker-end="url(#a2)"/>
-    <line x1="610" y1="242" x2="610" y2="266" stroke="#8b9299" stroke-width="2" marker-end="url(#a2)"/>
-    <rect x="530" y="272" width="160" height="34" rx="6" fill="none" stroke="#e8ecee" stroke-width="1.5"/>
-    <text x="610" y="294" text-anchor="middle" fill="#e8ecee" font-size="13">Price</text>
-    <text x="610" y="336" text-anchor="middle" fill="#aab1b5" font-size="12">Thousands of brains. No decision. Nobody to blame.</text>
-  </g>
-</svg>
-<figcaption><em>Television has a remarkable ability to explain why the market moved, immediately after it already moved.</em></figcaption>
-</figure>
+![Contrast between the myth of one algorithm producing price and the reality of many participants negotiating micro-auctions from which price emerges](assets/who-makes-the-price-diagram-2-no-algorithm.svg)
+<figcaption style="text-align:center;"><em>Television has a remarkable ability to explain why the market moved, immediately after it already moved.</em></figcaption>
 
 ## Part IV: Every negotiation ends two ways / Or: what price is actually measuring
 
@@ -168,28 +99,8 @@ Which reframes the cycle entirely. It is not a shape on a chart. It is a migrati
 
 Inventory rarely changes hands where everyone notices. Patient balance sheets accumulate while price appears quiet. Markup is simply price catching up to a transfer that already happened. Distribution is the same process in reverse. Eventually everyone willing to own inventory already owns it, the auction struggles to facilitate new trade, and price searches lower until ownership can transfer again.
 
-<figure>
-<svg viewBox="0 0 820 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A price cycle showing six stages of inventory migration between balance sheets">
-  <rect width="820" height="390" fill="#0e1311"/>
-  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="410" y="34" text-anchor="middle" fill="#e8ecee" font-size="17" font-weight="700">Inventory migration</text>
-    <text x="410" y="56" text-anchor="middle" fill="#8b9299" font-size="12">the line is the receipt, not the transaction</text>
-    <polyline points="60,212 200,308 410,120 620,308 760,212" fill="none" stroke="#c9d0d3" stroke-width="2.5"/>
-    <circle cx="200" cy="308" r="5" fill="#2fbf71"/>
-    <circle cx="410" cy="120" r="5" fill="#e0514b"/>
-    <circle cx="620" cy="308" r="5" fill="#2fbf71"/>
-    <text x="200" y="344" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">ACCUMULATION</text>
-    <text x="200" y="362" text-anchor="middle" fill="#aab1b5" font-size="11">into patient hands</text>
-    <text x="298" y="190" text-anchor="middle" fill="#8b9299" font-size="12.5" font-weight="700">MARKUP</text>
-    <text x="410" y="94" text-anchor="middle" fill="#e0514b" font-size="12.5" font-weight="700">DISTRIBUTION</text>
-    <text x="410" y="78" text-anchor="middle" fill="#aab1b5" font-size="11">out of them again</text>
-    <text x="512" y="160" text-anchor="middle" fill="#e0514b" font-size="12.5" font-weight="700">EXHAUSTION</text>
-    <text x="596" y="256" text-anchor="middle" fill="#8b9299" font-size="12.5" font-weight="700">MARKDOWN</text>
-    <text x="632" y="344" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">CAPITULATION</text>
-  </g>
-</svg>
-<figcaption><em>The receipt always arrives after the transfer.</em></figcaption>
-</figure>
+![A price cycle showing six stages of inventory migration between balance sheets](assets/who-makes-the-price-diagram-3-inventory-cycle.svg)
+<figcaption style="text-align:center;"><em>The receipt always arrives after the transfer.</em></figcaption>
 
 The price is the last thing to change hands. Ownership goes first.
 
@@ -203,32 +114,8 @@ Large positions rarely appear all at once. Institutions have to enter and exit w
 
 So the report is not telling you where price trades tomorrow morning. It is telling you how the inventory is stacked, and on which side. The auction is what tells you whether that stack has started to slide.
 
-<figure>
-<svg viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hierarchy from global positioning down through institutional inventory, daily auction, intraday auction, order flow, to the individual trade">
-  <rect width="820" height="340" fill="#0e1311"/>
-  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="410" y="32" text-anchor="middle" fill="#e8ecee" font-size="17" font-weight="700">One machine, six resolutions</text>
-    <rect x="230" y="52" width="360" height="34" rx="5" fill="none" stroke="#2fbf71" stroke-width="1.8"/>
-    <text x="410" y="74" text-anchor="middle" fill="#2fbf71" font-size="12.5" font-weight="700">GLOBAL POSITIONING</text>
-    <rect x="250" y="96" width="320" height="34" rx="5" fill="none" stroke="#2fbf71" stroke-width="1.3"/>
-    <text x="410" y="118" text-anchor="middle" fill="#c9d0d3" font-size="12">institutional inventory</text>
-    <rect x="270" y="140" width="280" height="34" rx="5" fill="none" stroke="#8b9299" stroke-width="1.3"/>
-    <text x="410" y="162" text-anchor="middle" fill="#c9d0d3" font-size="12">the daily auction</text>
-    <rect x="290" y="184" width="240" height="34" rx="5" fill="none" stroke="#8b9299" stroke-width="1.3"/>
-    <text x="410" y="206" text-anchor="middle" fill="#c9d0d3" font-size="12">the intraday auction</text>
-    <rect x="310" y="228" width="200" height="34" rx="5" fill="none" stroke="#e0514b" stroke-width="1.3"/>
-    <text x="410" y="250" text-anchor="middle" fill="#c9d0d3" font-size="12">order flow</text>
-    <rect x="330" y="272" width="160" height="34" rx="5" fill="none" stroke="#e0514b" stroke-width="1.8"/>
-    <text x="410" y="294" text-anchor="middle" fill="#e0514b" font-size="12.5" font-weight="700">THE TRADE</text>
-    <text x="122" y="80" text-anchor="middle" fill="#8b9299" font-size="11">weeks</text>
-    <text x="122" y="298" text-anchor="middle" fill="#8b9299" font-size="11">milliseconds</text>
-    <line x1="122" y1="92" x2="122" y2="284" stroke="#2a3230" stroke-width="1.2"/>
-    <text x="698" y="80" text-anchor="middle" fill="#8b9299" font-size="11">the census</text>
-    <text x="698" y="298" text-anchor="middle" fill="#8b9299" font-size="11">the negotiation</text>
-  </g>
-</svg>
-<figcaption><em>Same machine, measured on a different clock.</em></figcaption>
-</figure>
+![A hierarchy from global positioning down through institutional inventory, daily auction, intraday auction, order flow, to the individual trade](assets/who-makes-the-price-diagram-4-timeframe-hierarchy.svg)
+<figcaption style="text-align:center;"><em>Same machine, measured on a different clock.</em></figcaption>
 
 Positioning creates pressure. Liquidity determines where that pressure can actually transfer ownership. The auction decides whether it matters.
 

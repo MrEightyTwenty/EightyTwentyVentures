@@ -19,105 +19,8 @@ We don't give calls, and this isn't a forecast of where either price goes. It's 
 
 The market isn't asking six questions this quarter. It's asking one question in two different languages.
 
-![A figure stands at a crossroads where multiple paths diverge, each leading in different directions with arrows pointing upward. The grayscale illustration represents multiple decision points and diverging outcomes.](assets/q3-2026-briefing-hero.png)
-<figcaption style="text-align:center;">The board has multiple paths forward. The question is which prices resolve first.</figcaption>
-
-<figure>
-<svg viewBox="0 0 1440 960" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line chart of market-implied December hike probability rising from 25 percent in January to 75 percent in June 2026, with a timeline of four Fed communication events below">
-  <defs>
-    <marker id="fedarrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5f6a64"/></marker>
-  </defs>
-
-  <rect width="1440" height="960" fill="#0b0f0d"/>
-
-  <text x="70" y="66" fill="#e8ede9" font-size="30" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Price moves before policy confirms it</text>
-  <text x="70" y="98" fill="#8b9490" font-size="17" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Market-implied December hike probability against the official communication record, January to June 2026.</text>
-  <line x1="70" y1="116" x2="1370" y2="116" stroke="#1e2622" stroke-width="1"/>
-
-  <g stroke="#151b17" stroke-width="1">
-    <line x1="150" y1="150" x2="150" y2="620"/>
-    <line x1="366" y1="150" x2="366" y2="620"/>
-    <line x1="582" y1="150" x2="582" y2="620"/>
-    <line x1="798" y1="150" x2="798" y2="620"/>
-    <line x1="1014" y1="150" x2="1014" y2="620"/>
-    <line x1="1230" y1="150" x2="1230" y2="620"/>
-  </g>
-  <g fill="#5f6a64" font-size="14" text-anchor="middle" font-family="Consolas, SF Mono, monospace">
-    <text x="150" y="640">JAN</text>
-    <text x="366" y="640">FEB</text>
-    <text x="582" y="640">MAR</text>
-    <text x="798" y="640">APR</text>
-    <text x="1014" y="640">MAY</text>
-    <text x="1230" y="640">JUN</text>
-  </g>
-
-  <g fill="#5f6a64" font-size="13" text-anchor="end" font-family="Consolas, SF Mono, monospace">
-    <text x="132" y="185">100%</text>
-    <text x="132" y="295">50%</text>
-    <text x="132" y="405">0%</text>
-  </g>
-  <g stroke="#141a16" stroke-width="1">
-    <line x1="150" y1="180" x2="1230" y2="180"/>
-    <line x1="150" y1="290" x2="1230" y2="290"/>
-    <line x1="150" y1="400" x2="1230" y2="400"/>
-  </g>
-  <text x="58" y="290" fill="#7c857f" font-size="13" text-anchor="middle" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" transform="rotate(-90 58 290)">DEC HIKE ODDS, MARKET-IMPLIED</text>
-
-  <path d="M150,345 L366,345 L582,331 L798,312 L1014,275 L1230,235" fill="none" stroke="#35c07d" stroke-width="3"/>
-  <g fill="#35c07d">
-    <circle cx="150" cy="345" r="5"/><circle cx="366" cy="345" r="4"/><circle cx="582" cy="331" r="4"/>
-    <circle cx="798" cy="312" r="4"/><circle cx="1014" cy="275" r="4"/><circle cx="1230" cy="235" r="6"/>
-  </g>
-  <text x="150" y="333" fill="#5ad89b" font-size="13" text-anchor="middle" font-family="Consolas, SF Mono, monospace">~25%</text>
-  <text x="1230" y="222" fill="#5ad89b" font-size="14" text-anchor="middle" font-weight="700" font-family="Consolas, SF Mono, monospace">~75%</text>
-
-  <text x="700" y="172" fill="#5ad89b" font-size="13" font-style="italic" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">the odds catch up late, but the shift was legible earlier</text>
-
-  <line x1="150" y1="700" x2="1230" y2="700" stroke="#2b332e" stroke-width="2"/>
-  <text x="70" y="705" fill="#8b9490" font-size="13" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">OFFICIAL</text>
-  <text x="70" y="722" fill="#8b9490" font-size="13" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">RECORD</text>
-
-  <g stroke="#39423c" stroke-width="1.5">
-    <line x1="150" y1="700" x2="150" y2="730"/>
-    <line x1="582" y1="700" x2="582" y2="730"/>
-    <line x1="798" y1="700" x2="798" y2="730"/>
-    <line x1="1230" y1="700" x2="1230" y2="730"/>
-  </g>
-  <g fill="#5f6a64"><circle cx="150" cy="700" r="4"/><circle cx="582" cy="700" r="4"/><circle cx="798" cy="700" r="4"/><circle cx="1230" cy="700" r="4"/></g>
-
-  <rect x="82" y="730" width="200" height="88" rx="6" fill="#101613" stroke="#2b332e"/>
-  <text x="94" y="754" fill="#7c857f" font-size="12" font-family="Consolas, SF Mono, monospace">JANUARY, BASELINE</text>
-  <text x="94" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Consensus path: two cuts</text>
-  <text x="94" y="800" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">priced for the year.</text>
-
-  <rect x="470" y="730" width="286" height="146" rx="6" fill="#0e1512" stroke="#35c07d" stroke-width="1.5"/>
-  <text x="484" y="754" fill="#5ad89b" font-size="12" font-family="Consolas, SF Mono, monospace">MAR 17 TO 18, THE STALE SURVEY</text>
-  <text x="484" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Dealer survey median still shows</text>
-  <text x="484" y="798" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">two cuts, but the Desk notes</text>
-  <text x="484" y="818" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">respondents had already shifted</text>
-  <text x="484" y="838" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">to fewer cuts after submitting.</text>
-  <text x="484" y="862" fill="#8b9490" font-size="12.5" font-style="italic" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The record lags the dealer on arrival.</text>
-
-  <rect x="686" y="730" width="224" height="120" rx="6" fill="#101613" stroke="#2b332e"/>
-  <text x="700" y="754" fill="#7c857f" font-size="12" font-family="Consolas, SF Mono, monospace">APRIL, THE DISSENT</text>
-  <text x="700" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Vote splits 8 to 4, pulled apart</text>
-  <text x="700" y="798" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">from both flanks at once.</text>
-  <text x="700" y="822" fill="#e05a4f" font-size="13.5" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">First 4-dissent action in 30+ yrs.</text>
-
-  <rect x="1118" y="730" width="252" height="120" rx="6" fill="#0e1512" stroke="#35c07d" stroke-width="1.5"/>
-  <text x="1132" y="754" fill="#5ad89b" font-size="12" font-family="Consolas, SF Mono, monospace">JUN 17, THE ANNOUNCEMENT</text>
-  <text x="1132" y="778" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Dot median 3.4% to 3.8%.</text>
-  <text x="1132" y="798" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">9 of 18 pencil in a hike.</text>
-  <text x="1132" y="822" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Unanimous 12 to 0. The change,</text>
-  <text x="1132" y="842" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">finally, made explicit.</text>
-
-  <line x1="70" y1="890" x2="1370" y2="890" stroke="#1e2622" stroke-width="1"/>
-  <text x="70" y="908" fill="#e8ede9" font-size="14" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Read:</text>
-  <text x="70" y="928" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">June announced a shift already visible in the record since March. The longer-run anchor held at 3.1% in</text>
-  <text x="70" y="948" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">both the March and June projections, two regimes quoted in one document.</text>
-</svg>
-<figcaption style="text-align:center;">Market-implied probability of a December 2026 hike moved from 25% in January to 75% by June, but the repricing concentrated in March and April, before the Fed's formal announcement.</figcaption>
-</figure>
+![Line chart of market-implied December hike probability rising from 25 percent in January to 75 percent in June 2026, with a timeline of four Fed communication events below](assets/q3-2026-visual-1-fed-timeline.svg)
+<figcaption style="text-align:center;">Market-implied probability of a December 2026 hike, January to June 2026.</figcaption>
 
 ---
 
@@ -155,92 +58,8 @@ Policy eventually catches price. It rarely leads it.
 
 ## Part 4: The market found another engine / Or: why equities ignored the Fed
 
-<figure>
-<svg viewBox="0 0 1440 960" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of top-five hyperscaler capital expenditure rising from 256 billion dollars in 2024 to 650 to 700 billion guided for 2026, with a panel of financing metrics alongside">
-  <defs>
-    <marker id="capexarrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e05a4f"/></marker>
-  </defs>
-
-  <rect width="1440" height="960" fill="#0b0f0d"/>
-
-  <text x="70" y="66" fill="#e8ede9" font-size="30" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">A physical engine, financed at the long end</text>
-  <text x="70" y="98" fill="#8b9490" font-size="17" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Top-five hyperscaler capital expenditure, and the market that has to clear its financing. Two systems, one link.</text>
-  <line x1="70" y1="116" x2="1370" y2="116" stroke="#1e2622" stroke-width="1"/>
-
-  <line x1="150" y1="700" x2="960" y2="700" stroke="#2b332e" stroke-width="1.5"/>
-  <g stroke="#141a16" stroke-width="1">
-    <line x1="150" y1="180" x2="960" y2="180"/>
-    <line x1="150" y1="353" x2="960" y2="353"/>
-    <line x1="150" y1="527" x2="960" y2="527"/>
-  </g>
-  <g fill="#5f6a64" font-size="13" text-anchor="end" font-family="Consolas, SF Mono, monospace">
-    <text x="138" y="185">$750B</text>
-    <text x="138" y="358">$500B</text>
-    <text x="138" y="532">$250B</text>
-    <text x="138" y="705">$0</text>
-  </g>
-  <text x="60" y="440" fill="#7c857f" font-size="13" text-anchor="middle" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" transform="rotate(-90 60 440)">HYPERSCALER CAPEX, TOP 5</text>
-
-  <rect x="230" y="522" width="130" height="178" fill="#1e5c40"/>
-  <rect x="500" y="393" width="130" height="307" fill="#24734e"/>
-  <rect x="770" y="249" width="130" height="451" fill="#35c07d"/>
-  <line x1="770" y1="215" x2="900" y2="215" stroke="#5ad89b" stroke-width="2"/>
-  <text x="835" y="207" fill="#5ad89b" font-size="12" text-anchor="middle" font-family="Consolas, SF Mono, monospace">to 700</text>
-
-  <g fill="#e8ede9" font-size="17" text-anchor="middle" font-weight="700" font-family="Consolas, SF Mono, monospace">
-    <text x="295" y="512">$256B</text>
-    <text x="565" y="383">$443B</text>
-    <text x="835" y="239">$650B</text>
-  </g>
-  <g fill="#7c857f" font-size="14" text-anchor="middle" font-family="Consolas, SF Mono, monospace">
-    <text x="295" y="724">2024</text>
-    <text x="565" y="724">2025</text>
-    <text x="835" y="724">2026, guidance</text>
-  </g>
-
-  <path d="M905,262 C 965,262 985,300 1008,320" fill="none" stroke="#e05a4f" stroke-width="2.5" marker-end="url(#capexarrow)"/>
-  <text x="912" y="250" fill="#c96a63" font-size="12.5" font-family="Consolas, SF Mono, monospace">must clear</text>
-
-  <text x="150" y="762" fill="#7c857f" font-size="13" font-style="italic" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Bars: reported top-five hyperscaler guidance. The financing side is stated as levels, not plotted as a derived line.</text>
-
-  <rect x="1010" y="150" width="360" height="560" rx="8" fill="#101613" stroke="#1e2622"/>
-  <text x="1032" y="184" fill="#e8ede9" font-size="17" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">What the engine runs on</text>
-  <line x1="1032" y1="198" x2="1348" y2="198" stroke="#1e2622"/>
-
-  <text x="1032" y="238" fill="#35c07d" font-size="34" font-weight="700" font-family="Consolas, SF Mono, monospace">2.5x</text>
-  <text x="1032" y="262" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">capex growth in two years,</text>
-  <text x="1032" y="282" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">$256B to $650 or 700B.</text>
-
-  <line x1="1032" y1="306" x2="1348" y2="306" stroke="#171d19"/>
-
-  <text x="1032" y="346" fill="#35c07d" font-size="34" font-weight="700" font-family="Consolas, SF Mono, monospace">45 to 57%</text>
-  <text x="1032" y="370" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">capital intensity as a share of</text>
-  <text x="1032" y="390" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">revenue, no recent precedent.</text>
-
-  <line x1="1032" y1="414" x2="1348" y2="414" stroke="#171d19"/>
-
-  <text x="1032" y="454" fill="#35c07d" font-size="34" font-weight="700" font-family="Consolas, SF Mono, monospace">~$2.25T</text>
-  <text x="1032" y="478" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">gross investment-grade issuance</text>
-  <text x="1032" y="498" fill="#cdd5cf" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">this year, up about 25% on the year.</text>
-
-  <line x1="1032" y1="522" x2="1348" y2="522" stroke="#171d19"/>
-
-  <text x="1032" y="560" fill="#e05a4f" font-size="15" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The uncoupling ends here.</text>
-  <text x="1032" y="586" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The buildout is substantially</text>
-  <text x="1032" y="606" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">debt-financed, underwritten in part</text>
-  <text x="1032" y="626" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">against the value of the equity the</text>
-  <text x="1032" y="646" fill="#aab3ad" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">debt is helping to inflate.</text>
-  <text x="1032" y="678" fill="#e8ede9" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">A multi-decade physical liability,</text>
-  <text x="1032" y="698" fill="#e8ede9" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">priced at the long end, not the funds rate.</text>
-
-  <line x1="70" y1="880" x2="1370" y2="880" stroke="#1e2622" stroke-width="1"/>
-  <text x="70" y="898" fill="#e8ede9" font-size="14" font-weight="700" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">Read:</text>
-  <text x="70" y="918" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">The rally is not running on easier policy. It runs on a physical-constraint spending cycle whose scale must</text>
-  <text x="70" y="938" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">clear the long-duration credit market. The open question is whether that market absorbs the financing</text>
-  <text x="70" y="958" fill="#8b9490" font-size="14" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">without demanding materially more.</text>
-</svg>
-<figcaption style="text-align:center;">Top-five hyperscaler capex accelerating 2.5x across three years, now facing record investment-grade issuance. The uncoupling between equities (capex-driven) and policy (tightening) ends where this debt gets financed: the long end of the curve.</figcaption>
-</figure>
+![Bar chart of top-five hyperscaler capital expenditure rising from 256 billion dollars in 2024 to 650 to 700 billion guided for 2026, with a panel of financing metrics alongside](assets/q3-2026-visual-2-capex-financing.svg)
+<figcaption style="text-align:center;">Top-five hyperscaler capital expenditure, 2024 to 2026 guidance, with related financing metrics.</figcaption>
 
 Which leaves the obvious question. If policy tightened through the entire quarter, why did the index have its best run in five years?
 
@@ -279,14 +98,14 @@ So the board looks like this. A committee whose position had shifted before it a
 Four moving parts, and they resolve at two prices.
 
 ![DX positioning structure](assets/positioning-dx-cot.png)
-<figcaption style="text-align:center;">Dollar Index and COT positioning structure, showing speculative crowding at trailing-year extremes and participation momentum into the July close.</figcaption>
+<figcaption style="text-align:center;">Dollar Index, weekly. Lower panes: COT Index, speculative positioning (green) and commercial positioning (red).</figcaption>
 
 **The dollar.** The dollar is not a country's scoreboard, it's the price of global liquidity. Every asset funded in dollars and held outside them carries an exposure to it, whether or not the holder thinks of themselves as having a currency view. It is also the single transmission mechanism through which policy divergence expresses itself, which is what makes it the price to watch this quarter. There is no single global hawkish story. Policy paths are diverging, and the dollar is where those differences get reconciled into one number. Some central banks are tightening on domestic capacity while others keep cutting into the same energy shock, which hits exporters and importers in opposite directions. And the way the dollar got back here matters: the recovery has been bought by speculative money adding fresh long exposure, not backed into on fading interest, which is the makeup of an active repricing rather than a passive one. That repricing is not evenly distributed. The concentrated risk sits in a single cross. Speculative positioning in the yen is crowded short more one-sidedly than anywhere else on the board, which makes it the place a reversal in the dollar story would surface first and move hardest, because a crowd already pressed to that extreme has the least room left to add and the most exposure to a scramble the other way.
 
 **The 30-year.** The long bond is the harder one, and the more important one, because most participants instinctively read it as a Fed instrument. It isn't. The funds rate is a policy decision. The 30-year is a price. The question at the front end is whether the Fed cuts. The question at the long end is a much larger one: what price does the world demand to finance this amount of debt?
 
 ![ZB positioning structure](assets/positioning-zb-cot.png)
-<figcaption style="text-align:center;">30-Year Treasury futures and COT positioning, showing speculative crowding at the short extreme with dealer absorption on the other side and rising open interest into the close.</figcaption>
+<figcaption style="text-align:center;">30-Year Treasury futures, weekly. Lower panes: COT Index, speculative positioning (green) and commercial positioning (red).</figcaption>
 
 That's the question the buildout in Part 4 hands to the market. A physically-constrained, multi-decade infrastructure cycle funded through record issuance is a long-duration liability whether or not anyone chooses to describe it that way, and the long end is the only place its true cost is quoted. 
 
