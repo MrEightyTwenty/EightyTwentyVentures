@@ -18,6 +18,42 @@
     "image": "assets/q3-2026-briefing-hero.png"
   },
   {
+    "slug": "positioning-nobody-left-to-sell",
+    "title": "Positioning in Context P1",
+    "excerpt": "What the metals did after January stopped explaining them. When a positioning extreme becomes the signal after the catalyst is priced.",
+    "date": "2026-07-05",
+    "category": "Positioning in Context",
+    "cat": "positioning",
+    "series": "Positioning in Context",
+    "part": 1,
+    "image": "assets/positioning-metals-gc-cot.png",
+    "subtitle": "Nobody Left to Sell"
+  },
+  {
+    "slug": "positioning-defense-cards-face-up",
+    "title": "Positioning in Context P2",
+    "excerpt": "When a justified trend becomes structurally fragile. How positioning reads crowding that is not misguided, but increasingly vulnerable.",
+    "date": "2026-07-05",
+    "category": "Positioning in Context",
+    "cat": "positioning",
+    "series": "Positioning in Context",
+    "part": 2,
+    "image": "assets/positioning-yen-usdj-cot.png",
+    "subtitle": "A Defense Conducted With the Cards Face Up"
+  },
+  {
+    "slug": "positioning-bookmaker-not-a-fan",
+    "title": "Positioning in Context P3",
+    "excerpt": "When positioning should be ignored. Why a framework's greatest value is knowing when it has nothing to say.",
+    "date": "2026-07-06",
+    "category": "Positioning in Context",
+    "cat": "positioning",
+    "series": "Positioning in Context",
+    "part": 3,
+    "image": "assets/positioning-bitcoin-flows-cot.png",
+    "subtitle": "A Bookmaker Is Not a Fan"
+  },
+  {
     "slug": "who-makes-the-price",
     "title": "Who Makes the Price",
     "excerpt": "What a futures market is actually for, who shows up to build it, and how to read the crowd without pretending to read its mind.",
