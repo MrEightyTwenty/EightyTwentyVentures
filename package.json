@@ -1,24 +1,26 @@
 {
-  "name": "website",
-  "version": "1.0.0",
-  "description": "A clean, dark, brand-aligned static site ready for Netlify. Built as a foundation you can expand without ripping things out.",
-  "main": "auth.js",
+  "name": "eightytwentyventures",
+  "version": "2.0.0",
+  "description": "EightyTwentyVentures. Static publication built from markdown, with server-rendered briefings, member gating, RSS, and build-time validation.",
+  "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.js",
+    "check": "node build.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MrEightyTwenty/EightyTwentyVentures.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mr. EightyTwenty",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/MrEightyTwenty/EightyTwentyVentures/issues"
   },
-  "homepage": "https://github.com/MrEightyTwenty/EightyTwentyVentures#readme",
+  "homepage": "https://eightytwentyventures.com",
   "dependencies": {
+    "marked": "^9.1.6",
     "nodemailer": "^9.0.3"
   }
 }

@@ -1,7 +1,7 @@
 /* ==========================================================================
    EightyTwentyVentures — Registration Gate v2
    Magic-link access flow. Email captured to Netlify Forms. Token sent via
-   Resend. Access granted by access.html after server-side HMAC verification.
+   Google Workspace SMTP. Access granted by access.html after server-side HMAC verification.
    Session persists in localStorage indefinitely until manually cleared.
    ========================================================================== */
 
@@ -166,6 +166,9 @@
   /* ── Post-registration UI update ────────────────────────────── */
 
   function unlockUI () {
+    /* Swaps the member wall for the gated body on article pages. */
+    if (document.body) document.body.classList.add('etv-member');
+
     document.querySelectorAll('.briefing-card.teaser').forEach(function (card) {
       card.classList.add('registered');
     });
@@ -270,7 +273,11 @@
 
         captureToNetlifyForms(form, email);
 
-        sendMagicLink(email, '/briefing.html', function () {
+        var back = window.location.pathname.indexOf('/briefings/') === 0
+          ? window.location.pathname
+          : '/briefing.html';
+
+        sendMagicLink(email, back, function () {
           if (btn) { btn.disabled = false; btn.textContent = 'Read along'; }
         })
         .then(function (sent) {

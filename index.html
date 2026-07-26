@@ -59,12 +59,10 @@
         <h2>Latest Writing</h2>
         <a href="briefing.html" class="latest-view-all">View all &rarr;</a>
       </div>
-      <!-- Populated dynamically from content/briefings/index.json -->
+      <!-- Cards injected at build time by build.js -->
       <div class="post-grid" id="homePostGrid">
-        <!-- Fallback shown only if index.json is empty or unavailable -->
-        <div id="homePostFallback" class="post-card-placeholder" style="grid-column:1/-1;padding:48px 0;text-align:center;color:#444;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;">
-          First publication coming soon.
-        </div>
+        <!-- BUILD:HOME_CARDS -->
+        <!-- /BUILD:HOME_CARDS -->
       </div>
     </div>
   </section>
@@ -250,104 +248,7 @@
       });
     }
 
-    /* ── Load latest articles from index.json ────────────────── */
-    (function loadLatestArticles() {
-      var CAT_COLORS = {
-        'positioning': { bg1: '#1A1508', bg2: '#080600', accent: '#C9A84C', label: 'Positioning' },
-        'structure':   { bg1: '#0A1018', bg2: '#040608', accent: '#4C8AC9', label: 'Market Structure' },
-        'execution':   { bg1: '#180808', bg2: '#0A0404', accent: '#E84040', label: 'Execution' },
-        'psychology':  { bg1: '#0D2B22', bg2: '#050D09', accent: '#00C896', label: 'Process' },
-        'macro':       { bg1: '#0D2B22', bg2: '#050D09', accent: '#00C896', label: 'Macro' },
-        'cot':         { bg1: '#1A1508', bg2: '#080600', accent: '#C9A84C', label: 'COT' }
-      };
-
-      function esc(s) {
-        return String(s || '')
-          .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-          .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-      }
-
-      function formatDate(str) {
-        if (!str) return '';
-        var d = new Date(str.includes('T') ? str : str + 'T00:00:00');
-        if (isNaN(d.getTime())) return str;
-        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-      }
-
-      function makeSVG(cat) {
-        var c = CAT_COLORS[cat] || CAT_COLORS['psychology'];
-        var uid = 'hg' + Math.random().toString(36).slice(2,8);
-        return '<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">' +
-          '<defs>' +
-            '<radialGradient id="' + uid + 'a" cx="30%" cy="40%" r="70%">' +
-              '<stop offset="0%" stop-color="' + c.bg1 + '"/>' +
-              '<stop offset="100%" stop-color="' + c.bg2 + '"/>' +
-            '</radialGradient>' +
-            '<radialGradient id="' + uid + 'b" cx="70%" cy="65%" r="55%">' +
-              '<stop offset="0%" stop-color="' + c.accent + '" stop-opacity="0.13"/>' +
-              '<stop offset="100%" stop-color="transparent"/>' +
-            '</radialGradient>' +
-          '</defs>' +
-          '<rect width="640" height="360" fill="url(#' + uid + 'a)"/>' +
-          '<rect width="640" height="360" fill="url(#' + uid + 'b)"/>' +
-          '<text x="32" y="44" font-family="Georgia,serif" font-size="12" fill="' + c.accent + '" fill-opacity="0.45" letter-spacing="3">' + (c.label || '').toUpperCase() + '</text>' +
-        '</svg>';
-      }
-
-      fetch('content/briefings/index.json')
-        .then(function(r) { return r.ok ? r.json() : []; })
-        .then(function(articles) {
-          if (!Array.isArray(articles) || !articles.length) return;
-
-          var grid     = document.getElementById('homePostGrid');
-          var fallback = document.getElementById('homePostFallback');
-          if (!grid) return;
-
-          if (fallback) fallback.style.display = 'none';
-
-          // Most recent first, show up to 3
-          var recent = articles.slice().reverse().slice(0, 3);
-
-          recent.forEach(function(a, idx) {
-            var cat = a.cat || 'psychology';
-            var c   = CAT_COLORS[cat] || CAT_COLORS['psychology'];
-
-            var card = document.createElement('a');
-            card.href      = 'article.html?slug=' + encodeURIComponent(a.slug);
-            card.className = 'post-card stagger-child' + (idx === 0 ? ' post-card-featured' : '');
-            card.setAttribute('data-gated', '');
-
-            card.innerHTML =
-              '<div class="post-card-img">' + (a.image ? '<img src="' + esc(a.image) + '" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">' : makeSVG(cat)) + '</div>' +
-              '<div class="post-card-body">' +
-                '<div class="post-card-meta">' +
-                  '<span class="writing-tag ' + cat + '">' + esc(c.label) + '</span>' +
-                  '<span class="post-card-date">' + formatDate(a.date) + '</span>' +
-                '</div>' +
-                '<div class="post-card-title">' + esc(a.title) + '</div>' +
-                (a.excerpt ? '<p class="post-card-dek">' + esc(a.excerpt) + '</p>' : '') +
-                '<div class="post-card-lock" style="margin-top:12px;font-size:13px;color:#2dc89a;letter-spacing:0.04em;">Read &rarr;</div>' +
-              '</div>';
-
-            grid.appendChild(card);
-
-            /* The IO already fired on the empty grid before fetch resolved,
-               so visible is never added automatically. Apply it manually
-               with a staggered delay so the CSS transition still runs. */
-            (function(c, delay) {
-              setTimeout(function() { c.classList.add('visible'); }, delay);
-            })(card, 80 + idx * 120);
-
-            // Wire gating
-            card.addEventListener('click', function(e) {
-              if (window.ETV && window.ETV.isRegistered && window.ETV.isRegistered()) return;
-              e.preventDefault();
-              if (window.ETV && window.ETV.showModal) window.ETV.showModal(card.href);
-            });
-          });
-        })
-        .catch(function() {});
-    })();
+    /* Briefing cards are generated at build time by build.js */
   </script>
 
   <!-- Registration Gate Modal -->

@@ -6,6 +6,7 @@
     "date": "2026-06-23",
     "category": "Process",
     "cat": "psychology",
+    "visibility": "public",
     "image": "assets/i-didnt-want-to-build-this-cover.jpg"
   },
   {
@@ -14,52 +15,52 @@
     "excerpt": "The Q3 2026 Quarterly Briefing. Two prices resolve the board this quarter. Everything else is commentary.",
     "date": "2026-07-01",
     "category": "Quarterly Briefing",
-    "cat": "quarterly-briefing",
+    "cat": "macro",
+    "visibility": "public",
     "image": "assets/q3-2026-briefing-hero.png"
   },
   {
     "slug": "positioning-nobody-left-to-sell",
     "title": "Positioning in Context P1",
+    "subtitle": "Nobody Left to Sell",
     "excerpt": "What the metals did after January stopped explaining them. When a positioning extreme becomes the signal after the catalyst is priced.",
     "date": "2026-07-05",
     "category": "Positioning in Context",
     "cat": "positioning",
-    "series": "Positioning in Context",
-    "part": 1,
-    "image": "assets/positioning-metals-gc-cot.png",
-    "subtitle": "Nobody Left to Sell"
+    "visibility": "public",
+    "image": "assets/positioning-metals-gc-cot.png"
   },
   {
     "slug": "positioning-defense-cards-face-up",
     "title": "Positioning in Context P2",
+    "subtitle": "A Defense Conducted With the Cards Face Up",
     "excerpt": "When a justified trend becomes structurally fragile. How positioning reads crowding that is not misguided, but increasingly vulnerable.",
     "date": "2026-07-05",
     "category": "Positioning in Context",
     "cat": "positioning",
-    "series": "Positioning in Context",
-    "part": 2,
-    "image": "assets/positioning-yen-usdjpy-cot.png",
-    "subtitle": "A Defense Conducted With the Cards Face Up"
+    "visibility": "public",
+    "image": "assets/positioning-yen-usdjpy-cot.png"
   },
   {
     "slug": "positioning-bookmaker-not-a-fan",
     "title": "Positioning in Context P3",
+    "subtitle": "A Bookmaker Is Not a Fan",
     "excerpt": "When positioning should be ignored. Why a framework's greatest value is knowing when it has nothing to say.",
     "date": "2026-07-06",
     "category": "Positioning in Context",
     "cat": "positioning",
-    "series": "Positioning in Context",
-    "part": 3,
-    "image": "assets/positioning-bitcoin-flows-cot.png",
-    "subtitle": "A Bookmaker Is Not a Fan"
+    "visibility": "public",
+    "image": "assets/positioning-bitcoin-flows-cot.png"
   },
   {
     "slug": "who-makes-the-price",
     "title": "Who Makes the Price",
+    "subtitle": "First in a series on the machinery underneath markets",
     "excerpt": "What a futures market is actually for, who shows up to build it, and how to read the crowd without pretending to read its mind.",
     "date": "2026-07-16",
     "category": "Market Structure",
-    "cat": "market-structure",
+    "cat": "structure",
+    "visibility": "public",
     "image": "assets/who-makes-the-price-cover.jpg"
   }
 ]

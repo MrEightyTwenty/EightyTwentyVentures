@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="{{ROBOTS}}">
+  <title>{{TITLE}} · EightyTwentyVentures</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:site_name" content="EightyTwentyVentures">
+  <meta property="article:published_time" content="{{DATE_ISO}}">
+  <meta property="article:author" content="Mr. EightyTwenty">
+  <meta property="article:section" content="{{CATEGORY}}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="alternate" type="application/rss+xml" title="EightyTwentyVentures" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+
+  <script type="application/ld+json">
+{{JSONLD}}
+  </script>
+
+  <style>
+    .article-wrap { max-width: 720px; margin: 0 auto; padding: 80px 24px 120px; }
+
+    .article-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 13px; color: #555; text-decoration: none;
+      letter-spacing: 0.04em; margin-bottom: 52px; transition: color 0.15s;
+    }
+    .article-back:hover { color: #aaa; }
+    .article-back svg { width: 14px; height: 14px; }
+
+    .article-meta {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
+      font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #555;
+    }
+    .article-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: #333; }
+    .article-category { color: #1E8F63; }
+
+    .article-title {
+      font-size: clamp(26px, 4vw, 40px); font-weight: 600; color: #fff;
+      line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 16px;
+    }
+    .article-subtitle {
+      font-size: 18px; line-height: 1.6; color: #777; margin: 0 0 48px; font-weight: 400;
+    }
+    .article-divider { border: none; border-top: 1px solid #1e1e1e; margin: 0 0 48px; }
+
+    .article-hero {
+      width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
+      border-radius: 4px; margin: 0 0 48px; background: #0e1311;
+    }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .article-body { font-size: 17px; line-height: 1.8; color: #ccc; }
+    .article-body p { margin: 0 0 24px; }
+    .article-body h2 {
+      font-size: 22px; font-weight: 600; color: #fff;
+      margin: 52px 0 16px; letter-spacing: -0.01em;
+    }
+    .article-body h3 { font-size: 18px; font-weight: 600; color: #fff; margin: 36px 0 12px; }
+    .article-body strong { color: #fff; font-weight: 600; }
+    .article-body em { color: #aaa; }
+    .article-body a { color: #1E8F63; text-decoration: none; }
+    .article-body a:hover { text-decoration: underline; }
+    .article-body ul, .article-body ol { margin: 0 0 24px 24px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body blockquote {
+      border-left: 3px solid #1E8F63; margin: 32px 0; padding: 12px 24px;
+      background: #111; color: #aaa; font-style: italic;
+    }
+    .article-body blockquote p { margin: 0; }
+    .article-body hr { border: none; border-top: 1px solid #1e1e1e; margin: 48px 0; }
+    .article-body code {
+      font-family: 'Courier New', monospace; font-size: 14px;
+      background: #1a1a1a; padding: 2px 6px; border-radius: 2px; color: #aaa;
+    }
+    .article-body pre {
+      background: #111; border: 1px solid #1e1e1e; border-radius: 4px;
+      padding: 20px; overflow-x: auto; margin: 0 0 24px;
+    }
+    .article-body pre code { background: none; padding: 0; }
+    .article-body img {
+      display: block !important; margin-left: auto !important; margin-right: auto !important;
+      max-width: 100%; border-radius: 4px;
+    }
+    .article-body figure { margin: 40px 0; text-align: center; }
+    .article-body figcaption { font-size: 13px; color: #888; margin-top: 10px; font-style: italic; }
+
+    /* ── Member wall ────────────────────────────────────────────────
+       The locked half ships in the HTML for every requester, including
+       Googlebot, and is hidden with CSS for readers without access.
+       Declared to Google via isAccessibleForFree in the JSON-LD above. */
+
+    .etv-wall { position: relative; margin-top: -120px; padding-top: 120px; }
+    .etv-wall-fade {
+      position: absolute; top: 0; left: 0; right: 0; height: 120px;
+      background: linear-gradient(to bottom, rgba(8,8,8,0), #080808 88%);
+      pointer-events: none;
+    }
+    .etv-wall-panel {
+      border: 1px solid #1e1e1e; border-radius: 6px;
+      background: #0d0d0d; padding: 40px 32px; text-align: center;
+    }
+    .etv-wall-eyebrow {
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: #1E8F63; margin-bottom: 14px;
+    }
+    .etv-wall-title {
+      font-size: 22px; font-weight: 600; color: #fff;
+      margin: 0 0 14px; line-height: 1.35; letter-spacing: -0.01em;
+    }
+    .etv-wall-body {
+      font-size: 15px; line-height: 1.7; color: #999;
+      margin: 0 auto 26px; max-width: 460px;
+    }
+    .etv-wall-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .etv-wall-form input[type="email"] {
+      background: #111; border: 1px solid #2a2a2a; border-radius: 4px;
+      padding: 12px 16px; font-size: 15px; color: #ccc; min-width: 260px;
+      outline: none; font-family: inherit;
+    }
+    .etv-wall-form input[type="email"]:focus { border-color: #1E8F63; }
+    .etv-wall-form button {
+      background: #1E8F63; border: none; border-radius: 4px; color: #fff;
+      padding: 12px 24px; font-size: 15px; font-weight: 500;
+      cursor: pointer; font-family: inherit;
+    }
+    .etv-wall-form button:hover { background: #17724f; }
+    .etv-wall-meta { font-size: 12px; color: #555; margin: 18px 0 0; }
+
+    .etv-locked { display: none; }
+
+    /* Unlocked state, set by auth.js when localStorage.etv_access exists */
+    body.etv-member .etv-wall   { display: none; }
+    body.etv-member .etv-locked { display: block; }
+
+    /* Prev / next */
+    .article-nav {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      margin-top: 72px; padding-top: 32px; border-top: 1px solid #1e1e1e;
+    }
+    .article-nav-link {
+      display: block; padding: 18px 20px; border: 1px solid #1a1a1a;
+      border-radius: 4px; text-decoration: none; color: #ccc;
+      font-size: 15px; line-height: 1.4; transition: border-color 0.15s;
+    }
+    .article-nav-link:hover { border-color: #1E8F63; }
+    .article-nav-link span {
+      display: block; font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: #555; margin-bottom: 6px;
+    }
+    .article-nav-link.next { text-align: right; grid-column: 2; }
+    @media (max-width: 600px) {
+      .article-nav { grid-template-columns: 1fr; }
+      .article-nav-link.next { text-align: left; grid-column: 1; }
+    }
+  </style>
+</head>
+<body data-gated="{{GATED}}">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Eighty<span>Twenty</span>Ventures</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/playbook.html">The Playbook</a></li>
+        <li><a href="/briefing.html" class="active">Briefing</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/#subscribe" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"
+        onclick="document.getElementById('navLinks').classList.toggle('mobile-open')">&#9776;</button>
+    </div>
+  </nav>
+
+  <article class="article-wrap">
+
+    <a href="/briefing.html" class="article-back">
+      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      All briefings
+    </a>
+
+    <div class="article-meta">
+      <span class="article-category">{{CATEGORY}}</span>
+      <span class="dot"></span>
+      <time datetime="{{DATE_ISO}}">{{DATE}}</time>
+    </div>
+
+    <h1 class="article-title">{{TITLE}}</h1>
+    <p class="article-subtitle">{{SUBTITLE}}</p>
+
+    {{HERO}}
+
+    <hr class="article-divider">
+
+    <div class="article-body">
+      {{BODY_FREE}}
+      {{BODY_LOCKED}}
+    </div>
+
+    {{ARTICLE_NAV}}
+
+  </article>
+
+  <!-- Registration modal, shared with the rest of the site -->
+  <div id="etv-gate-modal" class="etv-gate-modal" role="dialog" aria-modal="true" aria-labelledby="etv-modal-title">
+    <div class="etv-modal-backdrop"></div>
+    <div class="etv-modal-panel">
+      <button class="etv-modal-close" aria-label="Close">&times;</button>
+      <div class="etv-modal-eyebrow">EightyTwentyVentures Research</div>
+      <h2 id="etv-modal-title" class="etv-modal-title">Read along.</h2>
+      <p class="etv-modal-body">New briefings arrive in full, in your inbox, on the day they publish. Enter your email and a link comes back that unlocks everything on the site.</p>
+      <form name="etv-access" method="POST" data-netlify="true" class="etv-modal-form">
+        <input type="hidden" name="form-name" value="etv-access">
+        <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Read along</button>
+      </form>
+      <p class="etv-modal-disclaimer">No credit card. No paid tier. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <script src="/auth.js"></script>
+</body>
+</html>
