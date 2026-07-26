@@ -11,6 +11,10 @@
   var KEY           = 'etv_access';
   var SEND_ENDPOINT = '/.netlify/functions/send-token';
 
+  /* Public embed endpoint, same one Buttondown's own <form> action uses.
+     No secret here, this is meant to be called from the browser. */
+  var BUTTONDOWN_ENDPOINT = 'https://buttondown.com/api/emails/embed-subscribe/EightyTwentyVentures';
+
   /* ── Storage helpers ─────────────────────────────────────────── */
 
   function isRegistered () {
@@ -194,6 +198,21 @@
     }).catch(function () {});
   }
 
+  /* ── Buttondown list capture (fire-and-forget) ─────────────────── */
+  /* Cross-origin simple POST. mode:'no-cors' means we cannot read the
+     response, which is fine, this only ever needs to fire and forget. */
+
+  function subscribeToButtondown (email) {
+    var params = new URLSearchParams();
+    params.append('email', email);
+    fetch(BUTTONDOWN_ENDPOINT, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params.toString()
+    }).catch(function () {});
+  }
+
   /* ── Send magic link ─────────────────────────────────────────── */
 
   function sendMagicLink (email, redirect, onError) {
@@ -238,6 +257,7 @@
     var redirect = modal ? (modal._redirect || '/briefing.html') : '/briefing.html';
 
     captureToNetlifyForms(form, email);
+    subscribeToButtondown(email);
 
     sendMagicLink(email, redirect, function () {
       /* On error: restore button, show inline message */
@@ -272,6 +292,7 @@
         if (btn) { btn.disabled = true; btn.textContent = 'Sending link...'; }
 
         captureToNetlifyForms(form, email);
+        subscribeToButtondown(email);
 
         var back = window.location.pathname.indexOf('/briefings/') === 0
           ? window.location.pathname
