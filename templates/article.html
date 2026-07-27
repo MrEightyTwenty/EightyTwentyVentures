@@ -107,42 +107,98 @@
        Googlebot, and is hidden with CSS for readers without access.
        Declared to Google via isAccessibleForFree in the JSON-LD above. */
 
-    .etv-wall { position: relative; margin-top: -120px; padding-top: 120px; }
+    .etv-wall { position: relative; margin-top: -140px; padding-top: 140px; }
     .etv-wall-fade {
-      position: absolute; top: 0; left: 0; right: 0; height: 120px;
-      background: linear-gradient(to bottom, rgba(8,8,8,0), #080808 88%);
+      position: absolute; top: 0; left: 0; right: 0; height: 140px;
+      background: linear-gradient(to bottom, rgba(8,8,8,0) 0%, rgba(8,8,8,0.72) 55%, #080808 100%);
       pointer-events: none;
     }
     .etv-wall-panel {
-      border: 1px solid #1e1e1e; border-radius: 6px;
-      background: #0d0d0d; padding: 40px 32px; text-align: center;
+      border: 1px solid #1e1e1e;
+      border-radius: 6px;
+      background: #0d0d0d;
+      padding: 48px 32px 44px;
+      text-align: center;
     }
     .etv-wall-eyebrow {
-      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-      color: #1E8F63; margin-bottom: 14px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #1E8F63;
+      margin: 0 0 18px;
     }
     .etv-wall-title {
-      font-size: 22px; font-weight: 600; color: #fff;
-      margin: 0 0 14px; line-height: 1.35; letter-spacing: -0.01em;
+      font-size: 23px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      margin: 0 auto 16px;
+      max-width: 21ch;
+      text-wrap: balance;
     }
     .etv-wall-body {
-      font-size: 15px; line-height: 1.7; color: #999;
-      margin: 0 auto 26px; max-width: 460px;
+      font-size: 15px;
+      line-height: 1.65;
+      color: #999;
+      margin: 0 auto 28px;
+      max-width: 42ch;
+      text-wrap: pretty;
     }
-    .etv-wall-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+
+    /* Form group: fixed-width column so the input, the button and the
+       disclaimer all share one centred axis instead of each centring
+       independently against the panel. */
+    .etv-wall-form {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      align-items: stretch;
+      max-width: 400px;
+      margin: 0 auto;
+    }
     .etv-wall-form input[type="email"] {
-      background: #111; border: 1px solid #2a2a2a; border-radius: 4px;
-      padding: 12px 16px; font-size: 15px; color: #ccc; min-width: 260px;
-      outline: none; font-family: inherit;
+      flex: 1 1 auto;
+      min-width: 0;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      padding: 12px 16px;
+      font-size: 15px;
+      color: #ccc;
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.15s;
     }
+    .etv-wall-form input[type="email"]::placeholder { color: #4a4a4a; }
     .etv-wall-form input[type="email"]:focus { border-color: #1E8F63; }
     .etv-wall-form button {
-      background: #1E8F63; border: none; border-radius: 4px; color: #fff;
-      padding: 12px 24px; font-size: 15px; font-weight: 500;
-      cursor: pointer; font-family: inherit;
+      flex: 0 0 auto;
+      background: #1E8F63;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: background 0.15s;
     }
     .etv-wall-form button:hover { background: #17724f; }
-    .etv-wall-meta { font-size: 12px; color: #555; margin: 18px 0 0; }
+    .etv-wall-meta {
+      font-size: 12px;
+      color: #555;
+      margin: 16px auto 0;
+      max-width: 400px;
+    }
+
+    @media (max-width: 520px) {
+      .etv-wall-panel { padding: 40px 20px 36px; }
+      .etv-wall-form { flex-direction: column; max-width: 320px; }
+      .etv-wall-form button { padding: 13px 24px; }
+    }
 
     .etv-locked { display: none; }
 

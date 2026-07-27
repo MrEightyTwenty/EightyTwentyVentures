@@ -323,14 +323,14 @@ function wallHtml () {
           <div class="etv-wall-panel">
             <div class="etv-wall-eyebrow">Continue reading</div>
             <h2 class="etv-wall-title">The rest of this briefing is for readers on the list.</h2>
-            <p class="etv-wall-body">Free, permanently. Enter your email and a link arrives that unlocks every current and future piece. New briefings land in your inbox in full on the day they publish.</p>
+            <p class="etv-wall-body">Free, permanently. Enter your email and a link comes back that unlocks every piece on the site, current and future.</p>
             <form class="etv-wall-form signup-form" name="etv-access" method="POST" data-netlify="true" netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="etv-access">
               <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
               <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
               <button type="submit">Read along</button>
             </form>
-            <p class="etv-wall-meta">No credit card. No paid tier. Unsubscribe anytime.</p>
+            <p class="etv-wall-meta">No credit card. No paid tier. New briefings arrive in full on the day they publish.</p>
           </div>
         </div>`;
 }
