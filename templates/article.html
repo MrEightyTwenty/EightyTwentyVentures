@@ -120,44 +120,55 @@
       padding: 48px 32px 44px;
       text-align: center;
     }
-    .etv-wall-eyebrow {
+    .etv-wall .etv-wall-panel > * { text-align: center; }
+    .etv-wall .etv-wall-eyebrow {
       font-size: 11px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: #1E8F63;
       margin: 0 0 18px;
+      text-align: center;
     }
-    .etv-wall-title {
+    .etv-wall .etv-wall-panel h2.etv-wall-title {
+      display: block;
       font-size: 23px;
       font-weight: 600;
       color: #fff;
-      line-height: 1.35;
+      line-height: 1.4;
       letter-spacing: -0.01em;
-      margin: 0 auto 16px;
-      max-width: 21ch;
+      margin-top: 0;
+      margin-right: auto;
+      margin-bottom: 16px;
+      margin-left: auto;
+      max-width: 30ch;
+      width: auto;
+      text-align: center;
       text-wrap: balance;
     }
-    .etv-wall-body {
+    .etv-wall .etv-wall-body {
       font-size: 15px;
       line-height: 1.65;
       color: #999;
       margin: 0 auto 28px;
-      max-width: 42ch;
+      max-width: 44ch;
+      text-align: center;
       text-wrap: pretty;
     }
 
     /* Form group: fixed-width column so the input, the button and the
        disclaimer all share one centred axis instead of each centring
        independently against the panel. */
-    .etv-wall-form {
+    .etv-wall .etv-wall-form {
       display: flex;
       gap: 8px;
       justify-content: center;
       align-items: stretch;
-      max-width: 400px;
-      margin: 0 auto;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
-    .etv-wall-form input[type="email"] {
+    .etv-wall .etv-wall-form input[type="email"] {
       flex: 1 1 auto;
       min-width: 0;
       background: #111;
@@ -168,11 +179,12 @@
       color: #ccc;
       outline: none;
       font-family: inherit;
+      text-align: left;
       transition: border-color 0.15s;
     }
-    .etv-wall-form input[type="email"]::placeholder { color: #4a4a4a; }
-    .etv-wall-form input[type="email"]:focus { border-color: #1E8F63; }
-    .etv-wall-form button {
+    .etv-wall .etv-wall-form input[type="email"]::placeholder { color: #4a4a4a; }
+    .etv-wall .etv-wall-form input[type="email"]:focus { border-color: #1E8F63; }
+    .etv-wall .etv-wall-form button {
       flex: 0 0 auto;
       background: #1E8F63;
       border: none;
@@ -186,18 +198,20 @@
       white-space: nowrap;
       transition: background 0.15s;
     }
-    .etv-wall-form button:hover { background: #17724f; }
-    .etv-wall-meta {
+    .etv-wall .etv-wall-form button:hover { background: #17724f; }
+    .etv-wall .etv-wall-meta {
       font-size: 12px;
       color: #555;
-      margin: 16px auto 0;
-      max-width: 400px;
+      margin: 18px auto 0;
+      max-width: 44ch;
+      text-align: center;
+      line-height: 1.6;
     }
 
     @media (max-width: 520px) {
       .etv-wall-panel { padding: 40px 20px 36px; }
-      .etv-wall-form { flex-direction: column; max-width: 320px; }
-      .etv-wall-form button { padding: 13px 24px; }
+      .etv-wall .etv-wall-form { flex-direction: column; max-width: 320px; }
+      .etv-wall .etv-wall-form button { padding: 13px 24px; }
     }
 
     .etv-locked { display: none; }
