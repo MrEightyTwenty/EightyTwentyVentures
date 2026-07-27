@@ -395,8 +395,7 @@ function renderArticlePage (a, template, prev, next) {
     .replace(/\{\{HERO\}\}/g,        a.image ? `<div class="article-hero"><img src="/${esc(a.image)}" alt="${esc(a.title)}"></div>` : '')
     .replace(/\{\{BODY_FREE\}\}/g,   free)
     .replace(/\{\{BODY_LOCKED\}\}/g, lockedBlock)
-    .replace(/\{\{ARTICLE_NAV\}\}/g, nav.length ? `<nav class="article-nav">${nav.join('')}</nav>` : '')
-    .replace(/\{\{GATED\}\}/g,       a.visibility === 'members' ? 'true' : 'false');
+    .replace(/\{\{ARTICLE_NAV\}\}/g, nav.length ? `<nav class="article-nav">${nav.join('')}</nav>` : '');
 }
 
 /* ── Cards ────────────────────────────────────────────────────────────────── */
