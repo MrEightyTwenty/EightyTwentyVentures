@@ -16,7 +16,7 @@
     "date": "2026-07-01",
     "category": "Quarterly Briefing",
     "cat": "macro",
-    "visibility": "public",
+    "visibility": "members",
     "image": "assets/q3-2026-briefing-hero.png"
   },
   {
@@ -27,7 +27,7 @@
     "date": "2026-07-05",
     "category": "Positioning in Context",
     "cat": "positioning",
-    "visibility": "public",
+    "visibility": "members",
     "image": "assets/positioning-metals-gc-cot.png"
   },
   {
@@ -38,7 +38,7 @@
     "date": "2026-07-05",
     "category": "Positioning in Context",
     "cat": "positioning",
-    "visibility": "public",
+    "visibility": "members",
     "image": "assets/positioning-yen-usdjpy-cot.png"
   },
   {
@@ -49,7 +49,7 @@
     "date": "2026-07-06",
     "category": "Positioning in Context",
     "cat": "positioning",
-    "visibility": "public",
+    "visibility": "members",
     "image": "assets/positioning-bitcoin-flows-cot.png"
   },
   {
@@ -60,7 +60,7 @@
     "date": "2026-07-16",
     "category": "Market Structure",
     "cat": "structure",
-    "visibility": "public",
+    "visibility": "members",
     "image": "assets/who-makes-the-price-cover.jpg"
   }
 ]

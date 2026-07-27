@@ -13,6 +13,8 @@ Markets were never built for traders. Traders found a market that already existe
 
 So start underneath.
 
+<!-- MEMBER WALL -->
+
 ## Part I: Markets were never built for traders / Or: uncertainty has always had a price
 
 Every business has one thing it cannot engineer away.
