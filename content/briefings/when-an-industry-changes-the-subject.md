@@ -1,7 +1,7 @@
 ---
 title: When an Industry Changes the Subject
 subtitle: What happens after intelligence stops being scarce
-category: Market Structure
+category: Macro
 date: 2026-07-27
 image: assets/when-an-industry-changes-the-subject-cover.jpg
 ---
@@ -11,6 +11,8 @@ Jensen Huang joined X in June and posted nothing for a month. On 24 July he post
 He has never been short of places to talk about artificial intelligence. Keynotes, earnings calls, an interview circuit with no obvious end. Two days earlier he had told Axios that Chinese open models are excellent and that American companies should be free to use them. What he had not done was speak in the one venue where he speaks only for himself, and he opened with a document about how a statute should be worded.
 
 On its own that is a curiosity. It matters more as an example of something that happens to every industry roughly once a generation, and that is almost always missed while it is happening.
+
+<!-- MEMBER WALL -->
 
 ## Part I: What an industry argues about
 
@@ -27,8 +29,6 @@ The move between questions leaves three traces, in sequence. Language changes fi
 Speed is the fourth thing worth watching. Twenty-five signatures at launch, thirty-two by that same evening, fifty inside two days. No industry pulls a coalition together that fast over a question it considers secondary.
 
 A letter is what an industry produces when it can no longer win the argument with a benchmark.
-
-<!-- MEMBER WALL -->
 
 ## Part II: The tell in the language
 
