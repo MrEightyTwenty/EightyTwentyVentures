@@ -51,13 +51,22 @@ const CATEGORIES = {
 const VISIBILITY = ['public', 'members', 'private'];
 const WALL       = '<!-- MEMBER WALL -->';
 
-/* Files and directories copied verbatim from repo root into dist/ */
+/* Files and directories copied verbatim from repo root into dist/
+   NOTE: content/ is deliberately NOT passed through wholesale. The raw
+   .md source includes text on the other side of the member wall, and
+   nothing client-side reads index.json anymore (cards are baked in at
+   build time). Only content/images (inline GIFs referenced in bodies)
+   needs to be public. */
 const PASSTHROUGH = [
-  'assets', 'amt', 'rsp', 'content', 'netlify', 'admin',
+  'assets', 'amt', 'rsp', 'netlify', 'admin',
   'style.css', 'auth.js', 'glossary.js', 'study.js',
   'access.html', 'playbook.html', 'playbook-intraday.html', 'playbook-position.html',
   'about.html', 'faq.html', '404.html', 'privacy.html', 'terms.html',
   'risk-disclosure.html', 'subscription-policy.html'
+];
+
+const EXTRA_PASSTHROUGH = [
+  ['content/images', 'content/images']
 ];
 
 /* ── Small helpers ────────────────────────────────────────────────────────── */
@@ -87,12 +96,26 @@ function formatDateShort (str) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
-/* Root-relative asset paths. Articles live at /briefings/{slug}/, so a
-   relative "assets/chart.png" would resolve to /briefings/{slug}/assets/. */
+/* Root-relative asset paths. Articles live at /briefings/{slug}/, so any
+   plain relative path (assets/chart.png, content/images/foo.gif) would
+   resolve against that subdirectory instead of the site root. Catches
+   any relative src/href, leaves absolute URLs, anchors, mailto, and
+   data URIs untouched. */
 function absolutiseAssets (html) {
-  return html
-    .replace(/(src|href)="assets\//g, '$1="/assets/')
-    .replace(/(src|href)='assets\//g, "$1='/assets/");
+  return html.replace(
+    /(src|href)=(["'])(?!https?:\/\/|\/\/|\/|#|mailto:|data:)([^"']+)\2/g,
+    (m, attr, q, p) => `${attr}=${q}/${p}${q}`
+  );
+}
+
+/* For RSS/email specifically: root-relative paths (the output of the
+   function above) don't resolve inside an email client, there's no page
+   for "/" to be relative to. Every image needs the full origin. */
+function absolutiseForEmail (html) {
+  return html.replace(
+    /(src|href)=(["'])\/(?!\/)([^"']*)\2/g,
+    (m, attr, q, p) => `${attr}=${q}${SITE.origin}/${p}${q}`
+  );
 }
 
 /* First ~30 words of the body, for meta description fallback */
@@ -443,7 +466,7 @@ function buildRss (articles) {
   const items = live.map(a => {
     const { free, locked } = renderBody(a);
     const url  = `${SITE.origin}/briefings/${a.slug}/`;
-    let content = `<p><img src="${SITE.origin}/${a.image}" alt="${esc(a.title)}" style="max-width:100%;"></p>` + free;
+    let content = `<p><img src="${SITE.origin}/${a.image}" alt="${esc(a.title)}" style="max-width:100%;"></p>` + absolutiseForEmail(free);
 
     if (locked) {
       content += `<hr><p><strong>The rest of this briefing continues on the site.</strong> ` +
@@ -529,6 +552,13 @@ function main () {
     const from = path.join(SRC, item);
     if (!fs.existsSync(from)) return;
     fs.cpSync(from, path.join(DIST, item), { recursive: true });
+  });
+
+  EXTRA_PASSTHROUGH.forEach(([from, to]) => {
+    const src = path.join(SRC, from);
+    if (!fs.existsSync(src)) return;
+    fs.mkdirSync(path.join(DIST, to), { recursive: true });
+    fs.cpSync(src, path.join(DIST, to), { recursive: true });
   });
 
   /* Article pages */
