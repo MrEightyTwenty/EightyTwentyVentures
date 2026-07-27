@@ -100,10 +100,14 @@ function formatDateShort (str) {
    plain relative path (assets/chart.png, content/images/foo.gif) would
    resolve against that subdirectory instead of the site root. Catches
    any relative src/href, leaves absolute URLs, anchors, mailto, and
-   data URIs untouched. */
+   data URIs untouched.
+
+   The path pattern matches anything up to the *matching* closing quote
+   rather than excluding both quote characters, so filenames containing
+   an apostrophe (we-don't-care.gif) are handled correctly. */
 function absolutiseAssets (html) {
   return html.replace(
-    /(src|href)=(["'])(?!https?:\/\/|\/\/|\/|#|mailto:|data:)([^"']+)\2/g,
+    /(src|href)=(["'])(?!https?:\/\/|\/\/|\/|#|mailto:|data:)((?:(?!\2)[^>])+?)\2/g,
     (m, attr, q, p) => `${attr}=${q}/${p}${q}`
   );
 }
@@ -113,7 +117,7 @@ function absolutiseAssets (html) {
    for "/" to be relative to. Every image needs the full origin. */
 function absolutiseForEmail (html) {
   return html.replace(
-    /(src|href)=(["'])\/(?!\/)([^"']*)\2/g,
+    /(src|href)=(["'])\/(?!\/)((?:(?!\2)[^>])*?)\2/g,
     (m, attr, q, p) => `${attr}=${q}${SITE.origin}/${p}${q}`
   );
 }
