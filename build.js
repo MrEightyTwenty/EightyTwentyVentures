@@ -260,7 +260,7 @@ function loadArticles () {
     /* Member wall */
     const hasWall = body.includes(WALL);
     if (visibility === 'members' && !hasWall) {
-      warn(`${slug}: visibility is "members" but there is no ${WALL} marker. The whole piece will be gated.`);
+      warn(`${slug}: visibility is "members" with no ${WALL} marker. The ENTIRE piece is gated, readers see only the signup wall. Add a marker to give them a free lead-in.`);
     }
     if (visibility === 'public' && hasWall) {
       warn(`${slug}: has a ${WALL} marker but visibility is "public". The marker will be ignored.`);
@@ -294,10 +294,20 @@ function renderBody (article) {
 
   const gated = article.visibility === 'members' || article.visibility === 'private';
 
-  if (!gated || !rest.trim()) {
+  /* Not gated: everything is free. */
+  if (!gated) {
     return { free: absolutiseAssets(marked.parse(article.body.replace(WALL, ''))), locked: '' };
   }
 
+  /* Gated, but no wall marker present. FAIL CLOSED: gate the entire body
+     rather than releasing it. An earlier version of this function returned
+     the full body as free content here, which silently published gated
+     articles in full. Never reintroduce that branch. */
+  if (!rest.trim()) {
+    return { free: '', locked: absolutiseAssets(marked.parse(article.body)) };
+  }
+
+  /* Gated with a marker: split at the wall. */
   return {
     free:   absolutiseAssets(marked.parse(lead)),
     locked: absolutiseAssets(marked.parse(rest))
