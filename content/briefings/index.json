@@ -62,5 +62,16 @@
     "cat": "structure",
     "visibility": "members",
     "image": "assets/who-makes-the-price-cover.jpg"
+  },
+  {
+    "slug": "when-an-industry-changes-the-subject",
+    "title": "When an Industry Changes the Subject",
+    "subtitle": "What happens after intelligence stops being scarce",
+    "excerpt": "An industry tells you what it believes is scarce by what it argues about. NVIDIA's open-weights letter is the case study.",
+    "date": "2026-07-27",
+    "category": "Market Structure",
+    "cat": "structure",
+    "visibility": "members",
+    "image": "assets/when-an-industry-changes-the-subject-cover.jpg"
   }
 ]
