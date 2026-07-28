@@ -15,6 +15,8 @@ In January, silver printed a record near $121 and gave back more than thirty per
 
 The consensus explanation is that the debasement trade got crowded and then got taken out. That explanation is correct, and it is the reason the five months since matter more than the crash did.
 
+<!-- MEMBER WALL -->
+
 ## Part I: The month with a name on it
 *Or: what a fully explained event is worth*
 

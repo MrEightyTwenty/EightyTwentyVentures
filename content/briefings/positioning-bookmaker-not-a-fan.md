@@ -15,6 +15,8 @@ June produced the largest outflows on record from spot Bitcoin funds, roughly $4
 
 Those two facts should not comfortably coexist. Working out why they do is more useful than any view either of them might have supported.
 
+<!-- MEMBER WALL -->
+
 ## Part I: The contradiction, in numbers
 *Or: what does not reconcile*
 

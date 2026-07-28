@@ -15,6 +15,8 @@ This quarter, those prices are the dollar and the 30-year Treasury.
 
 The equity market spent Q2 asking whether it could keep climbing, and it answered yes, loudly. The S&P finished up fourteen percent, the Nasdaq 100 up twenty-five, the best quarter in five years. That answer was real. It was also an answer to a question nobody important was asking. Underneath the rally, the price of dollars and the price of long-duration money were being repriced by forces the rally never acknowledged, and those two prices are where this quarter's information actually lives.
 
+<!-- MEMBER WALL -->
+
 We don't give calls, and this isn't a forecast of where either price goes. It's a read on where the structure is currently concentrated, which is a different claim and a more useful one.
 
 The market isn't asking six questions this quarter. It's asking one question in two different languages.

@@ -19,6 +19,8 @@ On June 30 the yen touched 162.58, its weakest level since 1986.
 
 The useful question is not why the defense failed. It is what a visibly failed defense does to the population of participants who have been positioned against it.
 
+<!-- MEMBER WALL -->
+
 ## Part I: What ¥11.7 trillion bought
 *Or: temporary*
 
