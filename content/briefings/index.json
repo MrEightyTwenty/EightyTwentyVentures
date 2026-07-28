@@ -73,5 +73,16 @@
     "cat": "macro",
     "visibility": "members",
     "image": "assets/when-an-industry-changes-the-subject-cover.jpg"
+  },
+  {
+    "slug": "who-decides-where-scarcity-returns",
+    "title": "Who Decides Where Scarcity Returns",
+    "subtitle": "From production to permission",
+    "excerpt": "When engineering stops supplying a bottleneck, policy can attempt to rebuild one. The constraint moves from production to permission.",
+    "date": "2026-07-28",
+    "category": "Macro",
+    "cat": "macro",
+    "visibility": "members",
+    "image": "assets/who-decides-where-scarcity-returns-cover.jpg"
   }
 ]
