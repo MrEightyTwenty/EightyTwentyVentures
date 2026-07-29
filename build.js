@@ -62,7 +62,8 @@ const PASSTHROUGH = [
   'style.css', 'auth.js', 'glossary.js', 'study.js',
   'access.html', 'playbook.html', 'playbook-intraday.html', 'playbook-position.html',
   'about.html', 'faq.html', '404.html', 'privacy.html', 'terms.html',
-  'risk-disclosure.html', 'subscription-policy.html'
+  'risk-disclosure.html', 'subscription-policy.html',
+  'google8553fe7ded56602d.html'
 ];
 
 const EXTRA_PASSTHROUGH = [
