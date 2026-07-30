@@ -7,12 +7,154 @@ series_number: 1
 date: 2026-07-28
 image: assets/aggression-is-not-control-cover.jpg
 ---
+<style>
+/* ===== Auction Lens figures: centered, bordered, expandable ===== */
+.etv-body p:has(> img:only-child),
+article p:has(> img:only-child){
+  text-align:center;
+  margin:2.4rem 0 0;
+}
+article p:has(> img:only-child) img{
+  display:block;
+  margin:0 auto;
+  cursor:zoom-in;
+  max-width:100%;
+  height:auto;
+}
+
+/* caption bubble, sits directly under each figure */
+article p:has(> img:only-child) + p{
+  display:block;
+  max-width:62ch;
+  margin:0.95rem auto 2.6rem;
+  padding:0.95rem 1.15rem;
+  text-align:left;
+  font-size:0.93rem;
+  line-height:1.62;
+  color:#aab2bd;
+  background:#11151a;
+  border:1px solid #232a33;
+  border-left:3px solid #1e8f63;
+  border-radius:8px;
+}
+article p:has(> img:only-child) + p strong{
+  color:#e6ebf1;
+  font-weight:600;
+}
+
+/* ===== video: centered, and centered when expanded ===== */
+.etv-video{
+  display:flex;
+  justify-content:center;
+  margin:2.4rem auto 1.2rem;
+  width:100%;
+}
+.etv-video video{
+  display:block;
+  width:100%;
+  max-width:960px;
+  height:auto;
+  margin:0 auto;
+  background:#000;
+  border:1px solid #232a33;
+  border-radius:8px;
+}
+.etv-video video:fullscreen,
+.etv-video video:-webkit-full-screen{
+  width:100vw;
+  height:100vh;
+  max-width:none;
+  border:0;
+  border-radius:0;
+  object-fit:contain;
+  background:#000;
+}
+
+/* ===== lightbox ===== */
+#etv-lb{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:2.5rem;
+  background:rgba(5,6,8,.95);
+}
+#etv-lb.on{display:flex;}
+#etv-lb img{
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  margin:auto;
+  object-fit:contain;
+  border:1px solid #1e8f63;
+  border-radius:6px;
+}
+#etv-lb-close{
+  position:fixed;
+  top:1rem;
+  right:1.25rem;
+  padding:.5rem .85rem;
+  font:600 .72rem/1 system-ui,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#e6ebf1;
+  background:transparent;
+  border:1px solid #2b323c;
+  border-radius:5px;
+  cursor:pointer;
+}
+#etv-lb-close:hover{border-color:#1e8f63;}
+@media (max-width:640px){
+  #etv-lb{padding:1rem;}
+  article p:has(> img:only-child) + p{margin-bottom:2rem;}
+}
+</style>
+
+<div id="etv-lb" role="dialog" aria-modal="true" aria-label="Expanded figure">
+  <button id="etv-lb-close" type="button">Close</button>
+  <img alt="">
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('etv-lb');
+  if(!lb) return;
+  var lbImg = lb.querySelector('img');
+  var closeBtn = document.getElementById('etv-lb-close');
+
+  function open(src, alt){
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lb.classList.add('on');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+  function close(){
+    lb.classList.remove('on');
+    lbImg.removeAttribute('src');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('article img, .etv-body img').forEach(function(img){
+    if(img.closest('#etv-lb')) return;
+    img.addEventListener('click', function(){ open(img.currentSrc || img.src, img.alt); });
+  });
+
+  closeBtn.addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
+
 
 Negative delta tells you somebody is being aggressive. It does not tell you they are winning.
 
 Aggression is immediate. Control is established only when that aggression produces price progress and continues to produce it. A tall red delta bar is often treated as a verdict. It is a measurement of effort, and effort matters only through the result it produces.
 
-What follows is a replay study of the Wednesday, 22 July 2026 session in Gold and Silver, worked forward as it developed rather than reviewed backward from the close. The two instruments absorbed the same pressure at the same moment and gave different answers. That difference is where the session becomes useful.
+What follows is the Wednesday, 22 July 2026 session in Gold and Silver, worked forward as it developed rather than reviewed backward from the close. The two instruments absorbed the same pressure at the same moment and gave different answers. That difference is where the session becomes useful.
 
 ---
 
@@ -173,10 +315,10 @@ Someone is always being aggressive somewhere on the tape. The question worth ask
 
 ## Watch the sequence unfold
 
-<video controls preload="none" poster="assets/aggression-is-not-control-clip-1-poster.jpg">
-  <source src="assets/aggression-is-not-control-clip-1.mp4" type="video/mp4">
-</video>
+<div class="etv-video">
+  <video controls preload="metadata" playsinline poster="assets/aggression-is-not-control-clips-poster.jpg">
+    <source src="assets/aggression-is-not-control-clips-combined.mp4" type="video/mp4">
+  </video>
+</div>
 
-Watch three relationships as the clip runs: sell-side aggression staying visible while downside progress starts to fail, the bid first holding the low, then the bid transacting at progressively higher prices. The clip continues past the point of entry so the immediate response stays visible rather than cutting on the decision itself.
-
-*The stalls visible partway through are in the source recording, not the player. Running the replay, the order flow, multiple profiles, and screen capture simultaneously pushed the recording machine past its own limits.*
+Watch three relationships as the clip runs: sell-side aggression staying visible while downside progress starts to fail, the bid first holding the low, then the bid transacting at progressively higher prices. The clip runs past the point of entry into the management that followed, so the response stays visible rather than cutting on the decision itself.
