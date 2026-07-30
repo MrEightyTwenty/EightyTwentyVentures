@@ -18,6 +18,12 @@ What follows is a replay study of the Wednesday, 22 July 2026 session in Gold an
 
 ## Part I: Two Branches
 
+![Pre-session working note showing weekly and daily charts for Gold and Silver above a written analysis](assets/aggression-is-not-control-context-presession.jpg)
+
+**Figure 1.** The actual pre-session note. Gold's charts, top left, show price having moved through the imbalanced zone near 4115 and working the far side of the prior week's gap. Silver's charts, top right, show the overnight extension already given back. The written analysis beneath states both branches directly: continuation requires the lower structure to hold and the bid to keep stepping up through it, while a loss of the noted Gold node paired with Silver unwinding beneath its prior day's highs turns the short side into the thing to watch. The note also flags room into the low 4200s on Gold against a narrower path into the high 59.700s on Silver, and states plainly that Gold's relative strength alone did not yet justify a long, pending Silver's confirmation.
+
+<!-- MEMBER WALL -->
+
 The session did not begin with a forecast. It began with conditions.
 
 The pre-session note laid out two paths. If prices were going to continue higher, the structure built underneath had to stay intact and the bid had to keep stepping up through it. If instead Gold lost control of the node it had most recently built, and Silver unwound back beneath the prior day's highs, then the short side became the thing to work with and a failed bid attempt became the thing to look for.
@@ -26,13 +32,13 @@ Attached to both was a caution that turns out to matter later. Silver had not ma
 
 The purpose of writing both branches was not to cover every possible outcome. It was to prevent initial relative strength from becoming a commitment to the long side before the tape supplied evidence. Nothing was predicted. What existed was a set of conditions, and the auction then revealed which condition became relevant.
 
-![Pre-session working note showing weekly and daily charts for Gold and Silver above a written analysis](assets/aggression-is-not-control-context-presession.jpg)
-
-**Figure 1.** The actual pre-session note. Gold's charts, top left, show price having moved through the imbalanced zone near 4115 and working the far side of the prior week's gap. Silver's charts, top right, show the overnight extension already given back. The written analysis beneath states both branches directly: continuation requires the lower structure to hold and the bid to keep stepping up through it, while a loss of the noted Gold node paired with Silver unwinding beneath its prior day's highs turns the short side into the thing to watch. The note also flags room into the low 4200s on Gold against a narrower path into the high 59.700s on Silver, and states plainly that Gold's relative strength alone did not yet justify a long, pending Silver's confirmation.
-
 ---
 
 ## Part II: The Same Move, Two Answers
+
+![Hourly charts of Gold and Silver at the regular session open, both instruments shown against their prior week and prior day reference levels](assets/aggression-is-not-control-context-hourly.jpg)
+
+**Figure 2.** The hourly view, captured as it actually sat at the open. On Gold, left, the shaded band marks the prior week's high zone, with price trading confidently above it and the marked node visible just beneath the current bar. On Silver, right, the same reference sits above current price, the overnight spike already retraced back through it. Both panels carry the same set of persistent levels, the prior day's high and low, the prior week's high, low, and midpoint, and the monthly and weekly opens, which is what makes the divergence readable at a glance rather than requiring a memorised sense of where each instrument closed last week.
 
 By the regular session open the two instruments were in visibly different places.
 
@@ -40,9 +46,10 @@ Gold had cleared the prior day's highs at 4088 and 4091 overnight and was tradin
 
 Those references come from a levels tool we built to carry the prior day's, week's, and month's opens, highs, lows, and midpoints forward onto the working chart. The underlying references are familiar. The advantage comes from keeping them persistent, organised, and readable inside the same decision environment, so every intraday move can be evaluated against areas the market has already accepted, rejected, or failed to sustain.
 
-![Hourly charts of Gold and Silver at the regular session open, both instruments shown against their prior week and prior day reference levels](assets/aggression-is-not-control-context-hourly.jpg)
 
-**Figure 2.** The hourly view, captured as it actually sat at the open. On Gold, left, the shaded band marks the prior week's high zone, with price trading confidently above it and the marked node visible just beneath the current bar. On Silver, right, the same reference sits above current price, the overnight spike already retraced back through it. Both panels carry the same set of persistent levels, the prior day's high and low, the prior week's high, low, and midpoint, and the monthly and weekly opens, which is what makes the divergence readable at a glance rather than requiring a memorised sense of where each instrument closed last week.
+![Five minute charts of Gold and Silver showing the session volume profile, value area, and pivot ribbon](assets/aggression-is-not-control-context-structure.jpg)
+
+**Figure 3.** The five minute view of both instruments, profile and pivot ribbon visible on each. On Gold, left, the volume profile shows a distinct node in the low 4120s where the ribbon flattens and trade visibly clustered, with a noticeably thinner band directly above it running into the value area high. That thin band is the location the piece keeps returning to. On Silver, right, the profile shows price sitting on the prior day's high with the prior week's high still overhead, unclaimed. Nothing here is a level to transact against. It is a map of where the auction has already done its work and where it has not.
 
 The session profile added the second layer. Gold's most recently built node topped out in the low 4120s, and that upper edge was the last place the auction had built meaningful trade before the leg that carried it into the open. Above the node, between roughly 4126 and the value area high, the profile thinned out considerably. Price had passed through quickly and left very little behind.
 
@@ -50,21 +57,23 @@ A thin area like that is not support. It is closer to a door with nothing much b
 
 Gold was the stronger expression of the move and Silver was the weaker one. That is a reason to prefer one instrument over the other. It is not a reason to be in either of them, a distinction that market commentary routinely collapses.
 
-![Five minute charts of Gold and Silver showing the session volume profile, value area, and pivot ribbon](assets/aggression-is-not-control-context-structure.jpg)
-
-**Figure 3.** The five minute view of both instruments, profile and pivot ribbon visible on each. On Gold, left, the volume profile shows a distinct node in the low 4120s where the ribbon flattens and trade visibly clustered, with a noticeably thinner band directly above it running into the value area high. That thin band is the location the piece keeps returning to. On Silver, right, the profile shows price sitting on the prior day's high with the prior week's high still overhead, unclaimed. Nothing here is a level to transact against. It is a map of where the auction has already done its work and where it has not.
 
 ---
 
 ## Part III: Aggression Without Progress
 
-Into the 9:00 a.m. window, a headline-driven repricing took both instruments sharply lower.
-
 ![A social media post from President Trump, timestamped 8:56 a.m., regarding retaliation for further Iranian strikes on shipping in the Strait of Hormuz](assets/aggression-is-not-control-catalyst-headline.jpg)
 
 A post from President Trump, timestamped 8:56 a.m., stated that any further Iranian strike on shipping in the Strait of Hormuz would be answered by the destruction of a bridge or a power plant, Tehran not excluded.
 
+Into the 9:00 a.m. window, a headline-driven repricing took both instruments sharply lower.
+
+
 A geopolitical headline hit the tape and compressed decision time immediately. In that kind of environment, the market is not working through the full macro significance first. It is reacting to the nearest shift in risk, with liquidity thinning and participants forced to adjust before conviction has time to form. Aggressive sellers pressed Gold out of the open and down into the thin area. Silver went with it.
+
+![Footprint and cluster charts for Gold and Silver during the sell-side press, each with a delta histogram and session relative volume readout](assets/aggression-is-not-control-press-goldsilver.jpg)
+
+**Figure 4.** The press itself, Gold above and Silver below. The footprint heatmaps on the left show where volume transacted inside each five-minute candle as price moved lower. The delta histograms beneath them show the aggregate result clearly: large negative five-minute delta bars developed in both instruments as aggressive sellers pressed. On Gold, meaningful volume continued trading inside the tested pocket without producing equivalent downside progress. On the structural chart, the leg-to-leg delta profile shows negative delta bins accumulated lower before positive bins began developing above them as the responsive bid started turning initiative. Silver initially continued lower, but its subsequent recovery carried price back above a large block of negative leg-to-leg delta, leaving much of that sell-side activity underwater. Gold produced the earlier and cleaner answer.
 
 The five-minute delta histogram beneath each footprint showed exactly what the sell-side press looked like in aggregate. A sustained run of negative bars replaced the positive sequence that had carried the markup. Aggressive selling dominated the five-minute candles in both instruments.
 
@@ -80,13 +89,14 @@ The structural outcome matched. Gold's low held around the prior week's high ref
 
 None of that yet means the sellers were trapped. A positive cluster proves somebody bought. It does not prove the sell side failed. The sellers shoved the door and it did not move, and at this stage that is all anyone could honestly say. What it justified was attention, not action.
 
-![Footprint and cluster charts for Gold and Silver during the sell-side press, each with a delta histogram and session relative volume readout](assets/aggression-is-not-control-press-goldsilver.jpg)
-
-**Figure 4.** The press itself, Gold above and Silver below. The footprint heatmaps on the left show where volume transacted inside each five-minute candle as price moved lower. The delta histograms beneath them show the aggregate result clearly: large negative five-minute delta bars developed in both instruments as aggressive sellers pressed. On Gold, meaningful volume continued trading inside the tested pocket without producing equivalent downside progress. On the structural chart, the leg-to-leg delta profile shows negative delta bins accumulated lower before positive bins began developing above them as the responsive bid started turning initiative. Silver initially continued lower, but its subsequent recovery carried price back above a large block of negative leg-to-leg delta, leaving much of that sell-side activity underwater. Gold produced the earlier and cleaner answer.
 
 ---
 
 ## Part IV: Defence and Intent
+
+![Footprint and cluster charts for Gold and Silver as the bid shifts from defensive to initiative, with the reclaimed node and the opening range references visible](assets/aggression-is-not-control-turn-goldsilver.jpg)
+
+**Figure 5.** The turn, Gold above and Silver below. Both instruments have rejected the lower prices and are working to regain access inside the node. On Gold, the footprint heatmap shows volume transacting through the lower edge rather than being rejected immediately back beneath it. The five-minute delta histogram flips positive as initiative buying enters the recovery. On the leg-to-leg delta profile, negative delta remains concentrated in the price bins below the break while positive bins begin building progressively higher. That separation is the visible shift from defence to intent. Silver is attempting the same sequence, recovering references from beneath and moving back toward the lower edge, but its confirmation remains later and less complete.
 
 The distinction that turns this from an observation into a decision is narrow and it is the most useful idea in the piece.
 
@@ -104,15 +114,14 @@ The opening range and the volatility-scaled expansion levels around it gave the 
 
 One thing stayed unresolved. Silver still had not made the forward progress the pre-session note asked for. It had recovered, but it was recovering to its reference from beneath it rather than never having lost it. That question was open at the moment risk was taken, and pretending otherwise afterward would be the kind of retrospective tidying this series exists to avoid.
 
-<!-- MEMBER WALL -->
-
-![Footprint and cluster charts for Gold and Silver as the bid shifts from defensive to initiative, with the reclaimed node and the opening range references visible](assets/aggression-is-not-control-turn-goldsilver.jpg)
-
-**Figure 5.** The turn, Gold above and Silver below. Both instruments have rejected the lower prices and are working to regain access inside the node. On Gold, the footprint heatmap shows volume transacting through the lower edge rather than being rejected immediately back beneath it. The five-minute delta histogram flips positive as initiative buying enters the recovery. On the leg-to-leg delta profile, negative delta remains concentrated in the price bins below the break while positive bins begin building progressively higher. That separation is the visible shift from defence to intent. Silver is attempting the same sequence, recovering references from beneath and moving back toward the lower edge, but its confirmation remains later and less complete.
 
 ---
 
 ## Part V: Access
+
+![Footprint and cluster charts for Gold and Silver showing continued positive delta through the thin area, with Silver reclaiming its point of control and prior day high](assets/aggression-is-not-control-vacuum-goldsilver.jpg)
+
+**Figure 6.** Access through the vacuum, Gold above and Silver below. The key Gold candle closes above the initial offer that flooded into the lows, leaving a low-volume pocket behind. The footprint heatmap shows volume transacting through the advance without price being immediately returned to the lower area. The delta histogram beneath it shifts into strong positive five-minute readings, and the per-price delta shows increasingly large positive prints building higher as price moves through the node and the low-volume pockets, while the earlier negative prints remain beneath the market. Price and aggressive buying are now progressing together. That is what produces the unwind and subsequent cascade of initiating buying. Silver reaches the same confirmation later, reclaiming its point of control and the prior day's high after Gold's move is already underway. Relative volume, still visible in the corner panel, stays close to where it was during the press, confirming the move never picked up broad participation even as it succeeded.
 
 The next thing that mattered was the difference between reaching the thin area and getting through it.
 
@@ -128,13 +137,14 @@ Silver eventually reclaimed its point of control and the prior day's highs, whic
 
 Participation never expanded, so the recovery could be described as effective within the sequence, but not as broad or strongly sponsored.
 
-![Footprint and cluster charts for Gold and Silver showing continued positive delta through the thin area, with Silver reclaiming its point of control and prior day high](assets/aggression-is-not-control-vacuum-goldsilver.jpg)
-
-**Figure 6.** Access through the vacuum, Gold above and Silver below. The key Gold candle closes above the initial offer that flooded into the lows, leaving a low-volume pocket behind. The footprint heatmap shows volume transacting through the advance without price being immediately returned to the lower area. The delta histogram beneath it shifts into strong positive five-minute readings, and the per-price delta shows increasingly large positive prints building higher as price moves through the node and the low-volume pockets, while the earlier negative prints remain beneath the market. Price and aggressive buying are now progressing together. That is what produces the unwind and subsequent cascade of initiating buying. Silver reaches the same confirmation later, reclaiming its point of control and the prior day's high after Gold's move is already underway. Relative volume, still visible in the corner panel, stays close to where it was during the press, confirming the move never picked up broad participation even as it succeeded.
 
 ---
 
 ## Part VI: Where the Evidence Stops
+
+![Footprint and cluster chart for Silver showing a smaller and more mixed delta response at an area it had already failed against earlier in the session](assets/aggression-is-not-control-decouple-silver.jpg)
+
+**Figure 7.** Silver alone, the final documented capture. Price is still moving higher even while the offer continues to press. The footprint heatmap shows volume continuing to transact near the upper reference rather than disappearing. The five-minute delta histogram remains positive, but the response is smaller and more mixed than during the earlier recovery. On the leg-to-leg delta profile, positive delta bins are still building higher, but negative bins are now appearing alongside them and the same effort is producing less price progress. That is the fragility visible in the image. The next upside attempts need to see initiative buying rewarded with follow-through, or the quality of the move continues to deteriorate. No Gold capture exists at this point in the sequence, which is why the piece ends on Silver rather than on a resolution.
 
 The last piece of information in the sequence is a deterioration rather than a reversal, and it showed up first on the weaker instrument.
 
@@ -150,9 +160,6 @@ The image record does not contain Gold's final flatten. A cleaner story would su
 
 The sequence ends with Silver losing efficiency at an area it had already rejected, Gold approaching its next decision point, and the auction requiring an assessment the available images cannot document.
 
-![Footprint and cluster chart for Silver showing a smaller and more mixed delta response at an area it had already failed against earlier in the session](assets/aggression-is-not-control-decouple-silver.jpg)
-
-**Figure 7.** Silver alone, the final documented capture. Price is still moving higher even while the offer continues to press. The footprint heatmap shows volume continuing to transact near the upper reference rather than disappearing. The five-minute delta histogram remains positive, but the response is smaller and more mixed than during the earlier recovery. On the leg-to-leg delta profile, positive delta bins are still building higher, but negative bins are now appearing alongside them and the same effort is producing less price progress. That is the fragility visible in the image. The next upside attempts need to see initiative buying rewarded with follow-through, or the quality of the move continues to deteriorate. No Gold capture exists at this point in the sequence, which is why the piece ends on Silver rather than on a resolution.
 
 ---
 

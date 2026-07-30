@@ -84,5 +84,16 @@
     "cat": "macro",
     "visibility": "members",
     "image": "assets/who-decides-where-scarcity-returns-cover.jpg"
+  },
+  {
+    "slug": "aggression-is-not-control",
+    "title": "Aggression Is Not Control",
+    "subtitle": "Reading the tape through market-generated information",
+    "excerpt": "Gold and Silver took the same pressure at the same moment and gave two different answers. A study of why aggression and control are not the same thing.",
+    "date": "2026-07-28",
+    "category": "Execution",
+    "cat": "execution",
+    "visibility": "members",
+    "image": "assets/aggression-is-not-control-cover.jpg"
   }
 ]
