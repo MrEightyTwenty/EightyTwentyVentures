@@ -18,6 +18,8 @@ The quarterly briefing argued that the dollar and the 30-year Treasury would be 
 
 The Fed is counting market-led tightening as part of its assessment of financial conditions, and treating that tightening as a reason for patience. A meaningful share of that pressure is landing directly on the capital cycle currently supporting growth.
 
+<!-- MEMBER WALL -->
+
 ## Part I: The Anomaly
 
 Three things happened on July 29 that would not ordinarily be expected to happen together. Brent crude settled at $90.74, up 7.9 percent on the day. Three Fed officials formally called for an immediate quarter-point rate increase. Yet the 2-year Treasury yield fell and the dollar weakened by roughly 0.3 percent.
@@ -29,8 +31,6 @@ Almost everything else on the tape registered the shock. The 30-year Treasury yi
 Two parts of the market moved differently. Short-term yields fell, and the dollar weakened. Together, those moves show that investors were not simply pricing a larger inflation problem. They were also marking down the speed of the Fed's likely response.
 
 The oil shock helped explain the broad risk-off move. It does not fully explain the part of the session tied to what investors expected the Fed to do next.
-
-<!-- MEMBER WALL -->
 
 ## Part II: What the Market Heard
 
