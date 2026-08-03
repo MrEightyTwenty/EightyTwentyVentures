@@ -95,5 +95,16 @@
     "cat": "execution",
     "visibility": "members",
     "image": "assets/aggression-is-not-control-cover.jpg"
+  },
+  {
+    "slug": "the-tightening-the-fed-did-not-do",
+    "title": "The Tightening the Fed Did Not Do",
+    "subtitle": "The policy rate held. The tightening still arrived, and it arrived somewhere specific.",
+    "excerpt": "Warsh held the funds rate on July 29, but treated the bond market's own tightening as doing part of the work a hike normally would. Here's where that pressure actually lands, and why the AI capital cycle is unusually exposed to it.",
+    "date": "2026-08-03",
+    "category": "Macro",
+    "cat": "macro",
+    "visibility": "members",
+    "image": "assets/the-tightening-the-fed-did-not-do-cover.png"
   }
 ]
