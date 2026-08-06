@@ -154,7 +154,7 @@ Negative delta tells you somebody is being aggressive. It does not tell you they
 
 Aggression is immediate. Control is established only when that aggression produces price progress and continues to produce it. A tall red delta bar is often treated as a verdict. It is a measurement of effort, and effort matters only through the result it produces.
 
-What follows is the Wednesday, 22 July 2026 session in Gold and Silver, worked forward as it developed rather than reviewed backward from the close. The two instruments absorbed the same pressure at the same moment and gave different answers. That difference is where the session becomes useful.
+What follows is the Wednesday, 22 July 2026 session in Gold and Silver, worked forward as it developed. The two instruments absorbed the same pressure at the same moment and gave different answers. That difference is where the session becomes useful.
 
 ---
 
@@ -188,17 +188,15 @@ Gold had cleared the prior day's highs at 4088 and 4091 overnight and was tradin
 
 Those references come from a levels tool we built to carry the prior day's, week's, and month's opens, highs, lows, and midpoints forward onto the working chart. The underlying references are familiar. The advantage comes from keeping them persistent, organised, and readable inside the same decision environment, so every intraday move can be evaluated against areas the market has already accepted, rejected, or failed to sustain.
 
-
 ![Five minute charts of Gold and Silver showing the session volume profile, value area, and pivot ribbon](assets/aggression-is-not-control-context-structure.jpg)
 
 **Figure 3.** The five minute view of both instruments, profile and pivot ribbon visible on each. On Gold, left, the volume profile shows a distinct node in the low 4120s where the ribbon flattens and trade visibly clustered, with a noticeably thinner band directly above it running into the value area high. That thin band is the location the piece keeps returning to. On Silver, right, the profile shows price sitting on the prior day's high with the prior week's high still overhead, unclaimed. Nothing here is a level to transact against. It is a map of where the auction has already done its work and where it has not.
 
 The session profile added the second layer. Gold's most recently built node topped out in the low 4120s, and that upper edge was the last place the auction had built meaningful trade before the leg that carried it into the open. Above the node, between roughly 4126 and the value area high, the profile thinned out considerably. Price had passed through quickly and left very little behind.
 
-A thin area like that is not support. It is closer to a door with nothing much behind it. If one side pushes into it aggressively, price should move through. That is the reason to mark it in advance. It is a location where the auction can answer a clean question, because there is almost no accumulated inventory in the way to muddy the answer.
+A thin area like that is not support in the traditional static sense, but contextually it often behaves as a supportive zone because it was created through aggressive buying and a lack of meaningful sell-side participation. When price revisits it, sellers frequently diminish or dry up, and buyers can re-engage and rebuild inventory at higher prices. That is also why it becomes a useful area to lean against: decisions tend to be made quickly there, and if the broader trend is intact, it can produce sustained follow-through rather than prolonged two-sided trade.
 
 Gold was the stronger expression of the move and Silver was the weaker one. That is a reason to prefer one instrument over the other. It is not a reason to be in either of them, a distinction that market commentary routinely collapses.
-
 
 ---
 
@@ -209,7 +207,6 @@ Gold was the stronger expression of the move and Silver was the weaker one. That
 A post from President Trump, timestamped 8:56 a.m., stated that any further Iranian strike on shipping in the Strait of Hormuz would be answered by the destruction of a bridge or a power plant, Tehran not excluded.
 
 Into the 9:00 a.m. window, a headline-driven repricing took both instruments sharply lower.
-
 
 A geopolitical headline hit the tape and compressed decision time immediately. In that kind of environment, the market is not working through the full macro significance first. It is reacting to the nearest shift in risk, with liquidity thinning and participants forced to adjust before conviction has time to form. Aggressive sellers pressed Gold out of the open and down into the thin area. Silver went with it.
 
@@ -230,7 +227,6 @@ By the time of the capture, a large amount of Silver's negative leg-to-leg delta
 The structural outcome matched. Gold's low held around the prior week's high reference. Silver lost the prior day's high and its value area low outright, which is not a test of a reference but the loss of one.
 
 None of that yet means the sellers were trapped. A positive cluster proves somebody bought. It does not prove the sell side failed. The sellers shoved the door and it did not move, and at this stage that is all anyone could honestly say. What it justified was attention, not action.
-
 
 ---
 
@@ -256,7 +252,6 @@ The opening range and the volatility-scaled expansion levels around it gave the 
 
 One thing stayed unresolved. Silver still had not made the forward progress the pre-session note asked for. It had recovered, but it was recovering to its reference from beneath it rather than never having lost it. That question was open at the moment risk was taken, and pretending otherwise afterward would be the kind of retrospective tidying this series exists to avoid.
 
-
 ---
 
 ## Part V: Access
@@ -279,7 +274,6 @@ Silver eventually reclaimed its point of control and the prior day's highs, whic
 
 Participation never expanded, so the recovery could be described as effective within the sequence, but not as broad or strongly sponsored.
 
-
 ---
 
 ## Part VI: Where the Evidence Stops
@@ -296,22 +290,7 @@ Price was still moving higher while the offer continued to press. That is not ye
 
 That is the same principle the piece opened with, running in the other direction. Earlier, aggressive selling failed to produce downside progress and that mattered more than the size of the selling. Here, buying continued to appear and produced progressively less. The direction of delta is the least interesting thing about it. The ratio of effort to result is where the information lives.
 
-Gold, one capture earlier, was still making progress and was approaching its own next decision area at the session open and the top of the opening range, which is the area where the quality of the bid would have to be assessed all over again.
-
-The image record does not contain Gold's final flatten. A cleaner story would supply one. The evidence does not.
-
-The sequence ends with Silver losing efficiency at an area it had already rejected, Gold approaching its next decision point, and the auction requiring an assessment the available images cannot document.
-
-
 ---
-
-The tools did not make the decision. They made the relevant relationships easier to see.
-
-The session volume profile identified where the auction had already built meaningful trade and where it had moved through quickly. The footprint heatmap showed where volume transacted inside each five-minute candle and whether meaningful business produced continued price progress. The delta histogram beneath it measured the aggregate buying or selling imbalance of each five-minute candle. The leg-to-leg delta profile grouped that delta into fixed price bins across the move, showing where positive and negative effort accumulated and which activity was later left behind or placed underwater. Relative volume placed the sequence inside the participation conditions of the session. The contextual levels showed whether price was holding, losing, or reclaiming areas the market had already treated as important.
-
-None of those readings was sufficient alone. Together, they reduced the amount of interpretation that had to be supplied by assumption.
-
-Someone is always being aggressive somewhere on the tape. The question worth asking, in both directions, is whether that aggression is producing progress.
 
 ## Watch the sequence unfold
 
