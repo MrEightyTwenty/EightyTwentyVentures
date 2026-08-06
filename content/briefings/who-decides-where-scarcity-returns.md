@@ -6,110 +6,146 @@ date: 2026-07-28
 image: assets/who-decides-where-scarcity-returns-cover.jpg
 ---
 
-On 19 July, an adviser to the administration posted that the leading closed labs had laid their cards on the table and it was time for the rest of Silicon Valley to do the same.
+On July 19, an adviser to the administration said the leading closed-model companies had already made their positions clear. It was time, he argued, for the rest of Silicon Valley to do the same.
 
-The next day, reporting confirmed what the summons was about. The administration had spent months circling restrictions on Chinese open-weight models: Entity List additions, procurement rules, an executive order conditioning US hosting on security guarantees. Each attempt had died internally. That resistance had recently thinned out.
+The next day, reporting explained what had prompted the statement. The administration had spent months considering restrictions on Chinese open-weight models. Officials had discussed adding companies to the Entity List, limiting government purchases, and requiring security guarantees before models could be hosted in the United States. Each proposal had previously stalled inside the administration, but that resistance was beginning to weaken.
 
-Four days later, twenty-five companies published a letter arguing that Washington should not treat downloadable weights as the source of the risk.
+Four days later, twenty-five companies published a joint letter arguing that Washington should not treat downloadable model weights as the source of the danger.
 
-The first piece asked where value goes once building a frontier model stops being the hard part. What happened next narrows the question. Governments are now debating rules that could decide which companies may release the most powerful models. Those rules may eventually matter as much as the ability to build one.
+The first piece in this series asked where economic value moves once building a powerful model is no longer the hardest part. What happened next makes the question more specific. Governments are now considering rules that could determine which companies are allowed to release their most capable models.
+
+The next source of scarcity may not be the ability to build intelligence. It may be the permission to distribute it.
 
 <!-- MEMBER WALL -->
 
-## Part I: What speed was actually measuring
+## Part I: What the speed actually showed
 
-The coalition formed quickly, which first looked like proof that the issue had become central. The summons changes what that speed tells us.
+The coalition formed quickly. At first, that looked like proof that the issue had suddenly become important enough to unite twenty-five companies in less than a week.
 
-Twenty-five companies did not independently reach the same conclusion within four days. Someone asked them to state their position in public, and they did.
+The public summons changes what that speed tells us.
 
-But an invitation only activates a position that already exists. Joint policy language does not clear twenty-five legal departments in four days while the argument is still being worked out. That is the timeline of a position being published, not formed.
+Twenty-five companies did not independently study the issue, settle their disagreements, approve shared language through their legal departments, and publish a coordinated position within four days. The argument had already been made internally. The companies were not forming a view in public. They were publishing one they had already prepared.
 
-The companies had already settled on the language. Their business interests were already pointing in the same direction. Politics forced a private consensus into public view on a schedule.
+Political pressure brought a private consensus into the open.
 
-What speed measures is not conviction. It is readiness.
+That does not make the letter less meaningful. An invitation can only produce a coordinated response that quickly when the underlying interests are already aligned. The companies had reached the same basic conclusion before anyone asked them to sign their names beneath it.
 
-## Part II: The variable, not the side
+The speed measured readiness, not sudden conviction.
 
-Three days after the letter, the most prominent company missing from it explained itself.
+## Part II: The real dividing line
 
-The explanation was not what the coverage expected. Anthropic's stated position is that open-weight models without dangerous capabilities are a public good, freely available to anyone able to supply the compute to run them, and that banning them as a category is neither useful nor something the company has asked for.
+Three days after the letter appeared, the most prominent company missing from it explained why.
 
-Read what it ranks first. The main concern is that authoritarian governments build models more powerful than American ones and use them for military advantage or domestic repression. On that concern, whether a model is open or closed is stated to be irrelevant. The most dangerous model may be one trained in secret and never released to anyone.
+Anthropic's position was not as simple as the coverage suggested. The company said open-weight models that do not contain dangerous capabilities can be a public good. Anyone able to provide the computing power should be allowed to run them, and Anthropic said it had not asked the government to ban open models as a category.
 
-Second comes the problem of release being permanent. Once weights are public, safety guardrails can be stripped out, copies can be redistributed, and nothing can be taken back. The coalition's letter conceded that point and then answered it with an argument about competition rather than risk.
+Its main concern was broader. Anthropic argued that authoritarian governments could build models more powerful than American ones and use them for military advantage or domestic control. Under that view, whether the model is open or closed is not the central issue. A dangerous model could be trained in secret and never released publicly.
 
-The first concern is the interesting one, because it is not the opposite of what the coalition said. The positions sound opposed, but both reject open versus closed as the right dividing line. They disagree about the point at which a model becomes dangerous enough to restrict.
+Its second concern was that an open-weight release cannot be taken back. Once the weights are available, safety controls can be removed, copies can spread, and the original developer loses control over how the model is used. The coalition acknowledged that risk but placed more weight on competition and American leadership.
 
-Neither side supports banning open-weight models as a category. The disagreement is over where the restriction should begin.
+The two sides therefore sound further apart than they are. Neither supports banning all open-weight models, and both reject open versus closed as the only useful dividing line.
 
-## Part III: What absence cost
+Their disagreement is over the threshold. At what point does a model become capable enough, and dangerous enough, that its release should be restricted?
 
-The first piece was right that the list stopped telling you much as it got longer. It was wrong about why staying off it was cheap.
+That is the variable that matters.
 
-The cost was not looking careless. It was that a safety argument got read as a business argument. The accusation is that Anthropic wants restrictions because restrictions protect its revenue, and its response spends the opening paragraph denying that before making any case at all.
+## Part III: What staying off the letter cost
 
-Once a principle is read as a commercial interest, every future statement of the principle reads as sales.
+The first article was right that the list became less informative as more companies joined it. Once nearly everyone signs, the signatures stop telling us much about who has a distinct position.
 
-The framing also came first. The summons on the nineteenth had already defined declining as siding with the incumbents, five days before there were any names to attach that to. Coverage did not create the cost of staying off the list. It attached that cost to specific companies.
+What it underestimated was the cost of remaining outside the group.
 
-## Part IV: Three gates, three different things
+Anthropic's safety argument was quickly interpreted as a business argument. Critics claimed that the company supported restrictions because tighter rules would protect the economics of its closed models. Anthropic therefore had to begin its response by denying a commercial motive before it could explain its actual position.
 
-Here is the part that applies well beyond software.
+That creates a lasting problem. Once a principle is understood as a defense of revenue, every future statement of that principle begins to sound like marketing.
 
-Anthropic supports three measures. They usually get described as one policy package. They are not. Each one restricts something different.
+The framing had also been established before the list of companies was public. The July 19 summons presented refusal to join as support for the closed-model incumbents. Later coverage did not create that cost. It simply attached the cost to specific companies.
 
-Export controls on advanced chips limit access to the hardware. This is an ordinary supply limit. It depletes, it can be evaded through smuggling, and it works only while chip manufacturing stays concentrated in a few places.
+The broader lesson is that policy debates are often shaped before the public receives the full argument. By the time a company explains what it believes, the market may have already decided why it believes it.
 
-Rules against industrial-scale distillation limit how capability gets copied. Distillation is training a cheaper model on the outputs of an expensive one, which lets a competitor reach the frontier without paying for the compute that built it. It is a hole in the first restriction, and closing it is an attempt to make the chip controls hold.
+## Part IV: Three gates that restrict different things
 
-Mandatory testing before release limits who is allowed to deploy. This one is different in kind, and that difference is the point.
+Anthropic supports three broad measures. They are often discussed as though they are parts of one restriction, but each controls a different point in the system.
 
-Hardware and compute are things you have to build. Approval is not. A government can create it by writing a rule, it does not run out when it is used, and it can be handed to a body that owns no chips, no data centers and no models.
+The first is export controls on advanced chips. These rules limit access to the physical hardware needed to train and run powerful models. This is a familiar kind of scarcity. Chips must be manufactured, the supply is limited, and the restriction only works while production remains concentrated in countries and companies willing to enforce it.
 
-The bottleneck moves from production to permission. From what a company can build to what it is allowed to ship.
+It is also imperfect. Hardware can be redirected, resold, or smuggled, and domestic manufacturing can eventually reduce the restriction's power.
 
-The word "attempt" matters. A rule written into law is not automatically a rule that binds. Rules constrain the companies that follow them, which are not always the companies policymakers are most worried about, and that is the standing weakness of any restriction placed at the point of release rather than on the underlying technology.
+The second measure targets industrial-scale distillation. Distillation allows a company to train a cheaper model using the outputs of a more expensive model. In practical terms, it can help a competitor reproduce part of a frontier model's capability without paying the full cost of building the original.
 
-Still, this is the third way the first article could turn out to be wrong, and the only one currently in motion. The first piece named two: a model that cannot be copied from its outputs, or a compute requirement only two firms on earth can meet. Both would be technical developments. Neither is what is being proposed. What is being attempted is a legal one.
+Restrictions on distillation are meant to close a hole in the chip controls. Limiting access to hardware matters less if a competitor can copy much of the resulting capability from the model's outputs.
 
-## Part V: The benchmark comes back as a rule
+The third measure is mandatory testing before release. This is different from the first two because it does not control the materials used to build a model or the methods used to copy it. It controls whether the finished model is allowed to reach the market.
 
-The letter contained no benchmarks at all. Three pages on the future of artificial intelligence without a single number, from companies whose entire commercial story had been numbers. The reading at the time was that a benchmark stops being a position the moment everybody can post one.
+Hardware is something a company must build or buy. Approval is something a government can create by writing a rule. It does not run out when it is used, and control over it can be given to an institution that owns no chips, data centers, or models.
 
-That is right and incomplete. The number is not disappearing. It is changing job.
+This is where the bottleneck moves from production to permission. The question is no longer only what a company is capable of building. It becomes what the company is allowed to release.
 
-Testing "sufficiently capable" models requires deciding what counts as sufficiently capable, and that requires a measurement. Anthropic is not the only one reaching for one. Ten days before its statement, the head of another frontier lab proposed testing rules that would apply to the most capable models regardless of which country built them and regardless of whether they are open or closed, with the cutoff set by benchmark scores and the tests held back and rewritten quarterly by outside auditors so companies cannot train against them. Different company, different design, but both reject open versus closed as the deciding line.
+The word "attempt" still matters. A rule written into law does not automatically become an effective restriction. It may bind American companies while doing little to constrain the foreign governments or private groups policymakers are most concerned about. That is the standing weakness of placing the restriction at the point of release rather than on the underlying technology.
 
-So the same test that no longer proves a company has a lasting lead may soon decide whether a model can ship. A benchmark that many companies can eventually pass is weak proof of a lasting lead, but it may still work as a regulatory cutoff, precisely because a cutoff has to be something people other than the vendor can run.
+Still, permission is the only proposed source of scarcity that is already moving through the policy process. The earlier article described two technical possibilities: a model whose capabilities could not be copied through its outputs, or a computing requirement so large that only a few companies could meet it.
 
-What is still contested is narrower than open versus closed, and matters more. Two questions.
+Neither is currently being proposed.
 
-The first is what the test measures. One option is compute, meaning how much was spent training the model. That is easy to verify but tracks money rather than ability, and it can miss a cheap model that turns out to be very capable. The other option is performance, meaning what the model can actually do. That catches capable models however they were built, but only works if the test is rewritten often enough that companies cannot study for it.
+The scarcity now being considered is legal.
 
-The second is who runs it. An industry-funded standards body and a government agency with the power to block a release are not two versions of the same thing. They differ on who pays for a wrong decision, and on who can be lobbied.
+## Part V: The benchmark changes jobs
+
+The coalition's letter contained no benchmarks. That was notable because the commercial story of artificial intelligence had been built around numbers. Companies spent years comparing model scores, context windows, costs, and performance, then published a major policy letter without using a single measurement.
+
+The original reading was that benchmarks lose commercial value once too many companies can post similar results. A score stops proving that one company has a lasting advantage when competitors can reach it a few months later.
+
+That remains true, but it is incomplete. The benchmark may not be disappearing. It may be changing jobs.
+
+A rule for "sufficiently capable" models first needs a definition of sufficient capability. That requires a test. A benchmark that no longer proves a durable commercial lead may still become the line that determines whether a model can be released.
+
+Another frontier lab has proposed a similar system. Its leadership argued that the most capable models should face testing regardless of where they were built or whether they are open or closed. The proposed threshold would be based on model performance, with outside auditors keeping the tests private and changing them regularly so companies could not train specifically to pass them.
+
+The policy designs differ, but the central idea is the same. Open versus closed is not the right dividing line. Capability is.
+
+That leaves two difficult questions.
+
+The first is what the test should measure. Regulators could use the amount of computing power spent during training. That is easier to verify, but it measures resources rather than what the finished model can actually do. A smaller or cheaper model could still develop dangerous capabilities and remain below the threshold.
+
+The alternative is to test performance directly. That catches capable models regardless of how they were built, but it creates a different problem. Once companies know the test, they can optimize for it. The benchmark would therefore need to remain private, change frequently, and measure real capability rather than a narrow set of rehearsed tasks.
+
+The second question is who controls the test. An industry-funded standards organization and a government agency with the power to block a release are not interchangeable. They differ in who pays for mistakes, who can be influenced, and who carries responsibility when a safe model is delayed or a dangerous one is approved.
+
+The benchmark is becoming less important as a sales tool and more important as a rule. The test may no longer decide who appears to lead the market. It may decide who is allowed to enter it.
 
 ## Part VI: Where the economics move
 
-This is where the policy argument becomes an investment one.
+This is where the policy debate becomes an investment question.
 
-The first piece said the advantage would go to the companies that could reorganize around cheap intelligence. Approval adds a second test. Companies may now separate not only by how well they use the technology, but by whether they can afford what it takes to release it.
+The first piece argued that the advantage would move toward companies capable of reorganizing around cheaper intelligence. Approval introduces a second test. Companies may now separate not only by how effectively they use the technology, but by whether they can afford the process required to release it.
 
-Testing, outside audits, documentation, security requirements and holding a finished model back for a month do not cost every developer the same. A large lab can treat all of that as overhead. For a small developer, the same requirements may mean not competing at all.
+Testing, external audits, documentation, security reviews, and delayed launches do not cost every company the same amount. A large frontier lab can treat those requirements as another operating expense. A smaller developer may find that the process makes competing impossible.
 
-A rule written to control capability can end up protecting the companies that were already ahead. That is the objection critics of the closed labs were making before the letter existed.
+A rule intended to control dangerous capability can therefore protect the companies that are already ahead. It does not need to be designed for that purpose. The fixed cost of compliance is enough to widen the gap.
 
-So the first consequence is not a new compliance industry. It is a widening gap between the companies that can afford the process and the companies that cannot.
+This was one of the central concerns raised by critics of the closed labs. A safety rule can also become a barrier to entry.
 
-There is real new demand. Independent testing, model governance, verification and security become requirements rather than good practice, and requirements come with budgets. That market is also probably small next to the infrastructure sitting beside it.
+There will be new demand for independent testing, model governance, security, documentation, and verification. Once those practices become legal requirements rather than optional standards, companies will have to budget for them.
 
-The bigger consequence is cost. If different countries write different rules, the same model may have to be tested repeatedly, and where local hosting or security rules come with those tests, built again in each market. That means more spending on chips, cloud capacity, power, cooling and the data centers and energy systems needed to run them. Regulation of this shape may not shrink the buildout. It may make companies pay for it more than once.
+That market is real, but it may remain small compared with the infrastructure spending created around it.
 
-Below the cutoff, the economics run the other way. Those models stay cheap and stay exempt, and competition there moves to running costs, self-hosting, smaller systems, proprietary data, and applications that turn cheap capability into something customers pay for.
+If different countries adopt different rules, the same model may need to be tested several times. Some markets may also require local hosting, separate security systems, or new data controls. A company may have to build and approve the same capability more than once.
 
-That splits the market rather than lifting it. Cheap, interchangeable models below the line. Expensive, approved systems above it. The weakest position is the one in between: selling access to a model as the whole business, with cheap models pressing on price from one side and compliance costs from the other.
+That means more demand for chips, cloud capacity, power, cooling, data centers, security, and the systems needed to prove compliance. Regulation of this kind may not reduce the AI buildout. It may make companies repeat parts of it in every major market.
 
-None of this is automatic. Compliance only becomes an advantage if the test is hard enough that somebody fails it. A cutoff written loosely enough for everyone to clear is paperwork, and paperwork does not move economics.
+Below the regulatory threshold, the economics look different. Smaller models remain cheaper, more widely available, and easier to deploy. Competition moves toward operating costs, self-hosting, proprietary data, and applications that turn inexpensive capability into something customers will pay for.
 
-Two things would show the wider reading is wrong. If testing rules arrive and do not change who releases a model or how quickly, the gate was never real. And if the next frontier release opens a lead wide enough that benchmarks return to the sales pitch, then building the model was still the hard part, and the letter said less about a lasting shift than the first piece assumed.
+The market could divide into two layers. Below the line are cheap and increasingly interchangeable models. Above it are expensive systems that have been tested and approved.
 
-The argument is settling on one point: open or closed is not the line that matters. What remains unsettled is how capability will be measured and who will make that decision. The advantage may no longer belong only to the company that builds the best model. It may also belong to whoever decides whether that model can be released.
+The weakest position may sit between them. A company whose entire business is selling access to a model would face pressure from cheaper systems below and higher compliance costs above. It would lack the cost advantage of small models and the scale advantage of the largest labs.
+
+This outcome is not automatic. Compliance only becomes a competitive advantage if the gate is difficult enough that some companies cannot pass through it. A rule that everyone can satisfy is paperwork, and paperwork alone does not create scarcity.
+
+Two developments would weaken the argument. The first would be testing rules that do not change which companies can release models or how long a release takes. In that case, the gate was never meaningful.
+
+The second would be a frontier model that opens a large and lasting technical lead. If benchmarks return to the center of the sales pitch because one company has clearly moved beyond the rest, then building the model remains the hard part. Permission would matter, but it would not be the main source of advantage.
+
+The debate is moving toward one conclusion. Open versus closed is not the line that matters most. The harder questions are how capability will be measured, where the threshold will sit, and who will have the authority to enforce it.
+
+The advantage may no longer belong only to the company that builds the best model.
+
+It may also belong to whoever decides whether that model is allowed to ship.

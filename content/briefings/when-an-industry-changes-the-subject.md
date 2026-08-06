@@ -6,130 +6,146 @@ date: 2026-07-27
 image: assets/when-an-industry-changes-the-subject-cover.jpg
 ---
 
-Jensen Huang joined X in June and posted nothing for a month. On 24 July he posted for the first time. Not a chip, not a roadmap, not a rebuttal to anyone. A three-page letter titled [Open Weights and American AI Leadership](https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf), signed by NVIDIA and twenty-four other companies, asking Washington not to place premature restrictions on models anyone can download and run.
+Jensen Huang joined X in June and posted nothing for a month. When he finally posted on July 24, it was not about a new chip, a product roadmap, or the latest argument over artificial intelligence. It was a three-page letter titled [Open Weights and American AI Leadership](https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf), signed by NVIDIA and twenty-four other companies, asking Washington not to place early restrictions on models that anyone can download and run.
 
-He has never been short of places to talk about artificial intelligence. Keynotes, earnings calls, an interview circuit with no obvious end. Two days earlier he had told Axios that Chinese open models are excellent and that American companies should be free to use them. What he had not done was speak in the one venue where he speaks only for himself, and he opened with a document about how a statute should be worded.
+Huang has never lacked places to discuss AI. He has keynotes, earnings calls, and an interview schedule with no obvious end. Two days earlier, he had praised Chinese open models and argued that American companies should be free to use them. But his first post in the one place where he speaks only for himself was about how the law should treat downloadable model weights.
 
-On its own that is a curiosity. It matters more as an example of something that happens to every industry roughly once a generation, and that is almost always missed while it is happening.
+On its own, that is an interesting choice. It matters more as a sign of something that happens to most important industries eventually: the central argument changes before most people notice that the source of value has changed with it.
 
 <!-- MEMBER WALL -->
 
 ## Part I: What an industry argues about
 
-An industry has one binding constraint at a time.
+Every industry has one constraint that matters more than the others. It is the thing that is hardest to obtain, the thing that earns the highest return, and usually the thing everyone spends the most time fighting over.
 
-Whatever is hardest to get is what earns the most. It is also what everyone spends their time fighting over.
+That gives us a useful way to study an industry. Pay attention to what it argues about, because the argument often reveals what the industry believes is becoming scarce.
 
-That gives you an instrument: an industry tells you what it believes is scarce by what it argues about.
+The debate usually moves through three questions. First, does the technology work? Then, can it scale? Finally, who is allowed to use, sell, or distribute it?
 
-The argument moves through three questions, always in the same order. Does it work. Can it scale. Who is allowed to do it. Aviation, pharmaceuticals and telecommunications all made that journey, and technical problems never disappeared in any of them. What changed was which problem was profitable to solve.
+Aviation, pharmaceuticals, and telecommunications all followed some version of that path. Their technical problems never disappeared. What changed was which problem carried the greatest economic value.
 
-The move between questions leaves three traces, in sequence. Language changes first, because vocabulary is cheap and admission is expensive. Capital moves next, because money has no reason to wait for the narrative. Policy arrives last and loudest, because law is how mature industries protect positions that engineering can no longer hold.
+The move from one question to the next leaves a trail. Language usually changes first because words can move before a company is ready to admit that its economics have changed. Capital moves next because money has no reason to wait for the public story. Policy arrives last and makes the most noise, because law becomes valuable when engineering alone can no longer protect a position.
 
-Speed is the fourth thing worth watching. Twenty-five signatures at launch, thirty-two by that same evening, fifty inside two days. No industry pulls a coalition together that fast over a question it considers secondary.
+Speed offers another clue. The open-weights letter launched with twenty-five names, reached thirty-two by that evening, and passed fifty within two days. Industries do not organize that quickly around something they consider secondary. The argument had already been forming before the letter appeared.
 
-A letter is what an industry produces when it can no longer win the argument with a benchmark.
+A policy letter is often what an industry produces when a benchmark can no longer settle the question.
 
 ## Part II: The tell in the language
 
-The letter rests on four claims, worth stating plainly before taking them apart.
+The letter makes several arguments. Open weights allow startups, universities, and public institutions to build useful systems without training a frontier model from the beginning. Keeping advanced AI inside a small number of closed platforms creates concentration risk. A closed model can fail or be compromised without outsiders being able to inspect it. Distillation can be a legitimate way to build better models, and policymakers should pursue theft directly rather than restricting open weights to reach it.
 
-Open weights give startups, universities and public institutions something to build on without training a frontier model from scratch. Concentrating advanced AI inside a handful of closed systems creates a single point of failure. A closed model can fail or be compromised in ways nobody outside the company can detect. Distillation is a legitimate development technique. Policymakers should pursue intellectual property theft directly, instead of restricting open weights in order to reach it. And American leadership will be judged not by one frontier model but by whether AI diffuses into factories, hospitals, farms, classrooms and main street businesses.
+The letter also argues that American leadership will not be decided by one company producing the best model. It will be decided by whether AI spreads into factories, hospitals, farms, classrooms, and smaller businesses. To help that happen, the signatories ask for wider access to computing power and public funding for shared training resources.
 
-It also asks for two things: expanded compute access for startups and researchers, and public funding for shared training assets.
+Now consider what the letter does not discuss.
 
-Now read it again for what is not there.
+There is almost nothing about artificial general intelligence, superintelligence, scaling laws, reasoning breakthroughs, or capability thresholds. Three pages about the future of AI contain no benchmark and almost no technical measurement.
 
-Nothing on artificial general intelligence. Nothing on superintelligence, scaling laws, reasoning breakthroughs or capability thresholds. Three pages on the future of artificial intelligence containing not one benchmark. Not one number.
+That omission matters because of who signed it. NVIDIA spent years explaining that greater capability requires more computing power. Meta includes performance tables with its model releases. Mistral and Black Forest Labs built much of their public case around the quality of their models.
 
-Consider who signed it. NVIDIA, whose commercial story for three years has been that capability scales with silicon. Meta, which ships a benchmark table with every model release. Mistral and Black Forest Labs, whose entire public claim is that their models are good.
+These companies know how to make an argument with numbers. They chose not to.
 
-Nobody leaves out their strongest evidence unless it has stopped being evidence of anything.
+In place of benchmarks, the letter uses words such as access, diffusion, ecosystems, sovereignty, prosperity, national security, and the application layer. These are not engineering terms. They are the language of distribution and policy.
 
-That is the first trace. Look at what filled the gap instead: diffusion, ecosystem, application layer, access, sovereignty, prosperity, national security. Not one of those is an engineering word. Every one of them is a word a legislative aide already knows.
+The change does not require us to guess at anyone's private motive. The companies are making a public case for keeping a resource widely available. Businesses rarely fight to keep something abundant when their advantage still depends on keeping it scarce.
 
-This points at something larger, and it requires no guessing at motives. The letter makes a case for keeping a resource flowing freely. No one makes that case about a resource that still earns its return by being scarce.
+Huang's own comments support that reading. Earlier in the year, he said that one in every four generated tokens came from an open model. In July, he praised Moonshot's Kimi K3, which publishes its full weights shortly after release. Once those weights are public, even the company that created them cannot pull every copy back.
 
-The numbers back it up, and Huang has been supplying them for months. At CES in January he said one in every four tokens generated now comes from an open model. In July he called Moonshot's Kimi K3 excellent. Kimi K3 publishes its full weights within days, after which nobody can withdraw them. Including the people who trained them.
-
-A benchmark still measures something. It stops being a position the moment everybody can post one.
+A benchmark still measures capability. It simply stops proving that one company owns a lasting advantage once several competitors can post a similar score.
 
 ## Part III: The tell in the money
 
-Ignore what the companies say for a moment. Look at how they make money.
+The next step is to ignore what the companies say and look at how they earn money.
 
-The launch roster is not interesting because it separated the industry. It did not. It is interesting because the firms willing to coordinate publicly on the first morning were the ones for whom it was cheapest to do so.
+The original signatories came from nearly every part of the AI stack. They sold chips, servers, cloud capacity, software, attention, open-model tools, venture capital, and even the physical materials needed to support the buildout.
 
-Chips, servers, cloud capacity, attention, enterprise software, open-weight tooling, venture capital, and one mining company for the physical inputs. Every layer of the stack except one. Not a single signatory earns its primary revenue selling access to a closed frontier model.
+One business model was largely missing. None of the original signatories earned most of its revenue by selling access to a closed frontier model.
 
-The split is narrower than it looks, because firms with identical economics stayed off it. CoreWeave rents GPUs and did not sign, despite NVIDIA being an investor. Neither did the cloud providers selling inference capacity, nor the data platforms that get more valuable as models get cheaper.
+That does not mean every company with similar economics signed. CoreWeave rents GPUs and stayed off the first list even though NVIDIA is an investor. Other cloud and data companies also remained absent despite benefiting when models become cheaper and more widely used.
 
-The explanation is arithmetic rather than disagreement. If the coalition wins, the policy applies to everyone, and a firm renting out GPUs benefits from the outcome whether or not its logo appeared on a PDF. A dozen firms sitting out is a dozen firms confident enough about the outcome to skip the bill.
+The explanation may be simpler than disagreement. If the coalition succeeds, the policy applies across the industry. A company can benefit from the outcome without paying the cost of attaching its name to the letter. Sometimes sitting out does not reveal opposition. It reveals confidence that others will do the lobbying for you.
 
-The point still holds. Nobody in the history of commerce has co-signed a public letter proposing that their own revenue line ought to be commoditized.
+The broader point remains. Companies generally do not sign public letters asking for their own main product to become easier to copy and cheaper to access.
 
-Microsoft is the most informative name on the launch page. It is OpenAI's largest investor and principal compute partner. OpenAI did not sign that morning. Microsoft signed anyway, days after GitHub Copilot added a Chinese open-weight model as its first. If Microsoft's economics increasingly look like infrastructure while OpenAI's look like intellectual property, shared ownership no longer guarantees shared incentives.
+Microsoft is the most revealing name on the original list. It is OpenAI's largest investor and primary computing partner, yet Microsoft signed before OpenAI did. Days earlier, GitHub Copilot had added a Chinese open-weight model.
 
-NVIDIA's position is easiest to misread, because it gets treated as a preference. Look at the economics instead, and the real variable is customer concentration: five hyperscalers with in-house silicon negotiate as a block, ten thousand mid-market firms running their own inference do not. Diffusion breaks the block, and open weights are currently the most effective mechanism for producing diffusion. That makes them the instrument rather than the objective. If a better mechanism appeared next quarter, the incentive would point at that one.
+That does not mean the companies had become opponents. It means their economics were beginning to point in different directions. Microsoft increasingly earns money from infrastructure, software, and distribution. OpenAI's value remains more closely tied to the intellectual property inside its models.
 
-That is why the letter claims America wins by pushing AI into factories, hospitals, farms, classrooms and main street businesses. None of those are AI companies. Not one of them will ever buy a training cluster.
+Shared ownership does not guarantee shared incentives.
 
-That is the second trace. Capital had finished repositioning before the letter was written, and it had repositioned away from the model.
+NVIDIA's support is also easier to understand through economics than preference. A small group of hyperscalers buying enormous amounts of computing power can negotiate together, build their own chips, and place pressure on NVIDIA's margins. Thousands of smaller companies running their own models do not have the same power.
+
+Open weights help spread AI beyond a few large buyers. That makes them useful to NVIDIA, but the goal is not openness for its own sake. The goal is wider demand and less customer concentration. If another method produced that result more effectively, the incentive would move with it.
+
+This is why the letter keeps returning to factories, hospitals, farms, classrooms, and smaller businesses. These are not model companies, and most will never train a frontier system. They are future users of chips, cloud infrastructure, software, and inference.
+
+By the time the letter was published, capital had already begun moving away from the model as the only place where value could be captured.
 
 ## Part IV: What a signature costs
 
-Then the list moved, fast enough to be worth timing. Twenty-five at launch. Thirty-two by that evening, OpenAI among them, roughly eleven hours after it had skipped the letter. Fifty by the Sunday, Google and AMD included.
+The list changed quickly. It began with twenty-five names, reached thirty-two by that evening, and passed fifty by Sunday. OpenAI joined roughly eleven hours after being absent from the launch. Google and AMD followed later.
 
-The obvious read is that consensus formed. That reading assumes every signature cost the same. It did not.
+The easy conclusion is that an industry consensus formed over the weekend. That assumes every company faced the same cost for signing, which they did not.
 
-On launch morning the cost was uneven. A company selling GPUs was defending its own customer base. A company selling access to a closed frontier model would have been undermining its own pricing power. Uneven cost is the only thing that ever makes a list informative.
+On the first morning, a GPU company could sign while defending its existing business. A company selling access to a closed model faced a harder choice because the letter could weaken the scarcity supporting its pricing. The early list was useful because the cost of signing was uneven.
 
-By evening it had stopped being uneven, and the reason was not economic. Every outlet had run the same sentence about the labs that stayed away, and abstention had acquired a meaning it did not have at breakfast. Declining now meant appearing in print as the company that wanted downloadable models restricted.
+By that evening, the cost had changed. Media coverage began naming the companies that had stayed away. Absence was no longer neutral. It started to look like support for restricting downloadable models.
 
-Nothing about OpenAI's business changed between morning and evening. The price of not signing did.
+Nothing about OpenAI's business changed between breakfast and dinner. The reputational cost of not signing did.
 
-That is the whole mechanism. Once observers start attaching meaning to absence, a roster stops measuring industry structure and starts measuring reputational cost. The coverage was not describing the event. It was participating in it.
+Once that happened, the list became less useful as evidence of industry structure. Early names revealed where the economics pointed. Later names increasingly revealed that public silence had become expensive.
 
-So the information in any public list decays as the list becomes the story. Early names disclose exposure. Late names disclose only that the company had been named. By the second day the abstainers were circulating as a graphic, which is the timestamp on the instrument breaking.
+The coverage was no longer only describing the coalition. It was helping expand it.
 
-And what looks like the coalition losing control of its own signal is not. An analyst wants a short list, because a short list has a line running through it. A regulator wants a long one, because length is the argument. Fifty names is worse evidence and better lobbying, and the trade took forty-eight hours.
+This is true of most public rosters. Their analytical value declines once the roster itself becomes the story. An analyst prefers a shorter list because the dividing line is clearer. A policymaker prefers a longer list because the number of names becomes part of the argument.
 
-Amazon, Anthropic and xAI are still off it. Abstention is cheaper for a firm that has already built its reputation on caution, so the holdouts are paying less than they appear to be. What they are holding is the position the letter walks past. The document concedes that released weights are beyond recall. Then it answers that concession with an argument about competition, not risk.
+Fifty signatures made the coalition less useful as a map of incentives and more useful as a lobbying document. That exchange took about forty-eight hours.
 
-None of this is really a story about signatures. Coalitions form around whatever an industry thinks is about to be decided, and this one formed around who gets to distribute.
+Amazon, Anthropic, and xAI remained outside the group. Their absence was not equally costly because each had already built some part of its public identity around caution or a different view of risk. They were also preserving the argument that the letter moves past too quickly: once model weights are released, the release cannot be undone.
+
+The letter acknowledges that problem but answers it mainly through competition and national leadership. The holdouts are keeping the risk side of the argument alive.
+
+The story, then, is not really about who signed. Coalitions form around whatever an industry believes is about to be decided. This one formed around who gets to distribute intelligence.
 
 ## Part V: Where scarcity goes
 
-The letter picks its own historical comparison. It reaches for the open-source software movement of the 1980s and argues that restricting it early would have cost the modern internet its foundation.
+The letter compares open-weight AI with the open-source software movement of the 1980s. It argues that early restrictions could have prevented much of the modern internet from developing.
 
-That comparison flatters the authors and explains very little, because it is a story about one kind of software beating another. The more useful precedent is electricity, for one reason. Scarcity did not disappear when power got cheap. It moved.
+That comparison is flattering, but it is not the most useful one. Electricity provides a better example because it shows what happens when an important input becomes cheap and widely available.
 
-Factories that bought electric motors and bolted them onto existing layouts got almost nothing, because what they had bought was a faster version of the old thing. The ones that rebuilt the floor around distributed power captured the gains. The lag between cheap power and visible output was an absorption problem, not a supply problem.
+Scarcity did not disappear when electricity spread. It moved.
 
-That is the rule worth carrying to the next industry that goes through this. When an input becomes abundant, the scarce asset becomes the capacity to reorganize around it.
+Factories that replaced steam engines with electric motors but kept the same floor plans gained less than expected. They had purchased a faster version of the old system. The larger gains went to companies that rebuilt the factory around distributed power, changing the placement of machines, the flow of work, and the design of the operation itself.
 
-Adopting and reorganizing are not the same thing, and the difference is visible from outside. A hospital that adopts writes its notes faster. A hospital that reorganizes changes how a patient moves from intake to discharge, and which roles still need to exist. An accounting firm that adopts closes the books in three days instead of five. One that reorganizes stops selling hours.
+The delay between cheap electricity and higher productivity was not mainly a supply problem. It was an organizational one.
 
-The first version shows up in a software line item. The second shows up in the org chart.
+That is the lesson worth carrying into AI. When an input becomes abundant, the ability to reorganize around it becomes scarce.
 
-Most organizations will do the first and describe it as the second, and the obstacle is never technical. Reorganizing means admitting that the current structure was built around a constraint that no longer exists. That admission has to be approved by the very people the current structure rewards. No capital expenditure produces it. Compute is purchasable, licences are purchasable, talent is mostly purchasable, and the willingness to dismantle your own org chart cannot simply be bought.
+Adoption and reorganization are not the same thing. An accounting firm adopts AI when it closes the books in three days instead of five. It reorganizes when it changes a business model built around billing for human hours.
 
-So cheap inputs do not lift an industry as a whole. They widen the distance between firms inside it. Electrification did not make manufacturing uniformly more productive; it made the gap between the best manufacturer and the median one considerably larger, and the median took decades to close it. The interesting question after a transition like this is never which firms adopted the new input. All of them will. It is why two competitors with the same tools and the same budgets ended up several years apart.
+Most companies will do the first and describe it as the second. The obstacle is rarely access to the tool. Reorganization requires leaders to admit that the current structure was built around a limitation that may no longer exist. That decision must often be approved by the same people whose authority and compensation came from the old structure.
 
-The letter half-concedes this without meaning to. Two of its three asks are requests for someone else to relieve a constraint: expand compute access, fund shared training assets. An industry does not ask the state to subsidise an input while that input is still where the money is.
+This is why cheaper intelligence may not lift every company equally. It may widen the distance between the best operators and the average ones. Electrification did not make every manufacturer more productive at the same speed. It created a larger gap between the companies that redesigned their operations and those that simply installed new equipment.
 
-So it ends up with the users rather than the suppliers, and with a minority of the users at that. Factories, hospitals, farms and classrooms are named throughout the letter and represented nowhere on it. None of them are priced for the transition, partly because the capacity is hard to measure and mostly because there is no ticker for organizational competence.
+The useful question is not which companies will adopt AI. Almost all of them will. The useful question is why two competitors with the same tools and similar budgets may end up several years apart.
 
-Two things could break the whole reading. Not every industry diffuses, and history is generous with the ones that did while staying quiet about the ones that did not. Commercial aircraft consolidated into a duopoly and stayed there. And bottlenecks do not only move in one direction. If an architecture appears that cannot be copied from its outputs, or a compute threshold only two firms can clear, scarcity returns to where it was.
+The letter partly admits this without saying it directly. Two of its main requests ask the government to reduce the cost of an input by expanding access to compute and funding shared training resources. Industries do not usually ask the state to make an input cheaper while that input remains the main source of their pricing power.
 
-The instrument tells you where an industry believes it stands. It does not tell you whether the industry is right.
+The value may therefore move toward the users, but only toward the minority capable of changing how their businesses work. Factories, hospitals, farms, and classrooms appear throughout the letter, yet none are represented among the signatories. They are also difficult to value in advance because there is no clean measure for organizational competence.
+
+Two developments could prove this reading wrong. The first is that AI may not spread as widely as the coalition expects. Some industries remain concentrated even after the technology matures. Commercial aviation, for example, settled into a duopoly.
+
+The second is that scarcity could return to the model itself. A new architecture may appear that cannot be copied from its outputs, or the cost of building the next generation may rise beyond what all but a few firms can afford.
+
+The letter tells us where the industry believes it stands. It does not prove that the industry is correct.
 
 ## Part VI: The argument nobody was having
 
-For three years the hard question in artificial intelligence was whether anyone could build it. Nobody wrote to Washington about that one. There was nothing to ask for, and the answer was going to arrive from the engineering either way.
+For three years, the hardest question in artificial intelligence was whether anyone could build systems this capable. Nobody needed to write to Washington about that problem because the answer was going to come from engineering.
 
-Fifty companies have now signalled something narrower than an answer, and more useful: they no longer expect the next advantage to be won where the last one was. Three are still holding the other position in public, which is the only reason the first group's agreement means anything at all.
+Now dozens of companies are organizing around a different question. They are not saying that technical progress has ended, or that models no longer matter. They are signaling that they do not expect the next durable advantage to be won in exactly the same place as the last one.
 
-They stopped making the case with benchmarks because they no longer believe benchmarks are where the next durable advantage will be earned.
+The remaining holdouts matter because their disagreement gives the coalition meaning. Without a credible opposing view, fifty signatures would say little more than fifty companies found the same public position convenient.
+
+The industry has started making its case through policy, access, and distribution rather than benchmark tables. That change in subject is the evidence.
 
 An industry tells you what it believes is scarce by what it argues about.
