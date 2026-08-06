@@ -18,7 +18,6 @@ Those two facts should not comfortably coexist. Working out why they do is more 
 <!-- MEMBER WALL -->
 
 ## Part I: The contradiction, in numbers
-*Or: what does not reconcile*
 
 Year to date net fund flows stand at roughly negative $5.2 billion. A ten session outflow streak has drained $2.73 billion and is still running. Price broke below $58,000 today, a twenty one month low. A major bank cut its twelve month target to $82,000 this morning, its second downgrade of the year, after stripping the inflow assumption out of its model entirely.
 
@@ -29,7 +28,6 @@ Two tidy resolutions are available. One says the futures crowd is trapped long i
 There is a third explanation that requires believing nothing of the sort.
 
 ## Part II: A bookmaker is not a fan
-*Or: exposure is not conviction*
 
 A bookmaker holding an enormous position on the favourite is not a supporter of the favourite. He is balancing a book.
 
@@ -46,7 +44,6 @@ This is the general limitation of positioning data and it is not a small one. Th
 We cannot resolve which of those we are looking at from the chart, and we are not going to pretend we can.
 
 ## Part III: Discard, do not invert
-*Or: the error that looks like rigour*
 
 There is a specific mistake worth naming, because it is the one an analyst who has done the work is most likely to make.
 
@@ -59,7 +56,6 @@ This framework applies with full confidence in physical commodities, where the c
 A method that can only ever produce a view is not a method. It is a habit with a vocabulary. The value of a framework sits almost entirely in how reliably it tells you when to say nothing, and this is one of those weeks.
 
 ## Part IV: What is left, on its actual basis
-*Or: the flow question*
 
 Something here is worth watching. It is just not positioning, and dressing it up as positioning would undo everything above.
 

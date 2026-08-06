@@ -22,7 +22,6 @@ The useful question is not why the defense failed. It is what a visibly failed d
 <!-- MEMBER WALL -->
 
 ## Part I: What ¥11.7 trillion bought
-*Or: temporary*
 
 Currency defense conducted through reserves has a structural problem that resolve does not fix. The reserve stack is finite, its size is public, and the amount spent on each attempt is reported. Everyone on the other side can count.
 
@@ -31,7 +30,6 @@ This is a defense with the cards face up. The defender can bluff about willingne
 So the thesis here is not that Tokyo eventually rescues the yen. Roughly seventy three billion dollars produced temporary relief and nothing structural. Anyone positioned for successful intervention is trading against arithmetic.
 
 ## Part II: The hike that was not news
-*Or: why the obvious read is the wrong one*
 
 A rate hike is unambiguously supportive of a currency. The yen fell to a forty year low two weeks after one. There is a well worn principle that bullish news failing to lift price is a bearish tell, and applied naively it kills everything that follows.
 
@@ -44,7 +42,6 @@ The inference is not that the yen has further downside fuel. It is that the rate
 The trade did not fail to work. It ran out of people.
 
 ## Part III: Crowded is not the same as wrong
-*Or: what the positioning adds*
 
 At the July 1 snapshot the dollar index trades near 101.2 with the speculator index at 99.09, the commercial index at 0, and open interest surging toward the top of its range. The yen shows speculators at 1.43 and commercials at 96.72. The euro, the dominant weight in the dollar index, shows speculators at 20.07 and commercials at 88.14. Aggregated positioning from a separate dataset independently puts net speculative yen shorts at multi year highs.
 
@@ -57,7 +54,6 @@ And the crowd has a reason. The policy differential runs to well over two hundre
 Which is the distinction the whole piece rests on. Crowded and wrong are different conditions. This short is crowded precisely because the fundamentals justify it. A position with no marginal buyer left does not need the fundamentals to reverse in order to reprice violently. It only needs a reason to move first.
 
 ## Part IV: The argument that this is early
-*Or: what the positioning does not settle*
 
 The strongest evidence against this read arrived in the same month as the hike. The Federal Reserve's June dot plot moved the median year end rate from 3.4% to 3.8%, with nine of nineteen participants expecting further hikes.
 

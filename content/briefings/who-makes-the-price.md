@@ -15,7 +15,7 @@ So start underneath.
 
 <!-- MEMBER WALL -->
 
-## Part I: Markets were never built for traders / Or: uncertainty has always had a price
+## Part I: Markets were never built for traders
 
 Every business has one thing it cannot engineer away.
 
@@ -29,7 +29,7 @@ The speculator is not the reason the market exists.
 
 The speculator is the reason it functions.
 
-## Part II: Same trade, opposite purpose / Or: read the business before the chart
+## Part II: Same trade, opposite purpose
 
 Pause here, because this is the part that rearranges everything.
 
@@ -56,7 +56,7 @@ One discipline holds the method together. The data shows behavior, never intent.
 ![Diagram showing risk transferring from a business needing certainty through the futures market to a speculator accepting risk](assets/who-makes-the-price-diagram-1-risk-transfer.svg)
 <figcaption style="text-align:center;"><em>The trade is identical. The reason never is.</em></figcaption>
 
-## Part III: There is no algorithm / Or: the market does not have one brain
+## Part III: There is no algorithm
 
 Retail has a favorite ghost. The algorithm, singular, definite article. It hunts stops. It knows where you are.
 
@@ -71,7 +71,7 @@ It emerges.
 ![Contrast between the myth of one algorithm producing price and the reality of many participants negotiating micro-auctions from which price emerges](assets/who-makes-the-price-diagram-2-no-algorithm.svg)
 <figcaption style="text-align:center;"><em>Television has a remarkable ability to explain why the market moved, immediately after it already moved.</em></figcaption>
 
-## Part IV: Every negotiation ends two ways / Or: what price is actually measuring
+## Part IV: Every negotiation ends two ways
 
 Here is the next thing to throw out: price is not rising because buyers outnumber sellers.
 
@@ -91,7 +91,7 @@ Then the absorbing side finishes. There is nobody left to take the other side of
 
 Which is why the length of a consolidation tends to matter as much as its shape. A range held for an hour releases an hour's worth of tension. A range held for a week releases a week's worth. The stretch and the snap are the same event, just measured at two different points in time.
 
-## Part V: Ownership moves before price / Or: the same transfer viewed through different clocks
+## Part V: Ownership moves before price
 
 Now the idea the whole series rests on.
 
@@ -121,7 +121,7 @@ So the report is not telling you where price trades tomorrow morning. It is tell
 
 Positioning creates pressure. Liquidity determines where that pressure can actually transfer ownership. The auction decides whether it matters.
 
-## Part VI: Every price is already history / Or: what the market actually leaves behind
+## Part VI: Every price is already history
 
 None of this is really about finance.
 
