@@ -106,5 +106,16 @@
     "cat": "macro",
     "visibility": "members",
     "image": "assets/the-tightening-the-fed-did-not-do-cover.png"
+  },
+  {
+    "slug": "nobody-is-hunting-you",
+    "title": "Nobody Is Hunting You",
+    "subtitle": "Reading order flow without inventing a villain",
+    "excerpt": "Stop hunts, liquidity grabs, smart money running your level. Every version of the story assumes the market noticed you. It didn't, and dropping the narrative is where useful analysis begins.",
+    "date": "2026-09-01",
+    "category": "Psychology & Process",
+    "cat": "psychology",
+    "visibility": "members",
+    "image": "assets/nobody-is-hunting-you-cover.png"
   }
 ]
