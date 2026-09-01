@@ -18,6 +18,8 @@ It does not. Retail traders are not nearly important enough, and that is not an 
 
 This is why taking losses personally makes very little sense. The market did not reject your analysis, nor did it even notice your analysis, or the boxes and lines you drew called support and resistance. It processed orders, because that is what markets do. The useful question is not who did something to us, but what those orders represented inside the larger overall context of the auction.
 
+<!-- MEMBER WALL -->
+
 ## Part 2: The market participants
 
 The actual futures market contains participants solving very different problems, as discussed in our previous writing, "[Who Makes The Price](/briefings/who-makes-the-price/)." A liquidity provider may be quoting to earn the spread while controlling inventory. An asset manager may be building exposure over several hours. An arbitrageur may be trading the relationship between futures and another instrument. A hedger may simply need to change risk.
@@ -29,8 +31,6 @@ The important point is not memorizing every participant category. It is understa
 That is why "aggressive buyer" is not a participant category, and neither is "passive seller." They describe how someone interacted with available liquidity at that moment. The same participant can demand liquidity in one situation and provide it in another, which means identity is usually less useful than the consequence of the activity itself.
 
 Our job is therefore much narrower. We observe whether the activity accomplishes anything. If buyers are repeatedly crossing the spread, does price advance? If it does not, what does that tell us about the liquidity meeting them? Once we stop trying to identify everyone involved, price formation becomes much easier to understand.
-
-<!-- MEMBER WALL -->
 
 ## Part 3: Price movement
 
